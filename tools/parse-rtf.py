@@ -13,6 +13,8 @@ Requires: pip install striprtf
 import sys
 import re
 import json
+import io
+import zipfile
 from pathlib import Path
 from striprtf.striprtf import rtf_to_text
 
@@ -44,15 +46,55 @@ CHAR_KEYS = ["ws", "bs", "str", "tgh", "ag", "int", "per", "wil", "fel"]
 ALL_SKILLS = list(SKILL_CHAR.keys())
 
 
+def file_to_text(path):
+    """Read an RTF or DOCX (misnamed .rtf) file and return plain text."""
+    with open(path, "rb") as f:
+        header = f.read(4)
+    if header == b"PK\x03\x04":
+        with open(path, "rb") as f:
+            data = f.read()
+        z = zipfile.ZipFile(io.BytesIO(data))
+        xml = z.read("word/document.xml").decode("utf-8")
+        # Table cells → pipe-delimited rows so the stat-table parser can read them
+        text = re.sub(r"<w:br[^/]*/?>", "\n", xml)
+        text = re.sub(r"</w:tc>", "|", text)   # cell boundary
+        text = re.sub(r"</w:tr>", "\n", text)   # row boundary
+        text = re.sub(r"</w:p>", "\n", text)
+        text = re.sub(r"<[^>]+>", "", text)
+        # Collapse paragraph breaks that appear inside a cell (before the trailing |)
+        text = re.sub(r"\n\|", "|", text)
+        return text
+    with open(path, "r", encoding="latin-1") as f:
+        content = f.read()
+    return rtf_to_text(content)
+
+
+def parse_armour(s):
+    """'9 + 1d10' → (9, '1d10'), '6' → (6, '')"""
+    s = s.strip()
+    m = re.match(r"(\d+)\s*\+\s*(\d*d\d+)", s, re.I)
+    if m:
+        return int(m.group(1)), m.group(2)
+    m = re.match(r"(\d+)", s)
+    if m:
+        return int(m.group(1)), ""
+    return 0, ""
+
+
 def strip_pipe(s):
     return s.rstrip("|").strip()
+
+
+def to_camel_case(s):
+    """'One-Handed' → 'oneHanded', 'Long Gun' → 'longGun'"""
+    words = re.split(r"[\s\-]+", s.strip())
+    return words[0].lower() + "".join(w.capitalize() for w in words[1:])
 
 
 def trait_key(name):
     """'Rapid Fire' → 'rapidFire', 'Two-Handed' → 'twoHanded'"""
     name = re.sub(r"\s*\([^)]+\)", "", name).strip()
-    words = re.split(r"[\s\-]+", name)
-    return words[0].lower() + "".join(w.capitalize() for w in words[1:])
+    return to_camel_case(name)
 
 
 def parse_weapon_traits(traits_str):
@@ -62,8 +104,13 @@ def parse_weapon_traits(traits_str):
     result = []
     for part in re.split(r",\s*(?=[A-Z])", traits_str.strip().rstrip(".")):
         part = part.strip()
-        if part:
-            result.append({"key": trait_key(part)})
+        if not part:
+            continue
+        entry = {"key": trait_key(part)}
+        val_m = re.search(r"\((\d+(?:\.\d+)?)\)", part)
+        if val_m:
+            entry["value"] = val_m.group(1)
+        result.append(entry)
     return result
 
 
@@ -86,7 +133,7 @@ def parse_attack(text):
     m = re.match(r"(Melee|Ranged)\s*\(([^)]+)\)", type_part, re.I)
     if m:
         weapon["attackType"] = m.group(1).lower()
-        weapon["spec"] = m.group(2).strip().lower().replace(" ", "_").replace("-", "")
+        weapon["spec"] = to_camel_case(m.group(2).strip())
     elif re.match(r"Melee", type_part, re.I):
         weapon["attackType"] = "melee"
     elif re.match(r"Ranged", type_part, re.I):
@@ -111,6 +158,7 @@ def parse_attack(text):
     dmg_m = re.search(r"(\d+)\s*\+\s*SL\s+Damage", tail, re.I)
     if dmg_m:
         weapon["damage_base"] = dmg_m.group(1)
+        weapon["damage_SL"] = True
         tail = tail[: dmg_m.start()] + tail[dmg_m.end() :]
     else:
         dmg_m = re.search(r"(\d+)\s+Damage", tail, re.I)
@@ -121,6 +169,13 @@ def parse_attack(text):
     # Anything before the first sentence that is not a trait list goes to description
     # Split on ". " to separate short trait-like tokens from long descriptions
     tail = tail.strip().strip(",").strip()
+
+    # "Or\n<alternative weapon>" — everything from "Or" onward is the description
+    or_desc = ""
+    or_m = re.search(r"\nOr\b", tail, re.I)
+    if or_m:
+        or_desc = tail[or_m.start():].strip()
+        tail = tail[: or_m.start()].strip().rstrip(".")
 
     # Split on ". " — first period-terminated segment(s) are traits, the rest is description
     segments = re.split(r"\.\s+", tail)
@@ -138,6 +193,8 @@ def parse_attack(text):
             desc_parts.append(seg + ".")
 
     weapon["traits"] = parse_weapon_traits(", ".join(trait_parts))
+    if or_desc:
+        desc_parts.append(or_desc)
     weapon["description"] = " ".join(desc_parts)
 
     return weapon
@@ -196,10 +253,7 @@ def name_from_filename(path):
 
 
 def parse_file(path):
-    with open(path, "r", encoding="latin-1") as f:
-        content = f.read()
-    text = rtf_to_text(content)
-
+    text = file_to_text(path)
     lines = [strip_pipe(l) for l in text.split("\n")]
 
     actor = {
@@ -210,6 +264,7 @@ def parse_file(path):
         "role": "troop",
         "characteristics": {k: 0 for k in CHAR_KEYS},
         "armour": 0,
+        "armour_formula": "",
         "wounds": 0,
         "criticals": 0,
         "initiative": 0,
@@ -303,7 +358,7 @@ def parse_file(path):
             if i < len(lines):
                 vals = lines[i].split("|")
                 try:
-                    actor["armour"] = int(vals[0].strip())
+                    actor["armour"], actor["armour_formula"] = parse_armour(vals[0])
                 except (ValueError, IndexError):
                     pass
                 try:

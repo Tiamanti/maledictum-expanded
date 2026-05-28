@@ -150,7 +150,7 @@ function buildWeapon(actorId, parsed) {
         damage: {
           base: parsed.damage_base || "",
           characteristic: "",
-          SL: false,
+          SL: parsed.damage_SL ?? false,
           ignoreAP: false,
         },
         traits: { list: parsed.traits || [] },
@@ -268,7 +268,7 @@ function buildActor(parsed) {
           land: { value: parsed.speed || "normal", modifier: 0 },
           fly: { value: "none", modifier: 0 },
         },
-        wounds: { max: 0, value: 0 },
+        wounds: { max: parsed.wounds || 0, value: 0 },
         criticals: { max: 0, value: 0 },
         hitLocations: {
           head:     { range: [1, 1], label: "IMPMAL.Head",     abbrev: "IMPMAL.HeadAbbrev" },
@@ -279,13 +279,13 @@ function buildActor(parsed) {
           body:     { range: [6, 10], label: "IMPMAL.Body",    abbrev: "IMPMAL.BodyAbbrev" },
         },
         resolve: parsed.resolve || 0,
-        armour: { formula: "", value: parsed.armour || 0, useItems: false },
+        armour: { formula: parsed.armour_formula || "", value: parsed.armour || 0, useItems: false },
       },
       faction: { id: "", name: parsed.faction || "" },
       species: parsed.species || "",
       role: parsed.role || "troop",
       warp: { charge: 0, state: 0, sustaining: { list: [] } },
-      autoCalc: { wounds: true, criticals: true, initiative: true },
+      autoCalc: { wounds: false, criticals: true, initiative: true },
     },
     prototypeToken: {
       name: parsed.name,
