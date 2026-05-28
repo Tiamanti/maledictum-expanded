@@ -1,0 +1,41 @@
+on:
+  push:
+    branches:
+      - master
+
+name: Auto Tag on Version Change
+
+jobs:
+  tag:
+    name: Create version tag if module.json version changed
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Check for version change
+        id: check
+        run: |
+          PREV=$(git show HEAD~1:module.json 2>/dev/null | jq -r '.version // empty' || echo "")
+          CURR=$(jq -r '.version' module.json)
+          echo "previous: $PREV  current: $CURR"
+          if [ -n "$CURR" ] && [ "$PREV" != "$CURR" ]; then
+            echo "changed=true"  >> $GITHUB_OUTPUT
+            echo "version=$CURR" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Push tag
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          TAG="v${{ steps.check.outputs.version }}"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag "$TAG"
+          git push origin "$TAG"
