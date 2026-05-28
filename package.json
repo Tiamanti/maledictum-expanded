@@ -1,6 +1,6 @@
 {
   "name": "maledictum-expanded",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Content expansion module for Imperium Maledictum.",
   "type": "module",
   "scripts": {
