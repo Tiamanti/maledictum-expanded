@@ -1,0 +1,394 @@
+#!/usr/bin/env node
+/**
+ * Read parsed actor JSON from stdin and write to a Foundry LevelDB compendium.
+ *
+ * Usage:
+ *   python tools/parse-rtf.py <rtf-dir> | node tools/write-pack.mjs <pack-dir>
+ *
+ * The pack-dir must already exist (as an empty directory or existing LevelDB).
+ * Existing entries with the same actor name are overwritten.
+ *
+ * Requires classic-level in the monorepo root node_modules.
+ */
+
+import { createRequire } from "module";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+// classic-level lives in the monorepo root node_modules (3 levels up from tools/)
+const classicLevelPath = path.resolve(__dirname, "../../../node_modules/classic-level");
+const require = createRequire(import.meta.url);
+const { ClassicLevel } = require(classicLevelPath);
+
+const PACK_DIR = process.argv[2];
+if (!PACK_DIR) {
+  console.error("Usage: node write-pack.mjs <pack-dir>");
+  process.exit(1);
+}
+
+// ── ID generation ────────────────────────────────────────────────────────────
+const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+function makeId(len = 16) {
+  let id = "";
+  for (let i = 0; i < len; i++) {
+    id += CHARS[Math.floor(Math.random() * CHARS.length)];
+  }
+  return id;
+}
+
+// ── Skill characteristic defaults ────────────────────────────────────────────
+const SKILL_CHAR = {
+  athletics: "str", awareness: "per", dexterity: "ag", discipline: "wil",
+  fortitude: "tgh", intuition: "per", linguistics: "int", logic: "int",
+  lore: "int", medicae: "int", melee: "ws", navigation: "int", piloting: "ag",
+  presence: "wil", psychic: "wil", ranged: "bs", rapport: "fel",
+  reflexes: "ag", stealth: "ag", tech: "int",
+};
+
+const ALL_SKILLS = Object.keys(SKILL_CHAR);
+
+const STATS = {
+  coreVersion: "14.363",
+  systemId: "impmal",
+  systemVersion: "4.0.0",
+  createdTime: Date.now(),
+  modifiedTime: Date.now(),
+  lastModifiedBy: null,
+  exportSource: null,
+  compendiumSource: null,
+  duplicateSource: null,
+};
+
+function baseOwnership() {
+  return { default: 0 };
+}
+
+// ── Item builders ─────────────────────────────────────────────────────────────
+
+function buildTrait(actorId, parsed) {
+  const id = makeId();
+  return {
+    key: `!actors.items!${actorId}.${id}`,
+    value: {
+      type: "trait",
+      name: parsed.name,
+      _id: id,
+      img: "modules/impmal-core/assets/icons/blank.webp",
+      system: {
+        notes: {
+          player: `<p>${parsed.description}</p>`,
+          gm: "",
+        },
+        attack: {
+          enabled: false, type: "melee", characteristic: "",
+          skill: { key: "", specialisation: "" },
+          damage: { SL: false, base: "", characteristic: "", ignoreAP: false },
+          range: "", traits: { list: [] }, self: false,
+        },
+        test: {
+          enabled: false, target: "self", difficulty: "challenging",
+          characteristic: "", skill: { key: "", specialisation: "" }, self: false,
+        },
+        roll: { enabled: false, formula: "", label: "" },
+        category: "standard",
+        vehicle: { maneuverable: 0 },
+      },
+      effects: [],
+      folder: null,
+      sort: 0,
+      ownership: baseOwnership(),
+      flags: {},
+      _stats: { ...STATS },
+    },
+  };
+}
+
+function buildSpecialisation(actorId, parsed) {
+  const id = makeId();
+  return {
+    key: `!actors.items!${actorId}.${id}`,
+    value: {
+      type: "specialisation",
+      name: parsed.name,
+      _id: id,
+      img: "modules/impmal-core/assets/icons/generic.webp",
+      system: {
+        notes: { player: "", gm: "" },
+        advances: parsed.advances,
+        restricted: false,
+        skill: parsed.skill,
+      },
+      effects: [],
+      sort: 0,
+      ownership: baseOwnership(),
+      flags: {},
+      _stats: { ...STATS },
+    },
+  };
+}
+
+function buildWeapon(actorId, parsed) {
+  const id = makeId();
+  const isRanged = parsed.attackType === "ranged";
+  return {
+    key: `!actors.items!${actorId}.${id}`,
+    value: {
+      type: "weapon",
+      name: parsed.name,
+      _id: id,
+      img: isRanged
+        ? "modules/impmal-core/assets/icons/weapons/ranged-weapon.webp"
+        : "modules/impmal-core/assets/icons/weapons/melee-weapon.webp",
+      system: {
+        notes: { player: parsed.description ? `<p>${parsed.description}</p>` : "", gm: "" },
+        encumbrance: { value: 0 },
+        cost: 0,
+        availability: "",
+        quantity: 1,
+        equipped: { value: true, hand: "", force: false },
+        damage: {
+          base: parsed.damage_base || "",
+          characteristic: "",
+          SL: false,
+          ignoreAP: false,
+        },
+        traits: { list: parsed.traits || [] },
+        ammoCost: 0,
+        attackType: parsed.attackType,
+        category: "",
+        spec: parsed.spec || "",
+        range: parsed.range || "",
+        rangeModifier: { value: 0, override: "" },
+        mag: { value: 1, current: 0 },
+        ammo: { id: "" },
+        mods: { list: [] },
+        slots: { list: [], value: 0 },
+      },
+      effects: [],
+      folder: null,
+      sort: 0,
+      ownership: baseOwnership(),
+      flags: {},
+      _stats: { ...STATS },
+    },
+  };
+}
+
+function buildEquipment(actorId, name) {
+  const id = makeId();
+  return {
+    key: `!actors.items!${actorId}.${id}`,
+    value: {
+      type: "equipment",
+      name: name.trim(),
+      _id: id,
+      img: "modules/impmal-core/assets/icons/equipment/equipment.webp",
+      system: {
+        notes: { player: "", gm: "" },
+        equipped: { value: false, hand: "", force: false },
+        encumbrance: { value: 0 },
+        cost: 0,
+        availability: "",
+        quantity: 1,
+        uses: { value: null, max: null, enabled: false },
+        test: {
+          difficulty: "challenging", characteristic: "",
+          skill: { key: "", specialisation: "" }, self: false,
+        },
+        traits: { list: [] },
+        slots: { list: [], value: 0 },
+      },
+      effects: [],
+      folder: null,
+      sort: 0,
+      ownership: baseOwnership(),
+      flags: {},
+      _stats: { ...STATS },
+    },
+  };
+}
+
+// ── Actor builder ─────────────────────────────────────────────────────────────
+
+function buildActor(parsed) {
+  const actorId = makeId();
+  const items = [];
+
+  // Specialisations
+  for (const spec of parsed.specialisations || []) {
+    items.push(buildSpecialisation(actorId, spec));
+  }
+
+  // Traits
+  for (const trait of parsed.traits || []) {
+    items.push(buildTrait(actorId, trait));
+  }
+
+  // Attacks (weapons)
+  for (const atk of parsed.attacks || []) {
+    items.push(buildWeapon(actorId, atk));
+  }
+
+  // Possessions (equipment)
+  for (const possession of parsed.possessions || []) {
+    if (possession.trim()) {
+      items.push(buildEquipment(actorId, possession));
+    }
+  }
+
+  // Build skills section
+  const skills = {};
+  for (const sk of ALL_SKILLS) {
+    skills[sk] = {
+      characteristic: SKILL_CHAR[sk],
+      advances: (parsed.skill_advances || {})[sk] ?? 0,
+      modifier: 0,
+    };
+  }
+
+  const characteristics = {};
+  for (const [k, v] of Object.entries(parsed.characteristics || {})) {
+    characteristics[k] = { starting: v, advances: 0, modifier: 0 };
+  }
+
+  const actorDoc = {
+    name: parsed.name,
+    type: "npc",
+    _id: actorId,
+    img: "modules/impmal-core/assets/tokens/unknown.webp",
+    system: {
+      characteristics,
+      skills,
+      notes: { player: "", gm: "" },
+      combat: {
+        size: parsed.size || "medium",
+        armourModifier: 0,
+        speed: {
+          land: { value: parsed.speed || "normal", modifier: 0 },
+          fly: { value: "none", modifier: 0 },
+        },
+        wounds: { max: 0, value: 0 },
+        criticals: { max: 0, value: 0 },
+        hitLocations: {
+          head:     { range: [1, 1], label: "IMPMAL.Head",     abbrev: "IMPMAL.HeadAbbrev" },
+          leftArm:  { range: [2, 2], label: "IMPMAL.LeftArm",  abbrev: "IMPMAL.LeftArmAbbrev" },
+          rightArm: { range: [3, 3], label: "IMPMAL.RightArm", abbrev: "IMPMAL.RightArmAbbrev" },
+          leftLeg:  { range: [4, 4], label: "IMPMAL.LeftLeg",  abbrev: "IMPMAL.LeftLegAbbrev" },
+          rightLeg: { range: [5, 5], label: "IMPMAL.RightLeg", abbrev: "IMPMAL.RightLegAbbrev" },
+          body:     { range: [6, 10], label: "IMPMAL.Body",    abbrev: "IMPMAL.BodyAbbrev" },
+        },
+        resolve: parsed.resolve || 0,
+        armour: { formula: "", value: parsed.armour || 0, useItems: false },
+      },
+      faction: { id: "", name: parsed.faction || "" },
+      species: parsed.species || "",
+      role: parsed.role || "troop",
+      warp: { charge: 0, state: 0, sustaining: { list: [] } },
+      autoCalc: { wounds: true, criticals: true, initiative: true },
+    },
+    prototypeToken: {
+      name: parsed.name,
+      displayName: 30,
+      actorLink: false,
+      width: 1, height: 1, depth: 1,
+      texture: {
+        src: "modules/impmal-core/assets/tokens/unknown.webp",
+        anchorX: 0.5, anchorY: 0.5, fit: "contain",
+        scaleX: 1, scaleY: 1, tint: "#ffffff", alphaThreshold: 0.75,
+      },
+      lockRotation: false, rotation: 0, alpha: 1, disposition: -1,
+      displayBars: 20,
+      bar1: { attribute: null }, bar2: { attribute: null },
+      light: {
+        negative: false, priority: 0, alpha: 0.5, angle: 360,
+        bright: 0, color: null, coloration: 1, dim: 0, attenuation: 0.5,
+        luminosity: 0.5, saturation: 0, contrast: 0, shadows: 0,
+        animation: { type: null, speed: 5, intensity: 5, reverse: false },
+        darkness: { min: 0, max: 1 },
+      },
+      sight: {
+        enabled: false, range: 0, angle: 360, visionMode: "basic",
+        color: null, attenuation: 0.1, brightness: 0, saturation: 0, contrast: 0,
+      },
+      detectionModes: {},
+      occludable: { radius: 0 },
+      ring: {
+        enabled: false,
+        colors: { ring: null, background: null },
+        effects: 1,
+        subject: { scale: 1, texture: null },
+      },
+      turnMarker: { mode: 1, animation: null, src: null, disposition: false },
+      movementAction: null,
+      flags: {}, randomImg: false, appendNumber: false, prependAdjective: false,
+    },
+    items: items.map((it) => it.value._id),
+    effects: [],
+    folder: null,
+    ownership: baseOwnership(),
+    flags: {},
+    _stats: { ...STATS },
+    sort: 0,
+  };
+
+  return [
+    { key: `!actors!${actorId}`, value: actorDoc },
+    ...items,
+  ];
+}
+
+// ── Main ──────────────────────────────────────────────────────────────────────
+
+async function main() {
+  // Read all stdin
+  const chunks = [];
+  for await (const chunk of process.stdin) chunks.push(chunk);
+  const raw = Buffer.concat(chunks).toString("utf-8");
+  const actors = JSON.parse(raw);
+
+  const db = new ClassicLevel(PACK_DIR, { valueEncoding: "json" });
+
+  // Load existing entries to check for name collisions
+  const existing = new Map(); // name -> actorId
+  for await (const [k, v] of db.iterator()) {
+    if (k.startsWith("!actors!") && !k.includes(".")) {
+      existing.set(v.name, v._id);
+    }
+  }
+
+  let added = 0;
+  let updated = 0;
+
+  for (const parsed of actors) {
+    if (existing.has(parsed.name)) {
+      // Delete old entries for this actor
+      const oldId = existing.get(parsed.name);
+      const batch = db.batch();
+      batch.del(`!actors!${oldId}`);
+      for await (const [k] of db.iterator({ gte: `!actors.items!${oldId}`, lte: `!actors.items!${oldId}~` })) {
+        batch.del(k);
+      }
+      await batch.write();
+      updated++;
+    } else {
+      added++;
+    }
+
+    const entries = buildActor(parsed);
+    const batch = db.batch();
+    for (const { key, value } of entries) {
+      batch.put(key, value);
+    }
+    await batch.write();
+    console.log(`  ${existing.has(parsed.name) ? "Updated" : "Added"}: ${parsed.name}`);
+  }
+
+  await db.close();
+  console.log(`Done. Added: ${added}, Updated: ${updated}`);
+}
+
+main().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});

@@ -1,5 +1,17 @@
 {
-  "name": "impmal-expanded",
-  "version": "0.0.1",
-  "type": "module"
+  "name": "maledictum-expanded",
+  "version": "1.0.0",
+  "description": "Content expansion module for Imperium Maledictum.",
+  "type": "module",
+  "scripts": {
+    "build": "cross-env NODE_ENV=development rollup --config rollup.config.mjs --watch",
+    "release": "cross-env NODE_ENV=production rollup --config rollup.config.mjs",
+    "import": "node tools/build-compendiums.mjs"
+  },
+  "devDependencies": {
+    "classic-level": "^1.4.1",
+    "cross-env": "^7.0.3",
+    "rollup": "^3.3.0",
+    "rollup-plugin-copy-watch": "^0.0.1"
+  }
 }

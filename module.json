@@ -1,0 +1,662 @@
+{
+  "id": "maledictum-expanded",
+  "title": "Imperium Maledictum Expanded",
+  "description": "",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name":  "Moxy",
+      "discord": "moxy1441",
+      "url": "https://moxyrebels.itch.io"
+    },
+    {
+      "name": "Tiamanti",
+      "flags": {}
+    }
+  ],
+  "url": "https://github.com/Tiamanti/ImpMal-Expanded",
+  "manifest": "https://github.com/Tiamanti/ImpMal-Expanded/releases/latest/download/module.json",
+  "download": "https://github.com/Tiamanti/ImpMal-Expanded/releases/latest/download/module.zip",
+  "packs": [
+    {
+      "name": "adeptus-administratum",
+      "label": "Adeptus Administratum",
+      "path": "packs/adeptus-administratum",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "adeptus-arbites",
+      "label": "Adeptus Arbites",
+      "path": "packs/adeptus-arbites",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "adeptus-astartes",
+      "label": "Adeptus Astartes",
+      "path": "packs/adeptus-astartes",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "adeptus-astra-telepathica",
+      "label": "Adeptus Astra Telepathica",
+      "path": "packs/adeptus-astra-telepathica",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "adeptus-mechanicus",
+      "label": "Adeptus Mechanicus",
+      "path": "packs/adeptus-mechanicus",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "skitarii-legions",
+      "label": "Skitarii Legions",
+      "path": "packs/skitarii-legions",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "adeptus-ministorum",
+      "label": "Adeptus Ministorum",
+      "path": "packs/adeptus-ministorum",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "sororitas",
+      "label": "Sororitas",
+      "path": "packs/sororitas",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "novitiates",
+      "label": "Novitiates",
+      "path": "packs/novitiates",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "amaranthine-syndicate",
+      "label": "Amaranthine Syndicate",
+      "path": "packs/amaranthine-syndicate",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "astra-militarum",
+      "label": "Astra Militarum",
+      "path": "packs/astra-militarum",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "militarum-auxilia",
+      "label": "Militarum Auxilia",
+      "path": "packs/militarum-auxilia",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "militarum-tempestus",
+      "label": "Militarum Tempestus",
+      "path": "packs/militarum-tempestus",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "craftworld-asuryani",
+      "label": "Craftworld Asuryani",
+      "path": "packs/craftworld-asuryani",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "drukhari",
+      "label": "Drukhari",
+      "path": "packs/drukhari",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "fauna",
+      "label": "Fauna",
+      "path": "packs/fauna",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "heretics",
+      "label": "Heretics",
+      "path": "packs/heretics",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "corpse-grinder-cult",
+      "label": "Corpse Grinder Cult",
+      "path": "packs/corpse-grinder-cult",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "infinite-empire",
+      "label": "Infinite Empire",
+      "path": "packs/infinite-empire",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "canoptek-constructs",
+      "label": "Canoptek Constructs",
+      "path": "packs/canoptek-constructs",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "destroyer-cult",
+      "label": "Destroyer Cult",
+      "path": "packs/destroyer-cult",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "infractionists-citizens",
+      "label": "Infractionists & Citizens",
+      "path": "packs/infractionists-citizens",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "citizens",
+      "label": "Citizens",
+      "path": "packs/citizens",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "gangers",
+      "label": "Gangers",
+      "path": "packs/gangers",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "hangers-on-brutes",
+      "label": "Hangers On & Brutes",
+      "path": "packs/hangers-on-brutes",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "hired-guns",
+      "label": "Hired Guns",
+      "path": "packs/hired-guns",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "inquisition",
+      "label": "Inquisition",
+      "path": "packs/inquisition",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "legiones-daemonica",
+      "label": "Legiones Daemonica",
+      "path": "packs/legiones-daemonica",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "khornate",
+      "label": "Khornate",
+      "path": "packs/khornate",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "nurglite",
+      "label": "Nurglite",
+      "path": "packs/nurglite",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "slaaneshi",
+      "label": "Slaaneshi",
+      "path": "packs/slaaneshi",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "tzeentchian",
+      "label": "Tzeentchian",
+      "path": "packs/tzeentchian",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "logos-historica-verita",
+      "label": "Logos Historica Verita",
+      "path": "packs/logos-historica-verita",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "magistratum-imperialis",
+      "label": "Magistratum Imperialis",
+      "path": "packs/magistratum-imperialis",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "navis-imperialis",
+      "label": "Navis Imperialis",
+      "path": "packs/navis-imperialis",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "nobility-imperialis",
+      "label": "Nobility Imperialis",
+      "path": "packs/nobility-imperialis",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "navigator-houses",
+      "label": "Navigator Houses",
+      "path": "packs/navigator-houses",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "orks",
+      "label": "Orks",
+      "path": "packs/orks",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "planetary-government",
+      "label": "Planetary Government",
+      "path": "packs/planetary-government",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "star-children",
+      "label": "Star Children",
+      "path": "packs/star-children",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    },
+    {
+      "name": "t-au-empire",
+      "label": "T'au Empire",
+      "path": "packs/t-au-empire",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "impmal",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "scripts/maledictum-expanded.mjs"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "impmal",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "flags": {
+    "canUpload": true,
+    "folder": {
+      "name": "Maledictum Expanded",
+      "sorting": "m",
+      "color": ""
+    }
+  },
+  "packFolders": [
+    {
+      "name": "Maledictum Expanded",
+      "sorting": "m",
+      "color": "",
+      "packs": [
+        "adeptus-administratum",
+        "adeptus-arbites",
+        "adeptus-astartes",
+        "adeptus-astra-telepathica",
+        "amaranthine-syndicate",
+        "craftworld-asuryani",
+        "drukhari",
+        "fauna",
+        "inquisition",
+        "logos-historica-verita",
+        "magistratum-imperialis",
+        "navis-imperialis",
+        "orks",
+        "planetary-government",
+        "star-children",
+        "t-au-empire"
+      ],
+      "folders": [
+        {
+          "name": "Adeptus Mechanicus",
+          "sorting": "a",
+          "color": "",
+          "packs": [
+            "adeptus-mechanicus",
+            "skitarii-legions"
+          ]
+        },
+        {
+          "name": "Adeptus Ministorum",
+          "sorting": "a",
+          "color": "",
+          "packs": [
+            "adeptus-ministorum"
+          ],
+          "folders": [
+            {
+              "name": "Sororitas",
+              "sorting": "a",
+              "color": "",
+              "packs": [
+                "sororitas",
+                "novitiates"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Astra Militarum",
+          "sorting": "a",
+          "color": "",
+          "packs": [
+            "astra-militarum",
+            "militarum-auxilia",
+            "militarum-tempestus"
+          ]
+        },
+        {
+          "name": "Heretics",
+          "sorting": "a",
+          "color": "",
+          "packs": [
+            "heretics",
+            "corpse-grinder-cult"
+          ]
+        },
+        {
+          "name": "Infinite Empire",
+          "sorting": "a",
+          "color": "",
+          "packs": [
+            "infinite-empire",
+            "canoptek-constructs",
+            "destroyer-cult"
+          ]
+        },
+        {
+          "name": "Infractionists & Citizens",
+          "sorting": "a",
+          "color": "",
+          "packs": [
+            "infractionists-citizens",
+            "citizens",
+            "gangers",
+            "hangers-on-brutes",
+            "hired-guns"
+          ]
+        },
+        {
+          "name": "Legiones Daemonica",
+          "sorting": "a",
+          "color": "",
+          "packs": [
+            "legiones-daemonica",
+            "khornate",
+            "nurglite",
+            "slaaneshi",
+            "tzeentchian"
+          ]
+        },
+        {
+          "name": "Nobility Imperialis",
+          "sorting": "a",
+          "color": "",
+          "packs": [
+            "nobility-imperialis",
+            "navigator-houses"
+          ]
+        }
+      ]
+    }
+  ]
+}
