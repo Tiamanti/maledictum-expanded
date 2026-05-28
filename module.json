@@ -2,7 +2,7 @@
   "id": "maledictum-expanded",
   "title": "Imperium Maledictum Expanded",
   "description": "",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "compatibility": {
     "minimum": "13",
     "verified": "14"
@@ -18,9 +18,9 @@
       "flags": {}
     }
   ],
-  "url": "https://github.com/Tiamanti/ImpMal-Expanded",
-  "manifest": "https://github.com/Tiamanti/ImpMal-Expanded/releases/latest/download/module.json",
-  "download": "https://github.com/Tiamanti/ImpMal-Expanded/releases/latest/download/module.zip",
+  "url": "https://github.com/Tiamanti/maledictum-expanded",
+  "manifest": "https://github.com/Tiamanti/maledictum-expanded/releases/latest/download/module.json",
+  "download": "https://github.com/Tiamanti/maledictum-expanded/releases/latest/download/module.zip",
   "packs": [
     {
       "name": "adeptus-administratum",
