@@ -45,6 +45,14 @@ const SYSTEM_WEAPONS   = loadRegistry("system-weapons.json");
 const SYSTEM_EQUIPMENT = loadRegistry("system-equipment.json");
 const SYSTEM_POWERS    = loadRegistry("system-powers.json");
 
+// Normalise US → UK spelling so "Armor Bane" matches "armour bane", etc.
+function normaliseSpelling(s) {
+  return s
+    .replace(/\barmor\b/gi, "armour")
+    .replace(/\bcolor\b/gi, "colour")
+    .replace(/\bgray\b/gi, "grey");
+}
+
 function findInRegistry(registry, name) {
   const lower = name.toLowerCase();
   if (registry[lower]) return registry[lower];
@@ -55,6 +63,9 @@ function findInRegistry(registry, name) {
   const nospace = lower.replace(/[\s\-]/g, "");
   const found = Object.keys(registry).find(k => k.replace(/[\s\-]/g, "") === nospace);
   if (found) return registry[found];
+  // US → UK spelling: "Armor Bane" → "armour bane"
+  const normalised = normaliseSpelling(lower);
+  if (normalised !== lower && registry[normalised]) return registry[normalised];
   return null;
 }
 
