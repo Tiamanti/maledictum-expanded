@@ -1,0 +1,626 @@
+{
+  "omnispex": {
+    "name": "Omnispex",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Omnispex",
+      "type": "modification",
+      "img": "modules/impmal-core/assets/icons/modification/modification.webp",
+      "system": {
+        "notes": {
+          "player": "<p>An Omnispex uses spectral sensors to analyse wavelengths outside of Human perception, so that even in darkness few can hide themselves from detection.</p><p>A Omnispex can be attached to most ranged weapons and removes Disadvantage when firing into a Zone that is @UUID[JournalEntry.hdElQAwiBr5AyoRf.JournalEntryPage.zQYkbNcsJmGintdL#dark]{Dark} or @UUID[JournalEntry.hdElQAwiBr5AyoRf.JournalEntryPage.zQYkbNcsJmGintdL#poorly-lit]{Poorly Lit}.</p>",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 200,
+        "availability": "rare",
+        "quantity": 1,
+        "category": "sight",
+        "usedWith": "Any Ranged Weapon without the Blast, or Flamer Traits.",
+        "addedTraits": {
+          "list": []
+        },
+        "removedTraits": {
+          "list": []
+        },
+        "enabled": true,
+        "disabled": false
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689193272625,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "0aU07JBpNMjdUABI"
+    },
+    "effectDocs": []
+  },
+  "backpack ammo supply": {
+    "name": "Backpack Ammo Supply",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Backpack Ammo Supply",
+      "type": "modification",
+      "img": "modules/impmal-core/assets/icons/modification/modification.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Backpack Ammo Supplies utilise back-mounted drum magazines, thrumming power packs, or oversized fuel canisters to drastically increase the amount of ammunition a weapon can hold. Unfortunately, they are both heavy and dangerous, as carrying so much volatile material into battle makes every stray shot potentially fatal.</p><p>A Backpack Ammo Supply quadruples a linked weapon's Magazine size, but adds +1 Enc when worn. The Backpack Ammo Supply takes 5 minutes to reload. In addition, if you suffer a @UUID[JournalEntry.hdElQAwiBr5AyoRf.JournalEntryPage.UaRHLqZ99zmg7AeE#critical-hit]{Critical Hit} while wearing a Backpack Ammo Supply, roll [[/r 1d10]]. On a result of 7+, the backpack detonates, dealing double the weapon's Damage to your Torso. The Backpack Ammo Supply is permanently destroyed if it explodes in this way. A Backpack Ammo Supply has the same Availability and Cost as the linked weapon. Enough ammo to fill the Backpack costs four times the listed price for reloads for the linked weapon.</p>",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 0,
+        "availability": "",
+        "quantity": 1,
+        "category": "support",
+        "usedWith": "Any Ranged Weapon",
+        "addedTraits": {
+          "list": []
+        },
+        "removedTraits": {
+          "list": []
+        },
+        "enabled": true,
+        "disabled": false
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689193272625,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "8vxhLmzHfqSBUVUz"
+    },
+    "effectDocs": []
+  },
+  "exterminator cartridge": {
+    "name": "Exterminator Cartridge",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Exterminator Cartridge",
+      "type": "modification",
+      "_id": "BMklaKKiyCUgQfOX",
+      "img": "modules/impmal-core/assets/icons/modification/modification.webp",
+      "system": {
+        "notes": {
+          "player": "<p>An Exterminator Cartridge is a stripped-down Flamer with enough fuel for a single use. They are popular among Imperial fanatics and zealots, who attach them to roaring Chainswords to douse their foes in cleansing fire as they charge in a blazing embodiment of the Emperor's fury.</p><p>An Exterminator Cartridge is a @UUID[Compendium.impmal-core.items.Item.blRx8XLXQaD9sjDz]{Flamer} that can be attached to any melee or ranged weapon. It can be fired as an Action, counting as a Ranged Attack. Once an Exterminator Cartridge has been fired, the Exterminator Cartridge is expended and takes 5 minutes to reload. Reloads can be acquired for 5 solars, and are Common.</p>",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 100,
+        "availability": "common",
+        "quantity": 1,
+        "category": "combat",
+        "usedWith": "Any Melee or Ranged weapon with the Two-Handed Trait.",
+        "addedTraits": {
+          "list": []
+        },
+        "removedTraits": {
+          "list": []
+        },
+        "enabled": true,
+        "disabled": false
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.2",
+        "coreVersion": "13.342",
+        "createdTime": 1689193272625,
+        "modifiedTime": 1708409570954,
+        "lastModifiedBy": "PCQgaY5E7QaWxBlV",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "silencer": {
+    "name": "Silencer",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Silencer",
+      "type": "modification",
+      "img": "modules/impmal-core/assets/icons/modification/modification.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Silencers use sonic bafflers and other devices to reduce the often loud and piercing retorts of weapons fire.</p><p>While attached, a Silencer removes a ranged weapon's @UUID[JournalEntry.wqlquQ8Njtd5fb4Y.JournalEntryPage.wsM53RDPPrqwS3Te#loud]{Loud} Trait.</p>",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 400,
+        "availability": "common",
+        "quantity": 1,
+        "category": "support",
+        "usedWith": "Solid Projectile ranged weapons",
+        "addedTraits": {
+          "list": []
+        },
+        "removedTraits": {
+          "list": [
+            {
+              "key": "loud"
+            }
+          ]
+        },
+        "enabled": true,
+        "disabled": false
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689193272625,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "LqQBByxsreNT3C09"
+    },
+    "effectDocs": []
+  },
+  "omniscope": {
+    "name": "Omniscope",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Omniscope",
+      "type": "modification",
+      "img": "modules/impmal-core/assets/icons/modification/modification.webp",
+      "system": {
+        "notes": {
+          "player": "<p>A basic but most often bulky arrangement of lenses in a sturdy casing, Omniscopes allow the user to see distant targets with greater clarity and precision.</p><p>This sight increases the Range of a compatible ranged weapon by one step, but it loses the @UUID[JournalEntry.wqlquQ8Njtd5fb4Y.JournalEntryPage.wsM53RDPPrqwS3Te#close]{Close} Trait if it has it. An Omniscope can also be used as @UUID[Compendium.impmal-core.items.Item.7lBipnmSZ4lD5WCo]{Magnoculars}.</p>",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 50,
+        "availability": "common",
+        "quantity": 1,
+        "category": "sight",
+        "usedWith": "Any Ranged Weapon without the Blast, or Flamer Traits.",
+        "addedTraits": {
+          "list": []
+        },
+        "removedTraits": {
+          "list": [
+            {
+              "key": "close"
+            }
+          ]
+        },
+        "enabled": true,
+        "disabled": false
+      },
+      "effects": [
+        "pAQPJkOW5nFHXjij"
+      ],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.2",
+        "coreVersion": "14.361",
+        "createdTime": 1689193272625,
+        "modifiedTime": 1729749194028,
+        "lastModifiedBy": "TnC9cMUojWJW6h5q",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "Sa0x6Yf5xZ2OcfVp"
+    },
+    "effectDocs": [
+      {
+        "name": "Omniscope",
+        "_id": "pAQPJkOW5nFHXjij",
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "transfer": true,
+        "statuses": [],
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "tint": "#ffffff",
+        "_stats": {
+          "coreVersion": "14.361",
+          "systemId": null,
+          "systemVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        },
+        "img": "modules/impmal-core/assets/icons/modification/modification.webp",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "documentType": "Item",
+            "avoidTest": {
+              "value": "none"
+            },
+            "prompt": false,
+            "zone": {}
+          },
+          "changes": [
+            {
+              "key": "system.rangeModifier.value",
+              "value": 1,
+              "priority": null,
+              "type": "add"
+            }
+          ]
+        },
+        "sort": 0,
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "melee attachment": {
+    "name": "Melee Attachment",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Melee Attachment",
+      "type": "modification",
+      "img": "modules/impmal-core/assets/icons/modification/modification.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Most commonly known as bayonets, melee attachments affix a long blade to the end of a ranged weapon such as a Lasgun, Autogun or Flamer. Oft times these humble attachments can be the difference between life and death when the enemy bears down upon a warrior.</p><p>A melee attachment functions as a @UUID[Compendium.impmal-core.items.Item.bS4Uy21y8pkp7I7P]{Mundane Sword} when affixed to a Ranged Weapon with the Two-handed Trait. It may be attached or removed as an Action. Wielding a ranged weapon with a melee attachment counts as a melee weapon for the purpose of defending yourself (see @UUID[JournalEntry.hdElQAwiBr5AyoRf.JournalEntryPage.Rjw4KykpjGJlGYEk#melee-attack]{Melee Attacks}). Note that when not attached to a weapon, a typical Melee Attachment counts as a @UUID[Compendium.impmal-core.items.Item.qQ8Y8nmiaTaKgzvs]{knife}.</p>",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 50,
+        "availability": "scarce",
+        "quantity": 1,
+        "category": "combat",
+        "usedWith": "Any Ranged Weapon with the Two-Handed Trait.",
+        "addedTraits": {
+          "list": []
+        },
+        "removedTraits": {
+          "list": []
+        },
+        "enabled": true,
+        "disabled": false
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.2",
+        "coreVersion": "13.342",
+        "createdTime": 1689193272625,
+        "modifiedTime": 1708409578822,
+        "lastModifiedBy": "PCQgaY5E7QaWxBlV",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "bme7IUpsgm3NzL83"
+    },
+    "effectDocs": []
+  },
+  "bipod": {
+    "name": "Bipod",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Bipod",
+      "type": "modification",
+      "img": "modules/impmal-core/assets/icons/modification/modification.webp",
+      "system": {
+        "notes": {
+          "player": "<p>A bipod is among the simplest of weapon attachments. It allows users of weapons with the Heavy trait to brace them anywhere they wish, without requiring cover or another suitable terrain feature.</p>",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 30,
+        "availability": "common",
+        "quantity": 1,
+        "category": "support",
+        "usedWith": "Any Ranged Weapon",
+        "addedTraits": {
+          "list": []
+        },
+        "removedTraits": {
+          "list": []
+        },
+        "enabled": true,
+        "disabled": false
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689193272625,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "cZKCgaW4oI9CpvFl"
+    },
+    "effectDocs": []
+  },
+  "mono-edge": {
+    "name": "Mono-edge",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Mono-edge",
+      "type": "modification",
+      "img": "modules/impmal-core/assets/icons/modification/modification.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Popular among assassins and other fighters who need to pierce armour with ease, Mono-edges are molecule-thin superfine blades that never dull.</p><p>A Mono-edge can be applied to any Mundane bladed melee weapon, granting it the Penetrating (2) Trait, or increasing its Penetrating rating by 2 if it already has the Trait. At the GM's discretion, they may allow other Mundane weapons to use this modification. In this case, the modification takes the form of a powerful pneumatic spike or kill-plate.</p>",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 250,
+        "availability": "rare",
+        "quantity": 1,
+        "category": "combat",
+        "usedWith": "Mundane melee weapons",
+        "addedTraits": {
+          "list": [
+            {
+              "key": "penetrating",
+              "value": "2"
+            }
+          ]
+        },
+        "removedTraits": {
+          "list": []
+        },
+        "enabled": true,
+        "disabled": false
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689193272625,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "rD6BtFSjpfupZss1"
+    },
+    "effectDocs": []
+  },
+  "laser sight": {
+    "name": "Laser Sight",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Laser Sight",
+      "type": "modification",
+      "img": "modules/impmal-core/assets/icons/modification/modification.webp",
+      "system": {
+        "notes": {
+          "player": "<p>This attachment uses a low-power laser to pick out a target so that the user can more easily make a kill shot. Others (including the target) may notice the appearance of the small red dot, though, revealing the shooter's presence.</p><p>A Laser Sight adds +1 SL to Ranged Attacks made with the weapon, but targets have Advantage on Awareness Tests to spot the wielder. An unaware target who notices the dot may attempt to Dodge the ranged attack. The sight may be switched on or off once per round as a Free Action.</p>",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 50,
+        "availability": "scarce",
+        "quantity": 1,
+        "category": "sight",
+        "usedWith": "Any Ranged Weapon without the Blast, or Flamer Traits.",
+        "addedTraits": {
+          "list": []
+        },
+        "removedTraits": {
+          "list": []
+        },
+        "enabled": true,
+        "disabled": false
+      },
+      "effects": [
+        "uS6d4tmiJQ4OkH4v"
+      ],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "14.361",
+        "createdTime": 1689193272625,
+        "modifiedTime": 1729749197407,
+        "lastModifiedBy": "TnC9cMUojWJW6h5q",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "s8IYzKs3E2tDNutI"
+    },
+    "effectDocs": [
+      {
+        "name": "Laser Sight",
+        "_id": "uS6d4tmiJQ4OkH4v",
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "transfer": true,
+        "statuses": [],
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "tint": "#ffffff",
+        "_stats": {
+          "coreVersion": "14.361",
+          "systemId": null,
+          "systemVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        },
+        "img": "modules/impmal-core/assets/icons/modification/modification.webp",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "documentType": "Item",
+            "avoidTest": {
+              "value": "none"
+            },
+            "prompt": false,
+            "zone": {}
+          },
+          "scriptData": [
+            {
+              "label": "+1 SL to Ranged Attacks",
+              "string": "[Script.6yX3fQEJHfGmXLwW]",
+              "trigger": "dialog",
+              "options": {
+                "dialog": {
+                  "hideScript": "[Script.biFsCPl9L92RbfLL]",
+                  "activateScript": "[Script.VVKEI5ZcmQnqViEW]",
+                  "submissionScript": "",
+                  "targeter": false
+                },
+                "immediate": {
+                  "deleteEffect": false
+                },
+                "hideScript": "[Script.biFsCPl9L92RbfLL]",
+                "activateScript": "[Script.VVKEI5ZcmQnqViEW]",
+                "submissionScript": "",
+                "targeter": false,
+                "deleteEffect": false
+              },
+              "script": "[Script.6yX3fQEJHfGmXLwW]"
+            }
+          ],
+          "changes": []
+        },
+        "sort": 0,
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "fire selector": {
+    "name": "Fire Selector",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Fire Selector",
+      "type": "modification",
+      "img": "modules/impmal-core/assets/icons/modification/modification.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Fire Selectors employ complex magazines that can be loaded with a mix of ammunition that can be toggled at the flick of a switch.</p><p>When loading a weapon with a Fire Selector, you can choose to load up to three different types of @UUID[JournalEntry.wqlquQ8Njtd5fb4Y.JournalEntryPage.luQOhxIEeYF6tMgt#ammunition]{ammunition}. Divide the Magazine between the loaded ammunition types as you desire. You can switch between loaded ammunition using the Fire Selector as a Free Action. Any weapon modified with a Fire Selector loses the @UUID[JournalEntry.wqlquQ8Njtd5fb4Y.JournalEntryPage.wsM53RDPPrqwS3Te#reliable]{Reliable} Trait if it has it.</p>",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 140,
+        "availability": "rare",
+        "quantity": 1,
+        "category": "support",
+        "usedWith": "Bolt, Launcher, Low-Tech, and Solid Projectile ranged weapons",
+        "addedTraits": {
+          "list": []
+        },
+        "removedTraits": {
+          "list": [
+            {
+              "key": "reliable"
+            }
+          ]
+        },
+        "enabled": true,
+        "disabled": false
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689193272625,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "ypBcdHfYzcs14rZR"
+    },
+    "effectDocs": []
+  }
+}

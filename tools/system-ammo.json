@@ -1,0 +1,1265 @@
+{
+  "man-stopper bullets": {
+    "name": "Man-Stopper Bullets",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Man-Stopper Bullets",
+      "type": "ammo",
+      "img": "modules/impmal-core/assets/icons/ammo/ammo.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Designed primarily to defeat personal protection, Man-stopper bullets are ideal when facing armoured foes such as Enforcers, Militarum troopers, and very successful criminals.</p>",
+          "gm": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 0,
+        "availability": "scarce",
+        "quantity": 0,
+        "custom": true,
+        "priceMultiplier": 3,
+        "usedWith": "Solid Projectile Weapons, excluding Shotguns",
+        "damage": null,
+        "addedTraits": {
+          "list": [
+            {
+              "key": "penetrating",
+              "value": "3"
+            }
+          ]
+        },
+        "removedTraits": {
+          "list": []
+        },
+        "range": ""
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689191670949,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "0fcoA2lzARTHovsa"
+    },
+    "effectDocs": []
+  },
+  "executioner rounds": {
+    "name": "Executioner Rounds",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Executioner Rounds",
+      "type": "ammo",
+      "img": "modules/impmal-core/assets/icons/ammo/ammo.webp",
+      "system": {
+        "notes": {
+          "player": "<p>These solid slugs contain tiny guidance cogitators that track targets, greatly extending the weapon's range, while simultaneously making micro-adjustments to circumvent cover or locate weak points in armour. If Executioner rounds are fired from a Shotgun, the Shotgun loses the @UUID[JournalEntry.wqlquQ8Njtd5fb4Y.JournalEntryPage.wsM53RDPPrqwS3Te#spread]{Spread} Trait for that attack.</p>",
+          "gm": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 0,
+        "availability": "rare",
+        "quantity": 0,
+        "custom": true,
+        "priceMultiplier": 1,
+        "usedWith": "Bolt weapons, Shotguns",
+        "damage": null,
+        "addedTraits": {
+          "list": []
+        },
+        "removedTraits": {
+          "list": [
+            {
+              "key": "spread"
+            }
+          ]
+        },
+        "range": ""
+      },
+      "effects": [
+        "TJDbhP2Z03adqYpZ"
+      ],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "14.361",
+        "createdTime": 1689191670949,
+        "modifiedTime": 1729749190976,
+        "lastModifiedBy": "TnC9cMUojWJW6h5q",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "6ckd4WfSgctod9Wc"
+    },
+    "effectDocs": [
+      {
+        "name": "Executioner Rounds",
+        "_id": "TJDbhP2Z03adqYpZ",
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "transfer": true,
+        "statuses": [],
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "tint": "#ffffff",
+        "_stats": {
+          "coreVersion": "14.361",
+          "systemId": null,
+          "systemVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        },
+        "img": "modules/impmal-core/assets/icons/ammo/ammo.webp",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "documentType": "Item",
+            "avoidTest": {
+              "value": "none"
+            },
+            "prompt": false,
+            "zone": {}
+          },
+          "changes": [
+            {
+              "key": "system.rangeModifier.override",
+              "value": "extreme",
+              "priority": null,
+              "type": "override"
+            }
+          ]
+        },
+        "sort": 0,
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "tox rounds": {
+    "name": "Tox Rounds",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Tox Rounds",
+      "type": "ammo",
+      "_id": "ASCqZKcEmboAsfK8",
+      "img": "modules/impmal-core/assets/icons/ammo/ammo.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Tox rounds are coated or filled with lethal poisons, chemicals, and even local fungi. These ensure that even if a hit doesn't take down the target, the harmful toxins will finish the job.</p>",
+          "gm": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 0,
+        "availability": "scarce",
+        "quantity": 0,
+        "custom": true,
+        "priceMultiplier": 3,
+        "usedWith": "Any Bolt weapon or Solid Projectile weapon, excluding Shotguns",
+        "damage": null,
+        "addedTraits": {
+          "list": [
+            {
+              "key": "inflict",
+              "value": "Poisoned"
+            }
+          ]
+        },
+        "removedTraits": {
+          "list": []
+        },
+        "range": ""
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689191670949,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "hot-shot las pack": {
+    "name": "Hot-Shot Las Pack",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Hot-Shot Las Pack",
+      "type": "ammo",
+      "img": "modules/impmal-core/assets/icons/ammo/ammo.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Hot-Shot Las Packs are overcharged magazines or bulky power packs that upgrade standard Las weapons with greater power and armour penetration at the cost of increased ammunition expenditure and reduced reliability. Hot-Shot Las Packs have a magazine size equal to half that of the weapon they are purchased for, and remove the @UUID[JournalEntry.wqlquQ8Njtd5fb4Y.JournalEntryPage.wsM53RDPPrqwS3Te#reliable]{Reliable} Trait.</p>",
+          "gm": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 0,
+        "availability": "scarce",
+        "quantity": 0,
+        "custom": true,
+        "priceMultiplier": 3,
+        "usedWith": "Las weapons with the Reliable trait",
+        "damage": 2,
+        "addedTraits": {
+          "list": [
+            {
+              "key": "penetrating",
+              "value": "2"
+            }
+          ]
+        },
+        "removedTraits": {
+          "list": [
+            {
+              "key": "reliable"
+            }
+          ]
+        },
+        "range": ""
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689191670949,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "VUiRLSaCXVvdkn6n"
+    },
+    "effectDocs": []
+  },
+  "bleeder rounds": {
+    "name": "Bleeder Rounds",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Bleeder Rounds",
+      "type": "ammo",
+      "img": "modules/impmal-core/assets/icons/ammo/ammo.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Bleeder rounds are a particularly cruel and effective form of projectile designed to induce catastrophic haemorrhaging in a target. These include intense anti-coagulants and other chemicals to keep even the slightest of wounds profusely gushing blood.</p>",
+          "gm": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 0,
+        "availability": "rare",
+        "quantity": 0,
+        "custom": true,
+        "priceMultiplier": 2,
+        "usedWith": "Solid Projectile Weapons, excluding Shotguns",
+        "damage": null,
+        "addedTraits": {
+          "list": [
+            {
+              "key": "inflict",
+              "value": "Bleeding"
+            }
+          ]
+        },
+        "removedTraits": {
+          "list": []
+        },
+        "range": ""
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689191670949,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "kZuL2i84eWjUTUFv"
+    },
+    "effectDocs": []
+  },
+  "inferno shells": {
+    "name": "Inferno Shells",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Inferno Shells",
+      "type": "ammo",
+      "img": "modules/impmal-core/assets/icons/ammo/ammo.webp",
+      "system": {
+        "notes": {
+          "player": "<p>These shells contain partially stabilised flammable chemicals, igniting on impact to spread a gel of adhesive flame across the target.</p>",
+          "gm": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 0,
+        "availability": "rare",
+        "quantity": 0,
+        "custom": true,
+        "priceMultiplier": 2,
+        "usedWith": "Bolt weapons, Shotguns",
+        "damage": null,
+        "addedTraits": {
+          "list": [
+            {
+              "key": "inflict",
+              "value": "Ablaze"
+            }
+          ]
+        },
+        "removedTraits": {
+          "list": []
+        },
+        "range": ""
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689191670949,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "lCkJSiH0GMakGv35"
+    },
+    "effectDocs": []
+  },
+  "tainted rounds": {
+    "name": "Tainted Rounds",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Tainted Rounds",
+      "type": "ammo",
+      "_id": "7d9bvFpQ2sA3IduG",
+      "img": "modules/impmal-core/assets/icons/ammo/ammo.webp",
+      "system": {
+        "notes": {
+          "player": "<p>A heretical form of ammunition crafted by Radical Inquisitors, each projectile or bolt is inscribed with abominable runes of warp sorcery, tainted by foul magics. Each shot brings the volatile and tearing power of the Warp to shred realspace. </p><p>Tainted Ammunition is used by Radical Inquisitors. Solid Projectile or Bolt Weapons using Tainted Ammunition gain bonus Damage equal to the wielder’s Corruption, up to their Willpower Bonus (WilB).</p>",
+          "gm": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 0,
+        "availability": "exotic",
+        "quantity": 1,
+        "custom": true,
+        "priceMultiplier": 2,
+        "usedWith": "Solid Projectile Weapons, excluding Shotguns",
+        "damage": null,
+        "addedTraits": {
+          "list": []
+        },
+        "removedTraits": {
+          "list": []
+        },
+        "range": ""
+      },
+      "effects": [
+        "rpChXtIVTGkrDIkH"
+      ],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.363",
+        "systemId": "impmal",
+        "systemVersion": "2.0.8",
+        "createdTime": 1739573934918,
+        "modifiedTime": 1739573934918,
+        "lastModifiedBy": "OvDs1hgofr7TnbvV",
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Tainted Rounds",
+        "img": "modules/impmal-core/assets/icons/ammo/ammo.webp",
+        "_id": "rpChXtIVTGkrDIkH",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "originalType": "document",
+            "documentType": "Item",
+            "avoidTest": {
+              "value": "none",
+              "opposed": false,
+              "prevention": true,
+              "reversed": false,
+              "skill": {}
+            },
+            "testIndependent": false,
+            "equipTransfer": false,
+            "selfOnly": false,
+            "prompt": false,
+            "area": {
+              "templateData": {
+                "borderColor": null,
+                "fillColor": null,
+                "texture": null
+              },
+              "keep": false,
+              "aura": {
+                "transferred": false,
+                "render": false
+              },
+              "duration": "sustained"
+            },
+            "zone": {
+              "type": "zone",
+              "transferred": false,
+              "traits": {},
+              "skipImmediateOnPlacement": false,
+              "keep": false
+            }
+          },
+          "itemTargetData": {
+            "ids": [],
+            "allItems": false
+          },
+          "scriptData": [
+            {
+              "script": "[Script.BBQghUVViuMkl9Uc]",
+              "label": "Bonus Damage",
+              "trigger": "dialog",
+              "options": {
+                "targeter": false,
+                "defending": false,
+                "hideScript": "[Script.oBFOt08siuczHEXN]",
+                "activateScript": "[Script.2WP55kSyhlLOvCLP]",
+                "submissionScript": "",
+                "deleteEffect": false
+              },
+              "async": false
+            }
+          ],
+          "zone": {
+            "type": "zone",
+            "traits": {
+              "barrier": false,
+              "difficult": false,
+              "warpTouched": false
+            },
+            "skipImmediateOnPlacement": false
+          },
+          "sourceData": {
+            "test": {}
+          },
+          "computed": false,
+          "changes": []
+        },
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "tint": "#ffffff",
+        "transfer": true,
+        "statuses": [],
+        "sort": 0,
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "_stats": {
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "coreVersion": "14.363",
+          "systemId": "impmal",
+          "systemVersion": "2.1.0",
+          "createdTime": 1739668007814,
+          "modifiedTime": 1740038058368,
+          "lastModifiedBy": "ADcTWlVqmDmCrquZ",
+          "exportSource": null
+        },
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "poisoned stakes": {
+    "name": "Poisoned Stakes",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Poisoned Stakes",
+      "type": "ammo",
+      "_id": "DDmXj2FQKGfvZl5C",
+      "img": "modules/impmal-core/assets/icons/ammo/ammo.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Where subtlety is demanded, Witch-Hunters can make use of poisoned stakes to deliver a toxic melange of poisons to their target.</p><p>Poisoned Stakes grant Crossbow Weapons the Inflict (Poisoned) Trait.</p>",
+          "gm": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 0,
+        "availability": "exotic",
+        "quantity": 1,
+        "custom": true,
+        "priceMultiplier": 2,
+        "usedWith": "Crossbow Weapons",
+        "damage": null,
+        "addedTraits": {
+          "list": [
+            {
+              "key": "inflict",
+              "value": "Poison"
+            }
+          ]
+        },
+        "removedTraits": {
+          "list": []
+        },
+        "range": ""
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.344",
+        "systemId": "impmal",
+        "systemVersion": "2.0.8",
+        "createdTime": 1739573934918,
+        "modifiedTime": 1739573934918,
+        "lastModifiedBy": "OvDs1hgofr7TnbvV",
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "silver stakes": {
+    "name": "Silver Stakes",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Silver Stakes",
+      "type": "ammo",
+      "_id": "DMnsRiBjoAlnchIQ",
+      "img": "modules/impmal-core/assets/icons/ammo/ammo.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Though less potent than the Purgatus Bolts, each bolt is inscribed with wards and runes to sever connections to the Warp, particularly effective against heretical psykers or warp-spawned horrors. </p><p>Silver Stakes grant Crossbow Weapons the Inflict (Stunned) Trait against daemons or creatures with a Warp Threshold.</p>",
+          "gm": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 0,
+        "availability": "exotic",
+        "quantity": 1,
+        "custom": true,
+        "priceMultiplier": 2,
+        "usedWith": "Crossbow Weapons",
+        "damage": null,
+        "addedTraits": {
+          "list": []
+        },
+        "removedTraits": {
+          "list": []
+        },
+        "range": ""
+      },
+      "effects": [
+        "PlFN5oM1LECJrU1E"
+      ],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.363",
+        "systemId": "impmal",
+        "systemVersion": "2.0.8",
+        "createdTime": 1739573934918,
+        "modifiedTime": 1739573934918,
+        "lastModifiedBy": "OvDs1hgofr7TnbvV",
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Silver Stakes",
+        "img": "modules/impmal-core/assets/icons/ammo/ammo.webp",
+        "_id": "PlFN5oM1LECJrU1E",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "originalType": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none",
+              "opposed": false,
+              "prevention": true,
+              "reversed": false,
+              "skill": {}
+            },
+            "testIndependent": false,
+            "equipTransfer": false,
+            "selfOnly": false,
+            "prompt": false,
+            "area": {
+              "templateData": {
+                "borderColor": null,
+                "fillColor": null,
+                "texture": null
+              },
+              "keep": false,
+              "aura": {
+                "transferred": false,
+                "render": false
+              },
+              "duration": "sustained"
+            },
+            "zone": {
+              "type": "zone",
+              "transferred": false,
+              "traits": {},
+              "skipImmediateOnPlacement": false,
+              "keep": false
+            }
+          },
+          "itemTargetData": {
+            "ids": [],
+            "allItems": false
+          },
+          "scriptData": [
+            {
+              "script": "[Script.s30UNo04wJA50CL1]",
+              "label": "Silver Stakes",
+              "trigger": "preApplyDamage",
+              "options": {
+                "targeter": false,
+                "defending": false,
+                "deleteEffect": false
+              },
+              "async": false
+            }
+          ],
+          "zone": {
+            "type": "zone",
+            "traits": {
+              "barrier": false,
+              "difficult": false,
+              "warpTouched": false
+            },
+            "skipImmediateOnPlacement": false
+          },
+          "sourceData": {
+            "test": {}
+          },
+          "computed": false,
+          "changes": []
+        },
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "tint": "#ffffff",
+        "transfer": true,
+        "statuses": [],
+        "sort": 0,
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "_stats": {
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "coreVersion": "14.363",
+          "systemId": "impmal",
+          "systemVersion": "2.1.0",
+          "createdTime": null,
+          "modifiedTime": 1740038058391,
+          "lastModifiedBy": "ADcTWlVqmDmCrquZ",
+          "exportSource": null
+        },
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "psybolt rounds": {
+    "name": "Psybolt Rounds",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Psybolt Rounds",
+      "type": "ammo",
+      "_id": "csnjvPJBoK8c4AIC",
+      "img": "modules/impmal-core/assets/icons/ammo/ammo.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Psychically charged ammunition, with truesilver tips carefully inscribed with powerful wards and runes, each bolt fired glows an eerie blow. Each shot strikes with greater force than a standard bolt round and is effective ammunition to use against heretical psykers and daemonic entities. </p><p>Psybolt Ammunition is used with Bolt Weapons. It is particularly effective against daemons and characters with the @UUID[Compendium.impmal-core.items.Item.3GLGsYiH5LiKgYjE]{Psyker }Talent. After any reductions due to armour or other effects, double the damage inflicted by Psybolt Rounds against such foes.</p>",
+          "gm": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 0,
+        "availability": "exotic",
+        "quantity": 1,
+        "custom": true,
+        "priceMultiplier": 3,
+        "usedWith": "Bolt Weapons",
+        "damage": null,
+        "addedTraits": {
+          "list": []
+        },
+        "removedTraits": {
+          "list": []
+        },
+        "range": ""
+      },
+      "effects": [
+        "utyqO1sRUCPQH2HQ"
+      ],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.363",
+        "systemId": "impmal",
+        "systemVersion": "2.0.8",
+        "createdTime": 1739573934918,
+        "modifiedTime": 1739573934918,
+        "lastModifiedBy": "OvDs1hgofr7TnbvV",
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Psybolt Rounds",
+        "img": "modules/impmal-core/assets/icons/ammo/ammo.webp",
+        "_id": "utyqO1sRUCPQH2HQ",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "originalType": "document",
+            "documentType": "Item",
+            "avoidTest": {
+              "value": "none",
+              "opposed": false,
+              "prevention": true,
+              "reversed": false,
+              "skill": {}
+            },
+            "testIndependent": false,
+            "equipTransfer": false,
+            "selfOnly": false,
+            "prompt": false,
+            "area": {
+              "templateData": {
+                "borderColor": null,
+                "fillColor": null,
+                "texture": null
+              },
+              "keep": false,
+              "aura": {
+                "transferred": false,
+                "render": false
+              },
+              "duration": "sustained"
+            },
+            "zone": {
+              "type": "zone",
+              "transferred": false,
+              "traits": {},
+              "skipImmediateOnPlacement": false,
+              "keep": false
+            }
+          },
+          "itemTargetData": {
+            "ids": [],
+            "allItems": false
+          },
+          "scriptData": [
+            {
+              "script": "[Script.HCNnSxrw5iOkdFFD]",
+              "label": "Double Damage",
+              "trigger": "applyDamage",
+              "options": {
+                "targeter": false,
+                "defending": false,
+                "deleteEffect": false
+              },
+              "async": false
+            }
+          ],
+          "zone": {
+            "type": "zone",
+            "traits": {
+              "barrier": false,
+              "difficult": false,
+              "warpTouched": false
+            },
+            "skipImmediateOnPlacement": false
+          },
+          "sourceData": {
+            "test": {}
+          },
+          "computed": false,
+          "changes": []
+        },
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "tint": "#ffffff",
+        "transfer": true,
+        "statuses": [],
+        "sort": 0,
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "_stats": {
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "coreVersion": "14.363",
+          "systemId": "impmal",
+          "systemVersion": "2.1.0",
+          "createdTime": 1739668219019,
+          "modifiedTime": 1740038058512,
+          "lastModifiedBy": "ADcTWlVqmDmCrquZ",
+          "exportSource": null
+        },
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "blessed rounds": {
+    "name": "Blessed Rounds",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Blessed Rounds",
+      "type": "ammo",
+      "_id": "jdIIc8FkWtKdQIty",
+      "img": "modules/impmal-core/assets/icons/ammo/ammo.webp",
+      "system": {
+        "notes": {
+          "player": "<p>The classification of Blessed ammunition covers a broad range of hand-crafted and sanctified ammunition. Whether they are bolts and solid slugs engraved with wards of warp-banishment, or promethium purified and consecrated with holy oils, or crossbow bolts and stakes tipped with silver, inscribed with prayers and devotions, blessed ammunition is useful when hunting the most impure heretic or warp-spawned horror. </p><p>Blessed ammunition adds the wielder’s Willpower Bonus (WilB) to the Damage when attacking a daemon or creature with a Warp Threshold.</p>",
+          "gm": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 0,
+        "availability": "exotic",
+        "quantity": 1,
+        "custom": true,
+        "priceMultiplier": 2,
+        "usedWith": "Bolt Weapons, Crossbow Weapons or Solid Projectile Weapons",
+        "damage": null,
+        "addedTraits": {
+          "list": []
+        },
+        "removedTraits": {
+          "list": []
+        },
+        "range": ""
+      },
+      "effects": [
+        "yvg0uv0ReSsjw9Q5"
+      ],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.363",
+        "systemId": "impmal",
+        "systemVersion": "2.0.8",
+        "createdTime": 1739573934918,
+        "modifiedTime": 1739573934918,
+        "lastModifiedBy": "OvDs1hgofr7TnbvV",
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Blessed Rounds",
+        "img": "modules/impmal-core/assets/icons/ammo/ammo.webp",
+        "_id": "yvg0uv0ReSsjw9Q5",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "originalType": "document",
+            "documentType": "Item",
+            "avoidTest": {
+              "value": "none",
+              "opposed": false,
+              "prevention": true,
+              "reversed": false,
+              "skill": {}
+            },
+            "testIndependent": false,
+            "equipTransfer": false,
+            "selfOnly": false,
+            "prompt": false,
+            "area": {
+              "templateData": {
+                "borderColor": null,
+                "fillColor": null,
+                "texture": null
+              },
+              "keep": false,
+              "aura": {
+                "transferred": false,
+                "render": false
+              },
+              "duration": "sustained"
+            },
+            "zone": {
+              "type": "zone",
+              "transferred": false,
+              "traits": {},
+              "skipImmediateOnPlacement": false,
+              "keep": false
+            }
+          },
+          "itemTargetData": {
+            "ids": [],
+            "allItems": false
+          },
+          "scriptData": [
+            {
+              "script": "[Script.NjzuiBCaZDzwn73V]",
+              "label": "Blessed Rounds",
+              "trigger": "preApplyDamage",
+              "options": {
+                "targeter": false,
+                "defending": false,
+                "deleteEffect": false
+              },
+              "async": false
+            }
+          ],
+          "zone": {
+            "type": "zone",
+            "traits": {
+              "barrier": false,
+              "difficult": false,
+              "warpTouched": false
+            },
+            "skipImmediateOnPlacement": false
+          },
+          "sourceData": {
+            "test": {}
+          },
+          "computed": false,
+          "changes": []
+        },
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "tint": "#ffffff",
+        "transfer": true,
+        "statuses": [],
+        "sort": 0,
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "_stats": {
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "coreVersion": "14.363",
+          "systemId": "impmal",
+          "systemVersion": "2.1.0",
+          "createdTime": null,
+          "modifiedTime": 1740038058555,
+          "lastModifiedBy": "ADcTWlVqmDmCrquZ",
+          "exportSource": null
+        },
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "purgatus stakes": {
+    "name": "Purgatus Stakes",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Purgatus Stakes",
+      "type": "ammo",
+      "_id": "yu4k9BtvuMwsGPFH",
+      "img": "modules/impmal-core/assets/icons/ammo/ammo.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Each handcrafted stake, explicitly designed for the Purgatus Crossbow, is carefully prepared through extensive sanctification. Each bolt is made of thriceblessed wood, consecrated in holy oils, and the purified silver tips are engraved with wards and runes that can affect the Immaterium itself. </p><p>Purgatus Stakes are used with the @UUID[Compendium.impmal-inquisition.items.Item.1dRwi7JTiuXS0vOm]{Purgatus Crossbow} only. Against daemons or creatures with a Warp Threshold, this weapon gains Rend (X), where X is equal to the wielder’s Willpower Bonus (WilB).</p>",
+          "gm": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 0,
+        "availability": "exotic",
+        "quantity": 1,
+        "custom": true,
+        "priceMultiplier": 2,
+        "usedWith": "Crossbow Weapons",
+        "damage": null,
+        "addedTraits": {
+          "list": []
+        },
+        "removedTraits": {
+          "list": []
+        },
+        "range": ""
+      },
+      "effects": [
+        "kjxJu6xiDHRY4zm7"
+      ],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.363",
+        "systemId": "impmal",
+        "systemVersion": "2.0.8",
+        "createdTime": 1739573934918,
+        "modifiedTime": 1739750222925,
+        "lastModifiedBy": "PpqPYvhOJKeI6yS2",
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Purgatus Stakes",
+        "img": "modules/impmal-core/assets/icons/ammo/ammo.webp",
+        "_id": "kjxJu6xiDHRY4zm7",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "originalType": "document",
+            "documentType": "Item",
+            "avoidTest": {
+              "value": "none",
+              "opposed": false,
+              "prevention": true,
+              "reversed": false,
+              "skill": {}
+            },
+            "testIndependent": false,
+            "equipTransfer": false,
+            "selfOnly": false,
+            "prompt": false,
+            "area": {
+              "templateData": {
+                "borderColor": null,
+                "fillColor": null,
+                "texture": null
+              },
+              "keep": false,
+              "aura": {
+                "transferred": false,
+                "render": false
+              },
+              "duration": "sustained"
+            },
+            "zone": {
+              "type": "zone",
+              "transferred": false,
+              "traits": {},
+              "skipImmediateOnPlacement": false,
+              "keep": false
+            }
+          },
+          "itemTargetData": {
+            "ids": [],
+            "allItems": false
+          },
+          "scriptData": [
+            {
+              "script": "[Script.v7BslEezLTKTB47K]",
+              "label": "Purgatus Stakes",
+              "trigger": "preApplyDamage",
+              "options": {
+                "targeter": false,
+                "defending": false,
+                "deleteEffect": false
+              },
+              "async": false
+            }
+          ],
+          "zone": {
+            "type": "zone",
+            "traits": {
+              "barrier": false,
+              "difficult": false,
+              "warpTouched": false
+            },
+            "skipImmediateOnPlacement": false
+          },
+          "sourceData": {
+            "test": {}
+          },
+          "computed": false,
+          "changes": []
+        },
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "tint": "#ffffff",
+        "transfer": true,
+        "statuses": [],
+        "sort": 0,
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "_stats": {
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "coreVersion": "14.363",
+          "systemId": "impmal",
+          "systemVersion": "2.1.0",
+          "createdTime": null,
+          "modifiedTime": 1740038058679,
+          "lastModifiedBy": "ADcTWlVqmDmCrquZ",
+          "exportSource": null
+        },
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  }
+}

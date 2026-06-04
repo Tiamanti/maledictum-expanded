@@ -40,10 +40,13 @@ function loadRegistry(filename) {
   }
 }
 
-const SYSTEM_TALENTS   = loadRegistry("system-talents.json");
-const SYSTEM_WEAPONS   = loadRegistry("system-weapons.json");
-const SYSTEM_EQUIPMENT = loadRegistry("system-equipment.json");
-const SYSTEM_POWERS    = loadRegistry("system-powers.json");
+const SYSTEM_TALENTS       = loadRegistry("system-talents.json");
+const SYSTEM_WEAPONS       = loadRegistry("system-weapons.json");
+const SYSTEM_EQUIPMENT     = loadRegistry("system-equipment.json");
+const SYSTEM_POWERS        = loadRegistry("system-powers.json");
+const SYSTEM_AMMO          = loadRegistry("system-ammo.json");
+const SYSTEM_MODIFICATIONS = loadRegistry("system-modifications.json");
+const SYSTEM_PROTECTION    = loadRegistry("system-protection.json");
 
 // Normalise US → UK spelling so "Armor Bane" matches "armour bane", etc.
 function normaliseSpelling(s) {
@@ -59,20 +62,120 @@ function findInRegistry(registry, name) {
   // Strip trailing parenthetical: "Drilled (Kill Team)" → "Drilled"
   const base = name.replace(/\s*\([^)]+\)\s*$/, "").trim().toLowerCase();
   if (base !== lower && registry[base]) return registry[base];
-  // Strip all spaces/hyphens for fuzzy match: "Night Shroud" → "nightshroud"
+  // Strip all spaces/hyphens: "Night Shroud" → "nightshroud"
   const nospace = lower.replace(/[\s\-]/g, "");
   const found = Object.keys(registry).find(k => k.replace(/[\s\-]/g, "") === nospace);
   if (found) return registry[found];
   // US → UK spelling: "Armor Bane" → "armour bane"
   const normalised = normaliseSpelling(lower);
   if (normalised !== lower && registry[normalised]) return registry[normalised];
+  // Strip trailing plural 's': "Bolt Pistols" → "Bolt Pistol"
+  if (lower.endsWith("s")) {
+    const singular = lower.slice(0, -1);
+    if (registry[singular]) return registry[singular];
+    const singularNospace = singular.replace(/[\s\-]/g, "");
+    const foundSingular = Object.keys(registry).find(k => k.replace(/[\s\-]/g, "") === singularNospace);
+    if (foundSingular) return registry[foundSingular];
+  }
   return null;
 }
 
-function findSystemTalent(name)    { return findInRegistry(SYSTEM_TALENTS, name); }
-function findSystemWeapon(name)    { return findInRegistry(SYSTEM_WEAPONS, name); }
-function findSystemEquipment(name) { return findInRegistry(SYSTEM_EQUIPMENT, name); }
-function findSystemPower(name)     { return findInRegistry(SYSTEM_POWERS, name); }
+function findSystemTalent(name)        { return findInRegistry(SYSTEM_TALENTS, name); }
+function findSystemWeapon(name)        { return findInRegistry(SYSTEM_WEAPONS, name); }
+function findSystemEquipment(name)     { return findInRegistry(SYSTEM_EQUIPMENT, name); }
+function findSystemPower(name)         { return findInRegistry(SYSTEM_POWERS, name); }
+function findSystemAmmo(name)          { return findInRegistry(SYSTEM_AMMO, name); }
+function findSystemModification(name)  { return findInRegistry(SYSTEM_MODIFICATIONS, name); }
+function findSystemProtection(name)    { return findInRegistry(SYSTEM_PROTECTION, name); }
+
+// ── Equipment name aliases ────────────────────────────────────────────────────
+// Exact-name shortcuts that the registry fuzzy-matching can't infer.
+const EQUIPMENT_ALIASES = {
+  "auspex":             "auspex/scanner",
+  "chirurgeon's kit":   "chirurgeon's kit (5 uses)",
+  "chirurgeons kit":    "chirurgeon's kit (5 uses)",
+  "chirurgeon kit":     "chirurgeon's kit (5 uses)",
+};
+
+// Ammo patterns found in equipment/possession lines.
+// "Manstopper clips" / "Man-Stopper rounds" etc. → "Man-Stopper Bullets"
+const AMMO_CLIP_PATTERNS = [
+  { re: /manstopper|man.?stopper/i, alias: "man-stopper bullets" },
+  { re: /dumdum|dum.?dum/i,          alias: "dum-dum bullets" },       // no system entry yet
+  { re: /hot.?shot\s+(las\s+)?pack/i, alias: "hot-shot las pack" },
+  { re: /inferno\s+shell/i,          alias: "inferno shells" },
+  { re: /bleeder/i,                  alias: "bleeder rounds" },
+  { re: /blessed/i,                  alias: "blessed rounds" },
+  { re: /executioner/i,              alias: "executioner rounds" },
+  { re: /tox/i,                      alias: "tox rounds" },
+];
+
+function isAmmoClipName(name) {
+  const lower = name.toLowerCase();
+  if (/\b(clips?|rounds?|bolts?|shells?|pack|cartridges?)\b/.test(lower)) {
+    for (const { re, alias } of AMMO_CLIP_PATTERNS) {
+      if (re.test(lower)) return alias;
+    }
+  }
+  return null;
+}
+
+// ── Weapon name pre-processing ────────────────────────────────────────────────
+// Returns { baseName, quantity, modNames[], ammoAlias|null }
+function parseWeaponName(rawName) {
+  let name = rawName.trim();
+  let quantity = 1;
+  const modNames = [];
+  let ammoAlias = null;
+
+  // "2x Bolt Pistols" / "2× Force Swords"
+  const qtyM = name.match(/^(\d+)\s*[x×]\s+(.+)$/i);
+  if (qtyM) { quantity = parseInt(qtyM[1]); name = qtyM[2].trim(); }
+
+  // "Autopistol w/ Manstopper" → weapon + ammo
+  const ammoSuffix = name.match(/^(.+?)\s+w\/\s*(.+)$/i);
+  if (ammoSuffix) {
+    name = ammoSuffix[1].trim();
+    // Normalise ammo suffix to a registry alias
+    const ammoRaw = ammoSuffix[2].trim();
+    for (const { re, alias } of AMMO_CLIP_PATTERNS) {
+      if (re.test(ammoRaw)) { ammoAlias = alias; break; }
+    }
+    if (!ammoAlias) ammoAlias = ammoRaw; // try literal lookup
+  }
+
+  // "Silenced X" / "Suppressed X"
+  if (/^(silenced|suppressed)\s+/i.test(name)) {
+    name = name.replace(/^(silenced|suppressed)\s+/i, "");
+    modNames.push("Silencer");
+  }
+
+  // "Mono-Knife" / "Mono-sword" / "Monosword"
+  const monoM = name.match(/^mono[-\s]?(.+)$/i);
+  if (monoM) { name = monoM[1].trim(); modNames.push("Mono-edge"); }
+
+  return { baseName: name, quantity, modNames, ammoAlias };
+}
+
+// ── Equipment name pre-processing ────────────────────────────────────────────
+// Returns { baseName, quantity }
+function parseEquipmentName(rawName) {
+  let name = rawName.trim();
+  let quantity = 1;
+
+  // "2x Krak Grenades" / "3x Frag Grenades"
+  const qtyM = name.match(/^(\d+)\s*[x×]\s+(.+)$/i);
+  if (qtyM) { quantity = parseInt(qtyM[1]); name = qtyM[2].trim(); }
+
+  // Strip leading articles: "a Backpack" → "Backpack"
+  name = name.replace(/^(a|an|the)\s+/i, "");
+
+  // Apply known aliases
+  const aliasKey = name.toLowerCase();
+  if (EQUIPMENT_ALIASES[aliasKey]) name = EQUIPMENT_ALIASES[aliasKey];
+
+  return { baseName: name, quantity };
+}
 
 // ── ID generation ────────────────────────────────────────────────────────────
 const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -152,7 +255,8 @@ function buildTrait(actorId, parsed) {
 }
 
 // Build item + effect sub-docs from a registry entry (works for any item type).
-function buildItemFromSystem(actorId, registryEntry) {
+// systemOverrides: optional partial system-field overrides, e.g. { quantity: 2, category: "power" }
+function buildItemFromSystem(actorId, registryEntry, systemOverrides = {}) {
   const src = registryEntry.item;
   const itemId = src._id;
 
@@ -165,6 +269,9 @@ function buildItemFromSystem(actorId, registryEntry) {
       folder: null,
       sort: 0,
       _stats: { ...STATS },
+      system: Object.keys(systemOverrides).length
+        ? { ...src.system, ...systemOverrides }
+        : src.system,
     },
   };
 
@@ -299,53 +406,93 @@ function buildActor(parsed) {
     itemEntries.push(buildSpecialisation(actorId, spec));
   }
 
+  // seenItemIds: prevents two items with the same system _id in one actor
+  const seenItemIds = new Set();
+
+  function addFromSystem(registryEntry, systemOverrides = {}) {
+    if (!registryEntry || seenItemIds.has(registryEntry.item._id)) return false;
+    seenItemIds.add(registryEntry.item._id);
+    const [entry, ...effects] = buildItemFromSystem(actorId, registryEntry, systemOverrides);
+    itemEntries.push(entry);
+    subEntries.push(...effects);
+    return true;
+  }
+
   // Traits — use system talent when name matches, otherwise keep as custom trait
   for (const trait of parsed.traits || []) {
     const systemTalent = findSystemTalent(trait.name);
-    if (systemTalent) {
-      const [talentEntry, ...effectEntries] = buildTalentFromSystem(actorId, systemTalent);
-      itemEntries.push(talentEntry);
-      subEntries.push(...effectEntries);
-    } else {
-      itemEntries.push(buildTrait(actorId, trait));
-    }
+    if (!addFromSystem(systemTalent)) itemEntries.push(buildTrait(actorId, trait));
   }
 
-  // Attacks (weapons) — use system item when name matches
+  // Attacks (weapons) — parse name, match system, apply quantity/category/mod overrides
   for (const atk of parsed.attacks || []) {
-    const systemWeapon = findSystemWeapon(atk.name);
+    const { baseName, quantity, modNames, ammoAlias } = parseWeaponName(atk.name);
+    const qty = quantity > 1 ? { quantity } : {};
+
+    // Resolve weapon: exact, then with "Power" prefix stripped (melee only)
+    let systemWeapon = findSystemWeapon(baseName);
+    let categoryOverride = null;
+    if (!systemWeapon && /^power\s+/i.test(baseName) && atk.attackType === "melee") {
+      const stripped = baseName.replace(/^power\s+/i, "");
+      systemWeapon = findSystemWeapon(stripped);
+      categoryOverride = "power";
+    }
+    if (!systemWeapon && /^power\s+/i.test(atk.name) && atk.attackType === "melee") {
+      categoryOverride = "power";
+    }
+
     if (systemWeapon) {
-      const [weaponEntry, ...effectEntries] = buildItemFromSystem(actorId, systemWeapon);
-      itemEntries.push(weaponEntry);
-      subEntries.push(...effectEntries);
+      const overrides = { ...qty, ...(categoryOverride ? { category: categoryOverride } : {}) };
+      addFromSystem(systemWeapon, overrides);
     } else {
-      itemEntries.push(buildWeapon(actorId, atk));
+      const entry = buildWeapon(actorId, { ...atk, name: baseName });
+      if (quantity > 1) entry.value.system.quantity = quantity;
+      if (categoryOverride) entry.value.system.category = categoryOverride;
+      itemEntries.push(entry);
+    }
+
+    // Modifications (Mono-edge, Silencer, …)
+    for (const modName of modNames) addFromSystem(findSystemModification(modName));
+
+    // Ammo from "w/ X" suffix
+    if (ammoAlias) addFromSystem(findSystemAmmo(ammoAlias));
+  }
+
+  // Possessions — parse quantity/articles, match ammo/equipment/protection
+  for (const raw of parsed.possessions || []) {
+    if (!raw.trim()) continue;
+    const { baseName, quantity } = parseEquipmentName(raw);
+    if (!baseName) continue;
+    const qty = quantity > 1 ? { quantity } : {};
+
+    // Check for ammo-clip patterns first ("Manstopper clips")
+    const ammoAlias = isAmmoClipName(baseName);
+    if (ammoAlias) {
+      const sysAmmo = findSystemAmmo(ammoAlias);
+      if (!addFromSystem(sysAmmo, qty)) {
+        // no system match — add as generic equipment
+        const entry = buildEquipment(actorId, baseName);
+        if (quantity > 1) entry.value.system.quantity = quantity;
+        itemEntries.push(entry);
+      }
+      continue;
+    }
+
+    // Try equipment, then protection
+    const sysEquip = findSystemEquipment(baseName);
+    const sysProt  = !sysEquip ? findSystemProtection(baseName) : null;
+    const match    = sysEquip || sysProt;
+
+    if (!addFromSystem(match, qty)) {
+      const entry = buildEquipment(actorId, baseName);
+      if (quantity > 1) entry.value.system.quantity = quantity;
+      itemEntries.push(entry);
     }
   }
 
-  // Possessions (equipment) — use system item when name matches
-  for (const possession of parsed.possessions || []) {
-    if (!possession.trim()) continue;
-    const systemEquip = findSystemEquipment(possession);
-    if (systemEquip) {
-      const [equipEntry, ...effectEntries] = buildItemFromSystem(actorId, systemEquip);
-      itemEntries.push(equipEntry);
-      subEntries.push(...effectEntries);
-    } else {
-      itemEntries.push(buildEquipment(actorId, possession));
-    }
-  }
-
-  // Psychic powers — match against system powers registry
-  const seenPowerIds = new Set();
+  // Psychic powers — extracted by parser from trait descriptions
   for (const powerName of parsed.powers || []) {
-    const systemPower = findSystemPower(powerName);
-    if (systemPower && !seenPowerIds.has(systemPower.item._id)) {
-      seenPowerIds.add(systemPower.item._id);
-      const [powerEntry, ...effectEntries] = buildItemFromSystem(actorId, systemPower);
-      itemEntries.push(powerEntry);
-      subEntries.push(...effectEntries);
-    }
+    addFromSystem(findSystemPower(powerName));
   }
 
   // Build skills section

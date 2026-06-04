@@ -1,0 +1,2581 @@
+{
+  "carapace gauntlets": {
+    "name": "Carapace Gauntlets",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Carapace Gauntlets",
+      "type": "protection",
+      "_id": "7HKj1d0RwUForWHu",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 2
+        },
+        "cost": 300,
+        "availability": "rare",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "category": "carapace",
+        "armour": 5,
+        "locations": {
+          "list": [
+            "rightArm",
+            "leftArm"
+          ],
+          "label": "Arms"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.4",
+        "coreVersion": "13.346",
+        "createdTime": 1689193752390,
+        "modifiedTime": 1753592107467,
+        "lastModifiedBy": "WapPl58meIHof2k6",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "xenos hide vest": {
+    "name": "Xenos Hide Vest",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Xenos Hide Vest",
+      "type": "protection",
+      "_id": "8OPStKOqQK9l08ix",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 2
+        },
+        "cost": 5000,
+        "availability": "exotic",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "category": "mundane",
+        "armour": 6,
+        "locations": {
+          "list": [
+            "body"
+          ],
+          "label": "Body"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689193752364,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "robes/light leathers": {
+    "name": "Robes/Light Leathers",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Robes/Light Leathers",
+      "type": "protection",
+      "_id": "D9X5jPYYafLyPqKh",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 2
+        },
+        "cost": 10,
+        "availability": "common",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": [
+            {
+              "key": "subtle"
+            }
+          ]
+        },
+        "category": "mundane",
+        "armour": 1,
+        "locations": {
+          "list": [
+            "rightArm",
+            "leftArm",
+            "body",
+            "rightLeg",
+            "leftLeg"
+          ],
+          "label": "Arms, Body, Legs"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689193752348,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "mesh vest": {
+    "name": "Mesh Vest",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Mesh Vest",
+      "type": "protection",
+      "_id": "Dx5iqkCTv1fDpYZQ",
+      "img": "modules/impmal-core/assets/icons/protection/mesh-armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 2
+        },
+        "cost": 500,
+        "availability": "rare",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "category": "mesh",
+        "armour": 4,
+        "locations": {
+          "list": [
+            "body"
+          ],
+          "label": "Body"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.4",
+        "coreVersion": "13.346",
+        "createdTime": 1689193752383,
+        "modifiedTime": 1753592166277,
+        "lastModifiedBy": "WapPl58meIHof2k6",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "flak gauntlets": {
+    "name": "Flak Gauntlets",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Flak Gauntlets",
+      "type": "protection",
+      "_id": "EFuAlEM1vh5fvSDW",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 100,
+        "availability": "common",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "category": "flak",
+        "armour": 2,
+        "locations": {
+          "list": [
+            "rightArm",
+            "leftArm"
+          ],
+          "label": "Arms"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.4",
+        "coreVersion": "13.346",
+        "createdTime": 1689193752370,
+        "modifiedTime": 1753592059159,
+        "lastModifiedBy": "WapPl58meIHof2k6",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "tempestus carapace": {
+    "name": "Tempestus Carapace",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Tempestus Carapace",
+      "type": "protection",
+      "_id": "EPeXcWj2RZARo4yQ",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 6
+        },
+        "cost": 4000,
+        "availability": "exotic",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": [
+            {
+              "key": "heavy",
+              "value": "4"
+            },
+            {
+              "key": "loud"
+            }
+          ]
+        },
+        "category": "carapace",
+        "armour": 6,
+        "locations": {
+          "list": [
+            "rightLeg",
+            "leftLeg",
+            "rightArm",
+            "leftArm",
+            "body",
+            "head"
+          ],
+          "label": "All"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.4",
+        "coreVersion": "13.346",
+        "createdTime": 1689193752398,
+        "modifiedTime": 1753592181333,
+        "lastModifiedBy": "WapPl58meIHof2k6",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "enforcer carapace": {
+    "name": "Enforcer Carapace",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Enforcer Carapace",
+      "type": "protection",
+      "_id": "Gbv79Tx6A5OS0zqe",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 5
+        },
+        "cost": 1800,
+        "availability": "rare",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": [
+            {
+              "key": "heavy",
+              "value": "4"
+            },
+            {
+              "key": "loud"
+            }
+          ]
+        },
+        "category": "carapace",
+        "armour": 5,
+        "locations": {
+          "list": [
+            "rightLeg",
+            "leftLeg",
+            "rightArm",
+            "leftArm",
+            "body",
+            "head"
+          ],
+          "label": "All"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.4",
+        "coreVersion": "13.346",
+        "createdTime": 1689193752395,
+        "modifiedTime": 1753592138935,
+        "lastModifiedBy": "WapPl58meIHof2k6",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "armoured greatcoat": {
+    "name": "Armoured Greatcoat",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Armoured Greatcoat",
+      "type": "protection",
+      "_id": "H4uLhQvXkGBmE79L",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 3
+        },
+        "cost": 500,
+        "availability": "rare",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": [
+            {
+              "key": "subtle"
+            }
+          ]
+        },
+        "category": "mundane",
+        "armour": 2,
+        "locations": {
+          "list": [
+            "rightArm",
+            "leftArm",
+            "body",
+            "rightLeg",
+            "leftLeg"
+          ],
+          "label": "Arms, Body, Legs"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689193752353,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "carapace chestplate": {
+    "name": "Carapace Chestplate",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Carapace Chestplate",
+      "type": "protection",
+      "_id": "I2J8NfYpRkKTshku",
+      "img": "modules/impmal-core/assets/icons/protection/light-carapace-armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 4
+        },
+        "cost": 800,
+        "availability": "rare",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": [
+            {
+              "key": "heavy",
+              "value": "4"
+            },
+            {
+              "key": "loud"
+            }
+          ]
+        },
+        "category": "carapace",
+        "armour": 6,
+        "locations": {
+          "list": [
+            "body"
+          ],
+          "label": "Body"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.4",
+        "coreVersion": "13.346",
+        "createdTime": 1689193752394,
+        "modifiedTime": 1753592104107,
+        "lastModifiedBy": "WapPl58meIHof2k6",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "mesh boots": {
+    "name": "Mesh Boots",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Mesh Boots",
+      "type": "protection",
+      "_id": "KxTqbo3tXemtOngj",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 2
+        },
+        "cost": 600,
+        "availability": "rare",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "category": "mesh",
+        "armour": 3,
+        "locations": {
+          "list": [
+            "rightLeg",
+            "leftLeg"
+          ],
+          "label": "Legs"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.4",
+        "coreVersion": "13.346",
+        "createdTime": 1689193752377,
+        "modifiedTime": 1753592154224,
+        "lastModifiedBy": "WapPl58meIHof2k6",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "heavy leathers": {
+    "name": "Heavy Leathers",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Heavy Leathers",
+      "type": "protection",
+      "_id": "LmBKbPMN8CsK4B3T",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 3
+        },
+        "cost": 60,
+        "availability": "common",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "category": "mundane",
+        "armour": 2,
+        "locations": {
+          "list": [
+            "rightArm",
+            "leftArm",
+            "body",
+            "rightLeg",
+            "leftLeg"
+          ],
+          "label": "Arms, Body, Legs"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689193752351,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "flak helmet": {
+    "name": "Flak Helmet",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Flak Helmet",
+      "type": "protection",
+      "_id": "RGI5qmEog7xPdZcR",
+      "img": "modules/impmal-core/assets/icons/protection/flak-helmet.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 2
+        },
+        "cost": 150,
+        "availability": "common",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "category": "flak",
+        "armour": 2,
+        "locations": {
+          "list": [
+            "head"
+          ],
+          "label": "Head"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.4",
+        "coreVersion": "13.346",
+        "createdTime": 1689193752368,
+        "modifiedTime": 1753592062558,
+        "lastModifiedBy": "WapPl58meIHof2k6",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "xenos mesh": {
+    "name": "Xenos Mesh",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Xenos Mesh",
+      "type": "protection",
+      "_id": "VbjP39Ixpyh1XOBU",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 3
+        },
+        "cost": 5000,
+        "availability": "exotic",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "category": "mesh",
+        "armour": 4,
+        "locations": {
+          "list": [
+            "rightArm",
+            "leftArm",
+            "body",
+            "rightLeg",
+            "leftLeg"
+          ],
+          "label": "Arms, Body, Legs"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.4",
+        "coreVersion": "13.346",
+        "createdTime": 1689193752385,
+        "modifiedTime": 1753592197622,
+        "lastModifiedBy": "WapPl58meIHof2k6",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "scrap-plate": {
+    "name": "Scrap-plate",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Scrap-plate",
+      "type": "protection",
+      "_id": "WCb8cnulcFJqgoxX",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 5
+        },
+        "cost": 300,
+        "availability": "rare",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": [
+            {
+              "key": "heavy",
+              "value": "3"
+            }
+          ]
+        },
+        "category": "mundane",
+        "armour": 3,
+        "locations": {
+          "list": [
+            "body"
+          ],
+          "label": "Body"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689193752355,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "light power armour": {
+    "name": "Light Power Armour",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Light Power Armour",
+      "type": "protection",
+      "_id": "ecmqAEH0GyBaYT4E",
+      "img": "modules/impmal-core/assets/icons/protection/light-power-armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 8
+        },
+        "cost": 500000,
+        "availability": "exotic",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": [
+            {
+              "key": "loud"
+            }
+          ]
+        },
+        "category": "power",
+        "armour": 8,
+        "locations": {
+          "list": [
+            "rightLeg",
+            "leftLeg",
+            "rightArm",
+            "leftArm",
+            "body",
+            "head"
+          ],
+          "label": "All"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [
+        "Yjr7rakW3pQuvaM1"
+      ],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.4",
+        "coreVersion": "14.361",
+        "createdTime": 1689193752400,
+        "modifiedTime": 1753592150654,
+        "lastModifiedBy": "WapPl58meIHof2k6",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Power Armour",
+        "_id": "Yjr7rakW3pQuvaM1",
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "transfer": true,
+        "statuses": [],
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          },
+          "core": {}
+        },
+        "tint": "#ffffff",
+        "_stats": {
+          "coreVersion": "14.361",
+          "systemId": null,
+          "systemVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": "Actor.nQ8PPP7Rg9ZWCsI6.Item.urTOleMhK9DyHjDZ.ActiveEffect.W6QXnW9DNuSVaw4f",
+          "duplicateSource": null,
+          "exportSource": null
+        },
+        "img": "modules/impmal-core/assets/icons/protection/light-power-armour.webp",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none"
+            },
+            "equipTransfer": true,
+            "enableConditionScript": "",
+            "prompt": false,
+            "zone": {}
+          },
+          "scriptData": [
+            {
+              "label": "Encumbrance",
+              "string": "[Script.6lNghRC3gOmD4CwT]",
+              "trigger": "prePrepareOwnedItemDerivedData",
+              "options": {
+                "dialog": {
+                  "hideScript": "",
+                  "activateScript": "",
+                  "submissionScript": "",
+                  "targeter": false
+                },
+                "immediate": {
+                  "deleteEffect": false
+                },
+                "hideScript": "",
+                "activateScript": "",
+                "submissionScript": "",
+                "targeter": false,
+                "deleteEffect": false
+              },
+              "script": "[Script.6lNghRC3gOmD4CwT]"
+            },
+            {
+              "label": "Update Check",
+              "string": "[Script.KlaESspjOoVqiJZz]",
+              "trigger": "updateDocument",
+              "options": {
+                "dialog": {
+                  "hideScript": "",
+                  "activateScript": "",
+                  "submissionScript": "",
+                  "targeter": false
+                },
+                "immediate": {
+                  "deleteEffect": false
+                },
+                "hideScript": "",
+                "activateScript": "",
+                "submissionScript": "",
+                "targeter": false,
+                "deleteEffect": false
+              },
+              "script": "[Script.KlaESspjOoVqiJZz]"
+            }
+          ],
+          "changes": [
+            {
+              "key": "system.characteristics.str.modifier",
+              "value": 10,
+              "priority": null,
+              "type": "add"
+            }
+          ]
+        },
+        "sort": 0,
+        "start": {
+          "combat": null,
+          "round": 85,
+          "time": 0,
+          "turn": 0,
+          "combatant": null,
+          "initiative": null
+        },
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "combat shield": {
+    "name": "Combat Shield",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Combat Shield",
+      "type": "protection",
+      "_id": "f1XuFoDwzexJZAas",
+      "img": "modules/impmal-core/assets/icons/protection/shield.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 300,
+        "availability": "common",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": [
+            {
+              "key": "shield",
+              "value": "2"
+            }
+          ]
+        },
+        "category": "shield",
+        "armour": null,
+        "locations": {
+          "list": [],
+          "label": "Special"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689193752359,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "flak vest": {
+    "name": "Flak Vest",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Flak Vest",
+      "type": "protection",
+      "_id": "g6dWis6NUm1JXxzK",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 3
+        },
+        "cost": 500,
+        "availability": "common",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "category": "flak",
+        "armour": 3,
+        "locations": {
+          "list": [
+            "body"
+          ],
+          "label": "Body"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.4",
+        "coreVersion": "13.346",
+        "createdTime": 1689193752372,
+        "modifiedTime": 1753592068271,
+        "lastModifiedBy": "WapPl58meIHof2k6",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "flak jacket": {
+    "name": "Flak Jacket",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Flak Jacket",
+      "type": "protection",
+      "_id": "hBLh8oe2wGUKmjV1",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 3
+        },
+        "cost": 800,
+        "availability": "scarce",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "category": "flak",
+        "armour": 3,
+        "locations": {
+          "list": [
+            "rightArm",
+            "leftArm",
+            "body"
+          ],
+          "label": "Arms, Body"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.4",
+        "coreVersion": "13.346",
+        "createdTime": 1689193752373,
+        "modifiedTime": 1753592065118,
+        "lastModifiedBy": "WapPl58meIHof2k6",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "mesh cowl": {
+    "name": "Mesh Cowl",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Mesh Cowl",
+      "type": "protection",
+      "_id": "hLABFDwMJp4kgFpD",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 2
+        },
+        "cost": 800,
+        "availability": "rare",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "category": "mesh",
+        "armour": 3,
+        "locations": {
+          "list": [
+            "head"
+          ],
+          "label": "Head"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.4",
+        "coreVersion": "13.346",
+        "createdTime": 1689193752380,
+        "modifiedTime": 1753592158268,
+        "lastModifiedBy": "WapPl58meIHof2k6",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "flak boots": {
+    "name": "Flak Boots",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Flak Boots",
+      "type": "protection",
+      "_id": "iO5yGhyu5RFhYVIy",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 2
+        },
+        "cost": 100,
+        "availability": "common",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "category": "flak",
+        "armour": 2,
+        "locations": {
+          "list": [
+            "rightLeg",
+            "leftLeg"
+          ],
+          "label": "Legs"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.4",
+        "coreVersion": "13.346",
+        "createdTime": 1689193752366,
+        "modifiedTime": 1753592055434,
+        "lastModifiedBy": "WapPl58meIHof2k6",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "carapace helm": {
+    "name": "Carapace Helm",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Carapace Helm",
+      "type": "protection",
+      "_id": "igcQNyDpfjE4ftz8",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 2
+        },
+        "cost": 400,
+        "availability": "rare",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "category": "carapace",
+        "armour": 5,
+        "locations": {
+          "list": [
+            "head"
+          ],
+          "label": "Head"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.4",
+        "coreVersion": "13.346",
+        "createdTime": 1689193752388,
+        "modifiedTime": 1753592128288,
+        "lastModifiedBy": "WapPl58meIHof2k6",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "scrap-shield": {
+    "name": "Scrap-shield",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Scrap-shield",
+      "type": "protection",
+      "_id": "lZuBCRMEA6Tq7vKH",
+      "img": "modules/impmal-core/assets/icons/protection/shield.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 50,
+        "availability": "common",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": [
+            {
+              "key": "shield",
+              "value": "1"
+            }
+          ]
+        },
+        "category": "shield",
+        "armour": null,
+        "locations": {
+          "list": [],
+          "label": "Special"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689193752359,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "astra militarum flak armour": {
+    "name": "Astra Militarum Flak Armour",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Astra Militarum Flak Armour",
+      "type": "protection",
+      "_id": "pEFmeV070knXgwZ5",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 5
+        },
+        "cost": 1000,
+        "availability": "rare",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": [
+            {
+              "key": "loud"
+            }
+          ]
+        },
+        "category": "flak",
+        "armour": 4,
+        "locations": {
+          "list": [
+            "rightLeg",
+            "leftLeg",
+            "rightArm",
+            "leftArm",
+            "body",
+            "head"
+          ],
+          "label": "All"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.4",
+        "coreVersion": "13.346",
+        "createdTime": 1689193752375,
+        "modifiedTime": 1753592052128,
+        "lastModifiedBy": "WapPl58meIHof2k6",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "boarding shield": {
+    "name": "Boarding Shield",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Boarding Shield",
+      "type": "protection",
+      "_id": "pZD0BWnti9JoKgD8",
+      "img": "modules/impmal-core/assets/icons/protection/shield.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 2
+        },
+        "cost": 800,
+        "availability": "rare",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": [
+            {
+              "key": "shield",
+              "value": "4"
+            }
+          ]
+        },
+        "category": "shield",
+        "armour": null,
+        "locations": {
+          "list": [],
+          "label": "Special"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689193752361,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "armoured bodyglove": {
+    "name": "Armoured Bodyglove",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Armoured Bodyglove",
+      "type": "protection",
+      "_id": "sYDTAe3hDjoSD0Gb",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 2
+        },
+        "cost": 1200,
+        "availability": "rare",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": [
+            {
+              "key": "subtle"
+            }
+          ]
+        },
+        "category": "mundane",
+        "armour": 2,
+        "locations": {
+          "list": [
+            "rightArm",
+            "leftArm",
+            "body",
+            "rightLeg",
+            "leftLeg"
+          ],
+          "label": "Arms, Body, Legs"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "1.0.1",
+        "coreVersion": "13.342",
+        "createdTime": 1689193752352,
+        "modifiedTime": 1702519067920,
+        "lastModifiedBy": "Re1K6cm6B4B40dzP",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "carapace greaves": {
+    "name": "Carapace Greaves",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Carapace Greaves",
+      "type": "protection",
+      "_id": "svMECY9HjBaJtmLg",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 2
+        },
+        "cost": 300,
+        "availability": "rare",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "category": "carapace",
+        "armour": 5,
+        "locations": {
+          "list": [
+            "rightLeg",
+            "leftLeg"
+          ],
+          "label": "Legs"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.4",
+        "coreVersion": "13.346",
+        "createdTime": 1689193752392,
+        "modifiedTime": 1753592111086,
+        "lastModifiedBy": "WapPl58meIHof2k6",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "power armour": {
+    "name": "Power Armour",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Power Armour",
+      "type": "protection",
+      "_id": "vhpvfuTVOEHEoM3S",
+      "img": "modules/impmal-core/assets/icons/protection/light-power-armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 10
+        },
+        "cost": 1000000,
+        "availability": "exotic",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": [
+            {
+              "key": "loud"
+            }
+          ]
+        },
+        "category": "power",
+        "armour": 10,
+        "locations": {
+          "list": [
+            "rightLeg",
+            "leftLeg",
+            "rightArm",
+            "leftArm",
+            "body",
+            "head"
+          ],
+          "label": "All"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [
+        "VTPB4AfqVtWI2DIr"
+      ],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.4",
+        "coreVersion": "14.361",
+        "createdTime": 1689193752401,
+        "modifiedTime": 1753592171268,
+        "lastModifiedBy": "WapPl58meIHof2k6",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Power Armour",
+        "_id": "VTPB4AfqVtWI2DIr",
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "transfer": true,
+        "statuses": [],
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          },
+          "core": {}
+        },
+        "tint": "#ffffff",
+        "_stats": {
+          "coreVersion": "14.361",
+          "systemId": null,
+          "systemVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": "Actor.nQ8PPP7Rg9ZWCsI6.Item.urTOleMhK9DyHjDZ.ActiveEffect.W6QXnW9DNuSVaw4f",
+          "duplicateSource": null,
+          "exportSource": null
+        },
+        "img": "modules/impmal-core/assets/icons/protection/light-power-armour.webp",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none"
+            },
+            "equipTransfer": true,
+            "enableConditionScript": "",
+            "prompt": false,
+            "zone": {}
+          },
+          "scriptData": [
+            {
+              "label": "Encumbrance",
+              "string": "[Script.6lNghRC3gOmD4CwT]",
+              "trigger": "prePrepareOwnedItemDerivedData",
+              "options": {
+                "dialog": {
+                  "hideScript": "",
+                  "activateScript": "",
+                  "submissionScript": "",
+                  "targeter": false
+                },
+                "immediate": {
+                  "deleteEffect": false
+                },
+                "hideScript": "",
+                "activateScript": "",
+                "submissionScript": "",
+                "targeter": false,
+                "deleteEffect": false
+              },
+              "script": "[Script.6lNghRC3gOmD4CwT]"
+            },
+            {
+              "label": "Update Check",
+              "string": "[Script.KlaESspjOoVqiJZz]",
+              "trigger": "updateDocument",
+              "options": {
+                "dialog": {
+                  "hideScript": "",
+                  "activateScript": "",
+                  "submissionScript": "",
+                  "targeter": false
+                },
+                "immediate": {
+                  "deleteEffect": false
+                },
+                "hideScript": "",
+                "activateScript": "",
+                "submissionScript": "",
+                "targeter": false,
+                "deleteEffect": false
+              },
+              "script": "[Script.KlaESspjOoVqiJZz]"
+            }
+          ],
+          "changes": [
+            {
+              "key": "system.characteristics.str.modifier",
+              "value": 10,
+              "priority": null,
+              "type": "add"
+            }
+          ]
+        },
+        "sort": 0,
+        "start": {
+          "combat": null,
+          "round": 85,
+          "time": 0,
+          "turn": 0,
+          "combatant": null,
+          "initiative": null
+        },
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "mesh gauntlets": {
+    "name": "Mesh Gauntlets",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Mesh Gauntlets",
+      "type": "protection",
+      "_id": "wrdFl0pUDZE9ievF",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 600,
+        "availability": "rare",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "category": "mesh",
+        "armour": 3,
+        "locations": {
+          "list": [
+            "rightArm",
+            "leftArm"
+          ],
+          "label": "Arms"
+        },
+        "damage": {},
+        "rended": {}
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.4",
+        "coreVersion": "13.346",
+        "createdTime": 1689193752382,
+        "modifiedTime": 1753592162325,
+        "lastModifiedBy": "WapPl58meIHof2k6",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "praesidium protectiva": {
+    "name": "Praesidium Protectiva",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Praesidium Protectiva",
+      "type": "protection",
+      "_id": "Kt7pWgWNLABjWhah",
+      "img": "modules/impmal-core/assets/icons/protection/shield.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Believed to contain a shard of the Emperor’s armour, this shield is wrought from layers of armaplas and ceramite, forming a protective barrier equal to @UUID[Compendium.impmal-core.items.Item.vhpvfuTVOEHEoM3S]{Power Armour}. Whatever additional anointments have blessed these shields over time, they carry an inherent righteousness and purity. Exclusively issued to members of the Adepta Sororitas, these icons of faith and devotion nonetheless have been known to be gifted to Inquisitors who distinguish themselves alongside the Sisters of Battle. </p><p>The Praesidium Protectiva is a Shield that can only be carried by a character in Power Armour. Further, a daemon, or a creature with a Warp Threshold, has a −20 penalty to all Tests against the bearer of a Praesidium Protectiva. (addditional rules and benefits for wielding @UUID[Compendium.impmal-core.journals.JournalEntry.wqlquQ8Njtd5fb4Y.JournalEntryPage.Wqnie6SvhIq6hZrS#shields]{Shields} are in <em><strong>Imperium Maledictum</strong></em>).</p>",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 4
+        },
+        "cost": 1500,
+        "availability": "exotic",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": [
+            {
+              "key": "shield",
+              "value": "6"
+            }
+          ]
+        },
+        "category": "shield",
+        "armour": null,
+        "locations": {
+          "list": [],
+          "label": ""
+        },
+        "damage": {},
+        "rended": {},
+        "slots": {
+          "list": [],
+          "value": 0
+        }
+      },
+      "effects": [
+        "TLFo36cpDDbl2m83"
+      ],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.363",
+        "systemId": "impmal",
+        "systemVersion": "2.0.8",
+        "createdTime": 1739573934918,
+        "modifiedTime": 1739573934918,
+        "lastModifiedBy": "OvDs1hgofr7TnbvV",
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Praesidium Protectiva",
+        "img": "modules/impmal-core/assets/icons/protection/shield.webp",
+        "_id": "TLFo36cpDDbl2m83",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "originalType": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none",
+              "opposed": false,
+              "prevention": true,
+              "reversed": false,
+              "skill": {}
+            },
+            "testIndependent": false,
+            "equipTransfer": true,
+            "selfOnly": false,
+            "prompt": false,
+            "area": {
+              "templateData": {
+                "borderColor": null,
+                "fillColor": null,
+                "texture": null
+              },
+              "keep": false,
+              "aura": {
+                "transferred": false,
+                "render": false
+              },
+              "duration": "sustained"
+            },
+            "zone": {
+              "type": "zone",
+              "transferred": false,
+              "traits": {},
+              "skipImmediateOnPlacement": false,
+              "keep": false
+            }
+          },
+          "itemTargetData": {
+            "ids": [],
+            "allItems": false
+          },
+          "scriptData": [
+            {
+              "script": "[Script.vwAsx2RKMrbMJCGx]",
+              "label": "Penalty against shield bearer",
+              "trigger": "dialog",
+              "options": {
+                "targeter": true,
+                "defending": false,
+                "hideScript": "[Script.tDKTbX830S02PRXp]",
+                "activateScript": "[Script.Pzi7XBiw1lF9CnIW]",
+                "submissionScript": "",
+                "deleteEffect": false
+              },
+              "async": false
+            }
+          ],
+          "zone": {
+            "type": "zone",
+            "traits": {
+              "barrier": false,
+              "difficult": false,
+              "warpTouched": false
+            },
+            "skipImmediateOnPlacement": false
+          },
+          "sourceData": {
+            "test": {}
+          },
+          "computed": false,
+          "changes": []
+        },
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "tint": "#ffffff",
+        "transfer": true,
+        "statuses": [],
+        "sort": 0,
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "_stats": {
+          "compendiumSource": "Compendium.impmal-inquisition.items.Item.vxMXZAPXzHavbkDz.ActiveEffect.zLJ37GmvzscwWyqt",
+          "duplicateSource": null,
+          "coreVersion": "14.363",
+          "systemId": "impmal",
+          "systemVersion": "2.1.0",
+          "createdTime": 1739670669432,
+          "modifiedTime": 1740038058419,
+          "lastModifiedBy": "ADcTWlVqmDmCrquZ",
+          "exportSource": null
+        },
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "warded armour": {
+    "name": "Warded Armour",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Warded Armour",
+      "type": "protection",
+      "_id": "OjYzpQaseVnZaams",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Carefully prepared layers of plasteel and ceramite, similar to Carapace Armour, form the bulk of a suit of Warded Armour. However, this armour’s true strength lies within the wards and sigils engraved into each heavy plate. Blessed by faithful artisans, each sigil of protection, each hexagrammic ward against the Immaterium, protects the wearer from daemonic entities and psychic powers.</p><p>Attempts to manifest a Psychic Power, targeting the wearer of Warded Armour or their Zone suffers from Disadvantage. daemon creatures have a −10 on all Tests against the wearer of Warded Armour.</p>",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 4
+        },
+        "cost": 8000,
+        "availability": "exotic",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": [
+            {
+              "key": "heavy",
+              "value": "4"
+            },
+            {
+              "key": "loud"
+            }
+          ]
+        },
+        "category": "carapace",
+        "armour": 5,
+        "locations": {
+          "list": [
+            "rightArm",
+            "leftArm",
+            "body",
+            "rightLeg",
+            "leftLeg"
+          ],
+          "label": ""
+        },
+        "damage": {},
+        "rended": {},
+        "slots": {
+          "list": [],
+          "value": 0
+        }
+      },
+      "effects": [
+        "xYXKBUlj6yHZ1YCf"
+      ],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.363",
+        "systemId": "impmal",
+        "systemVersion": "2.0.8",
+        "createdTime": 1739573934918,
+        "modifiedTime": 1739573934918,
+        "lastModifiedBy": "OvDs1hgofr7TnbvV",
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Warded Armour",
+        "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+        "_id": "xYXKBUlj6yHZ1YCf",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "originalType": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none",
+              "opposed": false,
+              "prevention": true,
+              "reversed": false,
+              "skill": {}
+            },
+            "testIndependent": false,
+            "equipTransfer": true,
+            "selfOnly": false,
+            "prompt": false,
+            "area": {
+              "templateData": {
+                "borderColor": null,
+                "fillColor": null,
+                "texture": null
+              },
+              "keep": false,
+              "aura": {
+                "transferred": false,
+                "render": false
+              },
+              "duration": "sustained"
+            },
+            "zone": {
+              "type": "zone",
+              "transferred": false,
+              "traits": {},
+              "skipImmediateOnPlacement": false,
+              "keep": false
+            }
+          },
+          "itemTargetData": {
+            "ids": [],
+            "allItems": false
+          },
+          "scriptData": [
+            {
+              "script": "[Script.nF88ngxIH2mMUQaJ]",
+              "label": "Penalty for Daemons",
+              "trigger": "dialog",
+              "options": {
+                "targeter": true,
+                "defending": false,
+                "hideScript": "[Script.gjX8lLYhzKFyWz76]",
+                "activateScript": "[Script.K4pZgWW2Z43NMZdW]",
+                "submissionScript": "",
+                "deleteEffect": false
+              },
+              "async": false
+            },
+            {
+              "script": "[Script.SBE9V0rhjc1c0Vcn]",
+              "label": "Disadvantage to manifest Psychic Powers",
+              "trigger": "dialog",
+              "options": {
+                "targeter": true,
+                "defending": false,
+                "hideScript": "[Script.QcOPkOjl7SyMtSp3]",
+                "activateScript": "[Script.QaW538nDW3sFbBQG]",
+                "submissionScript": "",
+                "deleteEffect": false
+              },
+              "async": false
+            }
+          ],
+          "zone": {
+            "type": "zone",
+            "traits": {
+              "barrier": false,
+              "difficult": false,
+              "warpTouched": false
+            },
+            "skipImmediateOnPlacement": false
+          },
+          "sourceData": {
+            "test": {}
+          },
+          "computed": false,
+          "changes": []
+        },
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "tint": "#ffffff",
+        "transfer": true,
+        "statuses": [],
+        "sort": 0,
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "_stats": {
+          "compendiumSource": "Compendium.impmal-inquisition.items.Item.vxMXZAPXzHavbkDz.ActiveEffect.zLJ37GmvzscwWyqt",
+          "duplicateSource": null,
+          "coreVersion": "14.363",
+          "systemId": "impmal",
+          "systemVersion": "2.1.0",
+          "createdTime": 1739671011758,
+          "modifiedTime": 1740038058438,
+          "lastModifiedBy": "ADcTWlVqmDmCrquZ",
+          "exportSource": null
+        },
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "truesilver weave": {
+    "name": "Truesilver Weave",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Truesilver Weave",
+      "type": "protection",
+      "_id": "hTmQbTs6tObxYzti",
+      "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Sanctified silver and iron, known as Truesilver, can be crafted into many forms as a potent weapon against immaterial powers and daemonic entities. Bands woven into the fabric of storm coats, and filigreed into plasteel plates, form cohesive protection against daemons and rogue psykers. They shine with a pure, silver-white light against the foul touch of the Immaterium. </p><p>A daemon, or a creature with a Warp Threshold, has a −10 penalty to all Tests against characters wearing Truesilver Weave.</p>",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 3
+        },
+        "cost": 5000,
+        "availability": "exotic",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": []
+        },
+        "category": "mundane",
+        "armour": 3,
+        "locations": {
+          "list": [
+            "rightArm",
+            "leftArm",
+            "body",
+            "rightLeg",
+            "leftLeg"
+          ],
+          "label": ""
+        },
+        "damage": {},
+        "rended": {},
+        "slots": {
+          "list": [],
+          "value": 0
+        }
+      },
+      "effects": [
+        "8ED8UUUv1ErL3mew"
+      ],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.363",
+        "systemId": "impmal",
+        "systemVersion": "2.0.8",
+        "createdTime": 1739573934918,
+        "modifiedTime": 1739573934918,
+        "lastModifiedBy": "OvDs1hgofr7TnbvV",
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Truesilver Weave",
+        "img": "modules/impmal-core/assets/icons/protection/armour.webp",
+        "_id": "8ED8UUUv1ErL3mew",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "originalType": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none",
+              "opposed": false,
+              "prevention": true,
+              "reversed": false,
+              "skill": {}
+            },
+            "testIndependent": false,
+            "equipTransfer": true,
+            "selfOnly": false,
+            "prompt": false,
+            "area": {
+              "templateData": {
+                "borderColor": null,
+                "fillColor": null,
+                "texture": null
+              },
+              "keep": false,
+              "aura": {
+                "transferred": false,
+                "render": false
+              },
+              "duration": "sustained"
+            },
+            "zone": {
+              "type": "zone",
+              "transferred": false,
+              "traits": {},
+              "skipImmediateOnPlacement": false,
+              "keep": false
+            }
+          },
+          "itemTargetData": {
+            "ids": [],
+            "allItems": false
+          },
+          "scriptData": [
+            {
+              "script": "[Script.nF88ngxIH2mMUQaJ]",
+              "label": "Penalty against Truesilver Weave",
+              "trigger": "dialog",
+              "options": {
+                "targeter": true,
+                "defending": false,
+                "hideScript": "[Script.tDKTbX830S02PRXp]",
+                "activateScript": "[Script.Pzi7XBiw1lF9CnIW]",
+                "submissionScript": "",
+                "deleteEffect": false
+              },
+              "async": false
+            }
+          ],
+          "zone": {
+            "type": "zone",
+            "traits": {
+              "barrier": false,
+              "difficult": false,
+              "warpTouched": false
+            },
+            "skipImmediateOnPlacement": false
+          },
+          "sourceData": {
+            "test": {}
+          },
+          "computed": false,
+          "changes": []
+        },
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "tint": "#ffffff",
+        "transfer": true,
+        "statuses": [],
+        "sort": 0,
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "_stats": {
+          "compendiumSource": "Compendium.impmal-inquisition.items.Item.vxMXZAPXzHavbkDz.ActiveEffect.zLJ37GmvzscwWyqt",
+          "duplicateSource": null,
+          "coreVersion": "14.363",
+          "systemId": "impmal",
+          "systemVersion": "2.1.0",
+          "createdTime": 1739670734486,
+          "modifiedTime": 1740038058544,
+          "lastModifiedBy": "ADcTWlVqmDmCrquZ",
+          "exportSource": null
+        },
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "crusader storm shield": {
+    "name": "Crusader Storm Shield",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Crusader Storm Shield",
+      "type": "protection",
+      "_id": "vxMXZAPXzHavbkDz",
+      "img": "modules/impmal-core/assets/icons/protection/shield.webp",
+      "system": {
+        "notes": {
+          "player": "<p>A tower shield crafted from layers of plasteel and ceramite. The Crusader variant storm shield is a suppression shield re-designed to combat the enemies of the Ordo Malleus. The shield is sanctified with holy oils, its surface engraved with various hexagrammic wards and sigils against the Immaterium, making it a reliable defence against daemons.</p><p>A daemon, or a creature with a Warp Threshold, has a −10 penalty to all Tests against the bearer of a Crusader Storm Shield (addditional rules and benefits for wielding @UUID[Compendium.impmal-core.journals.JournalEntry.wqlquQ8Njtd5fb4Y.JournalEntryPage.Wqnie6SvhIq6hZrS#shields]{Shields} are in <em><strong>Imperium Maledictum</strong></em>).</p>",
+          "gm": ""
+        },
+        "encumbrance": {
+          "value": 4
+        },
+        "cost": 1000,
+        "availability": "exotic",
+        "quantity": 1,
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "traits": {
+          "list": [
+            {
+              "key": "shield",
+              "value": "4"
+            }
+          ]
+        },
+        "category": "shield",
+        "armour": null,
+        "locations": {
+          "list": [],
+          "label": ""
+        },
+        "damage": {},
+        "rended": {},
+        "slots": {
+          "list": [],
+          "value": 0
+        }
+      },
+      "effects": [
+        "zLJ37GmvzscwWyqt"
+      ],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.363",
+        "systemId": "impmal",
+        "systemVersion": "2.0.8",
+        "createdTime": 1739573934918,
+        "modifiedTime": 1739573934918,
+        "lastModifiedBy": "OvDs1hgofr7TnbvV",
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Crusader Storm Shield",
+        "img": "modules/impmal-core/assets/icons/protection/shield.webp",
+        "_id": "zLJ37GmvzscwWyqt",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "originalType": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none",
+              "opposed": false,
+              "prevention": true,
+              "reversed": false,
+              "skill": {}
+            },
+            "testIndependent": false,
+            "equipTransfer": true,
+            "selfOnly": false,
+            "prompt": false,
+            "area": {
+              "templateData": {
+                "borderColor": null,
+                "fillColor": null,
+                "texture": null
+              },
+              "keep": false,
+              "aura": {
+                "transferred": false,
+                "render": false
+              },
+              "duration": "sustained"
+            },
+            "zone": {
+              "type": "zone",
+              "transferred": false,
+              "traits": {},
+              "skipImmediateOnPlacement": false,
+              "keep": false
+            }
+          },
+          "itemTargetData": {
+            "ids": [],
+            "allItems": false
+          },
+          "scriptData": [
+            {
+              "script": "[Script.nF88ngxIH2mMUQaJ]",
+              "label": "Penalty against shield bearer",
+              "trigger": "dialog",
+              "options": {
+                "targeter": true,
+                "defending": false,
+                "hideScript": "[Script.tDKTbX830S02PRXp]",
+                "activateScript": "[Script.Pzi7XBiw1lF9CnIW]",
+                "submissionScript": "",
+                "deleteEffect": false
+              },
+              "async": false
+            }
+          ],
+          "zone": {
+            "type": "zone",
+            "traits": {
+              "barrier": false,
+              "difficult": false,
+              "warpTouched": false
+            },
+            "skipImmediateOnPlacement": false
+          },
+          "sourceData": {
+            "test": {}
+          },
+          "computed": false,
+          "changes": []
+        },
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "tint": "#ffffff",
+        "transfer": true,
+        "statuses": [],
+        "sort": 0,
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "_stats": {
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "coreVersion": "14.363",
+          "systemId": "impmal",
+          "systemVersion": "2.1.0",
+          "createdTime": 1739669559167,
+          "modifiedTime": 1740038058657,
+          "lastModifiedBy": "ADcTWlVqmDmCrquZ",
+          "exportSource": null
+        },
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  }
+}
