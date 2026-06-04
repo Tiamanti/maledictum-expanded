@@ -455,7 +455,7 @@ function buildActor(parsed) {
     for (const modName of modNames) addFromSystem(findSystemModification(modName));
 
     // Ammo from "w/ X" suffix
-    if (ammoAlias) addFromSystem(findSystemAmmo(ammoAlias));
+    if (ammoAlias) addFromSystem(findSystemAmmo(ammoAlias) || findSystemModification(ammoAlias));
   }
 
   // Possessions — parse quantity/articles, match ammo/equipment/protection

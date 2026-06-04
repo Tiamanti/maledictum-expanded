@@ -532,6 +532,22 @@
         "type": "system",
         "compatibility": {}
       }
+    ],
+    "requires": [
+      {
+        "id": "impmal-core",
+        "type": "module",
+        "compatibility": {
+          "minimum": "1.0.0"
+        }
+      },
+      {
+        "id": "impmal-inquisition",
+        "type": "module",
+        "compatibility": {
+          "minimum": "1.0.0"
+        }
+      }
     ]
   },
   "flags": {
