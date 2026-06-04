@@ -252,6 +252,43 @@ def name_from_filename(path):
     return re.sub(r"\s*\([^)]+\)\s*$", "", path.stem).strip()
 
 
+POWER_LIST_RE = re.compile(
+    r"knows?\s+the\s+following\s+(?:\w+\s+)*[Pp]sychic\s+[Pp]owers?:\s*([^.]+)\.",
+    re.IGNORECASE,
+)
+POWER_ALSO_RE = re.compile(
+    r"also\s+knows?\s+the\s+(?:\w+\s+)*[Pp]sychic\s+[Pp]owers?\s+([A-Z][^.]+)\.",
+    re.IGNORECASE,
+)
+
+
+def _split_power_list(raw):
+    """Split a comma-and-list string into individual names."""
+    # Oxford comma: "A, B, and C" → ["A", "B", "C"]
+    return [n.strip() for n in re.split(r",\s*(?:and\s+)?|\s+and\s+", raw) if n.strip()]
+
+
+def extract_powers_from_traits(traits):
+    """Extract psychic power names from trait descriptions."""
+    power_names = []
+    for trait in traits:
+        desc = trait.get("description", "")
+        # Strip parentheticals first so "(EEV pg. 29)" periods don't break the regex
+        desc_clean = re.sub(r"\([^)]*\)", "", desc)
+        for m in POWER_LIST_RE.finditer(desc_clean):
+            power_names.extend(_split_power_list(m.group(1)))
+        for m in POWER_ALSO_RE.finditer(desc_clean):
+            power_names.extend(_split_power_list(m.group(1)))
+    # Deduplicate, preserve order
+    seen = set()
+    result = []
+    for name in power_names:
+        if name not in seen:
+            seen.add(name)
+            result.append(name)
+    return result
+
+
 def parse_file(path):
     text = file_to_text(path)
     lines = [strip_pipe(l) for l in text.split("\n")]
@@ -275,6 +312,7 @@ def parse_file(path):
         "traits": [],
         "attacks": [],
         "possessions": [],
+        "powers": [],
     }
 
     i = 0
@@ -428,6 +466,7 @@ def parse_file(path):
 
     flush_section()
     actor["name"] = name_from_filename(path)
+    actor["powers"] = extract_powers_from_traits(actor["traits"])
     return actor
 
 
