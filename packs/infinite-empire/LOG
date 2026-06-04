@@ -1,1 +1,5 @@
-2026/06/04-23:50:39.195 131bc Delete type=3 #1
+2026/06/05-00:25:47.472 cecc Recovering log #3
+2026/06/05-00:25:47.473 cecc Level-0 table #5: started
+2026/06/05-00:25:47.478 cecc Level-0 table #5: 91939 bytes OK
+2026/06/05-00:25:47.492 cecc Delete type=0 #3
+2026/06/05-00:25:47.492 cecc Delete type=3 #2

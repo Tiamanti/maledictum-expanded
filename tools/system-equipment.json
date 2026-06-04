@@ -1,0 +1,4725 @@
+{
+  "disguise kit": {
+    "name": "Disguise Kit",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Disguise Kit",
+      "system": {
+        "notes": {
+          "player": "<p>Disguise Kits are filled with makeup sets, facial prosthetics, skin and hair dyes, wigs and facial hair appliances, and more. A Disguise Kit is essential when merely altering your voice and clothing isn't enough to fool guards and pict scanners. It takes 10 minutes to alter your appearance using a Disguise Kit. No Test is required to simply make yourself look different. However, if you are trying to alter your appearance to appear as a member of a particular faction or to impersonate a specific individual, the GM can ask for a <strong>Challenging (+0)</strong> or harder Dexterity</strong> Test.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 100,
+        "availability": "exotic",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "dexterity",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "0UvzFzFgZ6N3AEHp",
+      "img": "modules/impmal-core/assets/icons/equipment/disguise-kit.webp",
+      "effects": [],
+      "sort": 1200000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749077312661,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "rebreather": {
+    "name": "Rebreather",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Rebreather",
+      "system": {
+        "notes": {
+          "player": "<p>Rebreathers employ small air tanks as well as recycling systems so that the user can breathe normally for some time in toxic atmospheres and even underwater.</p><p>While using a rebreather, you ignore penalties due to poisonous, deadly, and otherwise unhealthy air, and can breathe underwater. Rebreather tanks last for an hour before they need to be replaced as an Action. Additional tanks cost 20 solars. A set of two spare tanks are 1 Encumbrance.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 200,
+        "availability": "scarce",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "16DWBUHaqigUg0ZT",
+      "img": "modules/impmal-core/assets/icons/equipment/rebreather.webp",
+      "effects": [],
+      "sort": 3600000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078152141,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "glow-globe/stablight": {
+    "name": "Glow-Globe/Stablight",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Glow-Globe/Stablight",
+      "system": {
+        "notes": {
+          "player": "<p>The dark spaces within the Macharian Sector demand purifying light, both figuratively and literally. Stablights are hand held and dependable, having illuminated caverns and voidship underdecks for millennia, while glow globes are usually mounted in ceilings or along walls.</p><p>Using this device removes the Poorly Lit and @UUID[JournalEntry.hdElQAwiBr5AyoRf.JournalEntryPage.zQYkbNcsJmGintdL#dark]{Dark} Traits from your Zone. The device can shine for 5 hours and recharges after 2 hours of non-use, or almost immediately when connected to a standard Imperial power source.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 30,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "1LgXZfag35FhcNoj",
+      "img": "modules/impmal-core/assets/icons/equipment/glow-globe.webp",
+      "effects": [],
+      "sort": 1700000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749077520860,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "laud hailer": {
+    "name": "Laud Hailer",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Laud Hailer",
+      "system": {
+        "notes": {
+          "player": "<p>A Laud Hailer greatly amplifies a person's voice such that they can be heard above crowds of chanting pilgrims, screaming cultists, and hive firefights. They are favourite items for preachers, Enforcers, and others who insist on being heard no matter the situation.</p><p>When using a Laud Hailer, your voice or other sounds you play or generate can be easily heard up to 100 metres away.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 100,
+        "availability": "scarce",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": 0,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "4CglrWXiksan6Wk0",
+      "img": "modules/impmal-core/assets/icons/equipment/laud-hailer.webp",
+      "effects": [],
+      "sort": 2400000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078302797,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "remote detonator": {
+    "name": "Remote Detonator",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Remote Detonator",
+      "type": "equipment",
+      "_id": "4e2Jhd8jwmKiszzB",
+      "img": "modules/impmal-core/assets/icons/equipment/remote-detonator.webp",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 0,
+        "availability": "",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1698523542206,
+        "modifiedTime": 1749078140777,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "writing kit": {
+    "name": "Writing Kit",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Writing Kit",
+      "system": {
+        "notes": {
+          "player": "<p>These basic kits are ideal in areas where technology is unreliable or where foul machine spirits dominate and interactions with them is suspect at best. Each has parchment, quills, ink, and other items for recording information to be kept away from prying data sniffers and comm leeches and stored in a manner more permanent than most technologies allow.</p><p>Each writing kit contains the necessities for several dozen pages of penmanship, either by hand or @UUID[Compendium.impmal-core.items.Item.wazqwH6rG3lKCQUR]{Auto-Quill}.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 20,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "7ipsWHaVhIsF7b3S",
+      "img": "modules/impmal-core/assets/icons/equipment/writing-kit.webp",
+      "effects": [],
+      "sort": 4700000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749077976660,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "magnoculars": {
+    "name": "Magnoculars",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Magnoculars",
+      "system": {
+        "notes": {
+          "player": "<p>Compact and designed for dangerous settings, Magnoculars amplify visual images allowing both Militarum spotters and adepts seeking new fauna species for cataloguing to more easily pick out their targets.</p><p>You can use Magnoculars in combination with Awareness (Sight) Tests to detect objects at Long Range or further.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 30,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "",
+          "characteristic": "",
+          "skill": {
+            "key": "awareness",
+            "specialisation": "Sight"
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "7lBipnmSZ4lD5WCo",
+      "img": "modules/impmal-core/assets/icons/equipment/magnoculars.webp",
+      "effects": [],
+      "sort": 2700000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078237418,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "emperor's tarot": {
+    "name": "Emperor's Tarot",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Emperor's Tarot",
+      "system": {
+        "notes": {
+          "player": "<p>A seemingly ancient set of cards that takes many forms, these tarot decks are said to allow divination of the future. The ‘classic' deck consists of 78 psychically-charged liquid-crystal wafers that are said to be linked to the prophetic visions of the Emperor. Each is unique, however, the makeup varies across the galaxy; in Macharian, many decks are said to have fleeting afterminages of Lord Solar that fade before recognition. They are known to change images, which can shift their interpretations and meanings.</p><p>Reading the Emperor's Tarot takes one hour, and you must make a <strong>Difficult (−10) Discipline</strong> Test. You may never spend Fate to modify the results of this Test. If you succeed by +2 SL or more, you glimpse vague portents of a promising future, and immediately recover 1 Fate point. If you fail by −2 SL or more, you glimpse dark paths before you, and immediately lose 1 Fate point. If you Fumble, you must instead burn one Fate point — the Emperor's Tarot is not to be trifled with, and some futures were never meant to be known.</p><p>You can only read the Emperor's Tarot once per session. If you wish, you can read the Tarot of another willing character, in which case you make the Discipline Test, but apply any modifications to Fate to the character who's Tarot you read. Reading the Emperor's Tarot for a Character who has burned all of their Fate has no effect — whatever their destiny, it is sealed and well beyond the reach of any mortal soothsayer.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 10000,
+        "availability": "rare",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "difficult",
+          "characteristic": "",
+          "skill": {
+            "key": "discipline",
+            "specialisation": ""
+          },
+          "enabled": false,
+          "self": true
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "AMVwCpsT9ISRY65Z",
+      "img": "modules/impmal-core/assets/icons/equipment/emperor's-tarot.webp",
+      "effects": [],
+      "sort": 1300000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749077363668,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "multicompass": {
+    "name": "Multicompass",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Multicompass",
+      "system": {
+        "notes": {
+          "player": "<p>A valuable device when exploring frontier wilderness, crumbling hivescapes, and other areas lacking directional features, a Multicompass employs a variety of sensors and gyroscopic cogitators to signal axial and magnetic north on a planet.</p><p>You can use a Multicompass in combination with Navigation (Surface) or other Tests relating to making your way across unfamiliar terrain.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 400,
+        "availability": "exotic",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "navigation",
+            "specialisation": "Surface"
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "AdB3ZzAOrnREfdsv",
+      "img": "modules/impmal-core/assets/icons/equipment/multicompass.webp",
+      "effects": [],
+      "sort": 3100000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078203785,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "chrono": {
+    "name": "Chrono",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Chrono",
+      "system": {
+        "notes": {
+          "player": "<p>A Chrono is a basic, though often overlooked, item used to determine the time. Resourceful folk use Chronos to synchronise their actions.</p><p>Chronos display the current time and, if the planet supports it, automatically adjust to local time after only a few seconds on the ground.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 20,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "Aw29y9tfO4Uc9uWb",
+      "img": "modules/impmal-core/assets/icons/equipment/chrono.webp",
+      "effects": [],
+      "sort": 4800000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749077487610,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "backpack/slings": {
+    "name": "Backpack/Slings",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Backpack/Slings",
+      "system": {
+        "notes": {
+          "player": "<p>When worn, a backpack or sling increases your maximum Encumbrance by 4. </p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 20,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "B55qG1YQTS9IyuTm",
+      "img": "modules/impmal-core/assets/icons/equipment/backpack.webp",
+      "effects": [
+        "Ua29vNVcPJgdQNo0"
+      ],
+      "sort": 400000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "14.361",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749077502981,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Backpack/Slings",
+        "_id": "Ua29vNVcPJgdQNo0",
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "transfer": true,
+        "statuses": [],
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "tint": "#ffffff",
+        "_stats": {
+          "coreVersion": "14.361",
+          "systemId": null,
+          "systemVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        },
+        "img": "modules/impmal-core/assets/icons/equipment/backpack.webp",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none"
+            },
+            "equipTransfer": true,
+            "prompt": false,
+            "zone": {}
+          },
+          "changes": [
+            {
+              "key": "system.encumbrance.overburdened",
+              "value": 4,
+              "priority": null,
+              "type": "add"
+            },
+            {
+              "key": "system.encumbrance.restrained",
+              "value": 4,
+              "priority": null,
+              "type": "add"
+            }
+          ]
+        },
+        "sort": 0,
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "entrenching tool": {
+    "name": "Entrenching Tool",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Entrenching Tool",
+      "system": {
+        "notes": {
+          "player": "<p>Perhaps the most basic tool in the @UUID[JournalEntry.GPqYZykonC12TJb1.JournalEntryPage.r6JYS3jOfrAEorvd]{Astra Militarum}, the standard model has a wide blade ideal for digging trenches, pits, and simply moving sand and dirt from one location to another. Most types are compact and can fold to a size that can be stowed away when marching or fighting.</p><p>An Entrenching Tool can also be used as an @UUID[Compendium.impmal-core.items.Item.lwPymw5Hah0H8Ey5]{Improvised (One-handed)} melee weapon. A properly sharpened Entrenching Tool counts as an @UUID[Compendium.impmal-core.items.Item.cnbaSByME7caQohv]{Axe} instead.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 20,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "Dlv5TTOiyOJphsIl",
+      "img": "modules/impmal-core/assets/icons/equipment/entrenching-tool.webp",
+      "effects": [],
+      "sort": 1400000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749079111933,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "lascutter": {
+    "name": "Lascutter",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Lascutter",
+      "system": {
+        "notes": {
+          "player": "<p>Mainly used for cracking apart ore, slicing through voidship bulkheads, and tearing open stubborn doors. Lascutters employ a high-powered, short-range cutting beam that few things can withstand.</p><p>A Lascutter can be used in combination with Tech (Engineering) Tests to cut through solid objects such as bulkheads, vault doors, or walkways. If employed as a weapon, treat a Lascutter as a one-handed Improvised Weapon with the following traits: Inflict (Ablaze), Loud, Rend (3).</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 2
+        },
+        "cost": 170,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "tech",
+            "specialisation": "Engineering"
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "JqK0ohbnuujGTVTE",
+      "img": "modules/impmal-core/assets/icons/equipment/lascutter.webp",
+      "effects": [],
+      "sort": 2300000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749079111934,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "screamer": {
+    "name": "Screamer",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Screamer",
+      "system": {
+        "notes": {
+          "player": "<p>These basic alarm devices set out screeching sonics when a predetermined condition such as movement, sound, or pressure is detected. They can be activated and set as watchdogs against invaders when groups cannot set guard themselves or to supplement their own watch.</p><p>Setting a Screamer requires a <strong>Routine (+20) Tech (Security)</strong> Test. On a failure, the Screamer immediately goes off and alerts everyone within Long Range. On a success, the Screamer is set and begins to monitor its Zone or an adjacent Zone. Note the SL of the successful Test. When setting the Screamer, the user's can choose for it to monitor for either sound, movement, or pressure.</p><p>When a creature enters the Screamer's Zone, they must make a <strong>Challenging (+0) Stealth</strong> Test to avoid detection, suffering −SL equal to the SL of the Test to set the Screamer. For example, if the Test to set the Screamer succeeded with +3 SL, any Stealth Test to avoid detection would suffer −3 SL. If the Screamer detects a change in the condition chosen, it erupts loudly, alerting everyone within Long Range.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 170,
+        "availability": "scarce",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "routine",
+          "characteristic": "",
+          "skill": {
+            "key": "tech",
+            "specialisation": "Security"
+          },
+          "enabled": false,
+          "self": true
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "JqncadD7vghYI0GR",
+      "img": "modules/impmal-core/assets/icons/equipment/screamer.webp",
+      "effects": [],
+      "sort": 4000000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749079111935,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "photo-visors/contacts": {
+    "name": "Photo-Visors/Contacts",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Photo-Visors/Contacts",
+      "system": {
+        "notes": {
+          "player": "<p>Worn either as covering over both eyes or directly on the cornea (where they might be less obvious to others), these devices amplify ambient light to a degree similar to normal illumination.</p><p>While wearing Photo-Visors or Photo-Contacts, you ignore penalties from Zones with the @UUID[JournalEntry.hdElQAwiBr5AyoRf.JournalEntryPage.zQYkbNcsJmGintdL#poorly-lit]{Poorly Lit} and @UUID[JournalEntry.hdElQAwiBr5AyoRf.JournalEntryPage.zQYkbNcsJmGintdL#dark]{Dark} Environmental Traits, and gain Advantage on Tests to resist effects that cause the @UUID[JournalEntry.DjxnvYJajGflu7IY.JournalEntryPage.Tu0sU1bo9eZI6qoe#blinded]{Blinded} Condition.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 300,
+        "availability": "scarce",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "NlduMbxJZrKejC9J",
+      "img": "modules/impmal-core/assets/icons/equipment/photo-visors.webp",
+      "effects": [
+        "3w9BVYmOVBD2qXGr"
+      ],
+      "sort": 3300000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "14.361",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078181900,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Photo-Visors/Contacts",
+        "_id": "3w9BVYmOVBD2qXGr",
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "transfer": true,
+        "statuses": [],
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          },
+          "core": {}
+        },
+        "tint": "#ffffff",
+        "_stats": {
+          "coreVersion": "14.361",
+          "systemId": null,
+          "systemVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": "Item.0aU07JBpNMjdUABI.ActiveEffect.LtTWkK8TmY8VQP2S",
+          "duplicateSource": null,
+          "exportSource": null
+        },
+        "img": "modules/impmal-core/assets/icons/equipment/photo-visors.webp",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none"
+            },
+            "equipTransfer": true,
+            "prompt": false,
+            "zone": {}
+          },
+          "scriptData": [
+            {
+              "label": "Ignore Dark or Poorly Lit",
+              "string": "[Script.92H3GLZ0Cu6t9msv]",
+              "trigger": "dialog",
+              "options": {
+                "dialog": {
+                  "hideScript": "[Script.s0Lx7dIagwSq5ozt]",
+                  "activateScript": "[Script.cK4KQ45NnVbkwjed]",
+                  "submissionScript": "[Script.Qk7HWw0HtM7POhI8]",
+                  "targeter": false
+                },
+                "immediate": {
+                  "deleteEffect": false
+                },
+                "hideScript": "[Script.s0Lx7dIagwSq5ozt]",
+                "activateScript": "[Script.cK4KQ45NnVbkwjed]",
+                "submissionScript": "[Script.Qk7HWw0HtM7POhI8]",
+                "targeter": false,
+                "deleteEffect": false
+              },
+              "script": "[Script.92H3GLZ0Cu6t9msv]"
+            },
+            {
+              "label": "Resisting Blinded Condition",
+              "string": "[Script.AXOnZ7UZlPmawf88]",
+              "trigger": "dialog",
+              "options": {
+                "dialog": {
+                  "hideScript": "[Script.tEBDDfKCd9thZnsi]",
+                  "activateScript": "[Script.vSXPZHPoMiAOjKkg]",
+                  "submissionScript": "",
+                  "targeter": false
+                },
+                "immediate": {
+                  "deleteEffect": false
+                },
+                "hideScript": "[Script.tEBDDfKCd9thZnsi]",
+                "activateScript": "[Script.vSXPZHPoMiAOjKkg]",
+                "submissionScript": "",
+                "targeter": false,
+                "deleteEffect": false
+              },
+              "script": "[Script.AXOnZ7UZlPmawf88]"
+            }
+          ],
+          "changes": []
+        },
+        "sort": 0,
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "survival gear": {
+    "name": "Survival Gear",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Survival Gear",
+      "system": {
+        "notes": {
+          "player": "<p>Survival Gear encompasses a wide range of equipment designed for long durations in wilderness areas, including the crumbling habways of destroyed cities and other areas where basic necessities are unavailable. Though bulky, they can mean the difference between life and death in areas where no one might ever find the remains.</p><p>Each Survival Gear pack includes items such as a bedroll, insulated tent, canteen, rope, firestarters, candles, hydro-purifier tabs, and other basics except for actual food and water. Survival Gear can be used in combination with Fortitude (Endurance) to endure @UUID[JournalEntry.hdElQAwiBr5AyoRf.JournalEntryPage.UaRHLqZ99zmg7AeE#exposure]{Exposure}.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 3
+        },
+        "cost": 50,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "",
+          "characteristic": "",
+          "skill": {
+            "key": "fortitude",
+            "specialisation": "Endurance"
+          },
+          "enabled": false,
+          "self": true
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "O5AtUszQGDbi8qmS",
+      "img": "modules/impmal-core/assets/icons/equipment/survival-gear.webp",
+      "effects": [],
+      "sort": 4300000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078027597,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "filtration plugs": {
+    "name": "Filtration Plugs",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Filtration Plugs",
+      "system": {
+        "notes": {
+          "player": "<p>These items are simple to manufacture and use. They come in pairs and are each set within the nostril to eliminate noxious pollutants and harmful gases (so long as the user remembers to not breathe through their mouth).</p><p>While using filtration plugs, you gain +2 SL on Fortitude Tests made to withstand the effects of harmful gases, such as in Zones with the @UUID[JournalEntry.hdElQAwiBr5AyoRf.JournalEntryPage.zQYkbNcsJmGintdL#hazard]{Hazard} Trait.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 20,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "OdTP4DEK3oGAjMWZ",
+      "img": "modules/impmal-core/assets/icons/equipment/filtration-plugs.webp",
+      "effects": [
+        "2zAmFIH3i4b4QsUk"
+      ],
+      "sort": 100000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "14.361",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749077449726,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Filtration Plugs",
+        "_id": "2zAmFIH3i4b4QsUk",
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "transfer": true,
+        "statuses": [],
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "tint": "#ffffff",
+        "_stats": {
+          "coreVersion": "14.361",
+          "systemId": null,
+          "systemVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        },
+        "img": "modules/impmal-core/assets/icons/equipment/filtration-plugs.webp",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none"
+            },
+            "equipTransfer": true,
+            "prompt": false,
+            "zone": {}
+          },
+          "scriptData": [
+            {
+              "label": "Fortitude Tests to withstand harmful gases",
+              "string": "[Script.dc8x3nb7mpNiKqKd]",
+              "trigger": "dialog",
+              "options": {
+                "dialog": {
+                  "hideScript": "[Script.tL9YNmXaKogz1FAE]",
+                  "activateScript": "",
+                  "submissionScript": "",
+                  "targeter": false
+                },
+                "immediate": {
+                  "deleteEffect": false
+                },
+                "hideScript": "[Script.tL9YNmXaKogz1FAE]",
+                "activateScript": "",
+                "submissionScript": "",
+                "targeter": false,
+                "deleteEffect": false
+              },
+              "script": "[Script.dc8x3nb7mpNiKqKd]"
+            }
+          ],
+          "changes": []
+        },
+        "sort": 0,
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "manacles": {
+    "name": "Manacles",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Manacles",
+      "system": {
+        "notes": {
+          "player": "<p>The essential tool of bounty hunters and Enforcers alike, Manacles help ensure a bounty, criminal, or heretic remains helpless and more easily transported to their awaiting fate.</p><p>You can use an Action to apply Manacles to an unresisting character's wrists or ankles, including those with the Restrained (Minor), Stunned, or @UUID[JournalEntry.DjxnvYJajGflu7IY.JournalEntryPage.Tu0sU1bo9eZI6qoe#unconscious]{Unconscious} Conditions. While Manacles are in place, that target is Incapacitated. Manacles come with keys or a code to lock and unlock the heavy steel cuffs. Otherwise, a <strong>Very Hard (−30) Dexterity (Lock Picking), Athletics (Might) or Tech (Security)</strong> Test is needed to remove them. This Test is made with Disadvantage if the user is attempting to unlock themself.</p><p>Manacles can be destroyed by dealing 10 Damage to them.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 50,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "QEbKaRlz9eZV01ix",
+      "img": "modules/impmal-core/assets/icons/equipment/manacles.webp",
+      "effects": [],
+      "sort": 2800000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078231042,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "instruments of divination": {
+    "name": "Instruments of Divination",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Instruments of Divination",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 200,
+        "availability": "rare",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "RJQOgOg4q8krADXi",
+      "img": "modules/impmal-core/assets/icons/equipment/instruments-of-divination.webp",
+      "effects": [],
+      "sort": 2200000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078339876,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "sacred unguents": {
+    "name": "Sacred Unguents",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Sacred Unguents",
+      "system": {
+        "notes": {
+          "player": "<p>These Omnissiah-blessed lubricating oils can calm even the most recalcitrant of Machine Spirits, allowing them to operate with ease and ignore slights against their forms.</p><p>You can use Sacred Unguents 5 times. As an Action, you can make a <strong>Challenging (+0) Tech (Engineering)</strong> Test to apply Sacred Unguents to an Imperial technological item, vehicle, or weapon. If you succeed, the next time you fail a Test using the affected item, you re-roll the Test. After this re-roll, or if one day passes, the applied Sacred Unguents dry up and this effect ends. If you fail the Test to apply Sacred Unguents, you incorrectly apply the Unguents, or the machine spirit demands more to be appeased, either way you waste one use of Sacred Unguents.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 100,
+        "availability": "rare",
+        "quantity": 1,
+        "uses": {
+          "value": 5,
+          "max": 5,
+          "enabled": true
+        },
+        "test": {
+          "difficulty": "",
+          "characteristic": "",
+          "skill": {
+            "key": "tech",
+            "specialisation": "Engineering"
+          },
+          "enabled": false,
+          "self": true
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "S8vLsphFt4PnjsHc",
+      "img": "modules/impmal-core/assets/icons/equipment/sacred-unguents.webp",
+      "effects": [],
+      "sort": 3900000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078091341,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "stummer": {
+    "name": "Stummer",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Stummer",
+      "system": {
+        "notes": {
+          "player": "<p>Stummers cancel ambient noise through integral cogitators using sonic sensors and waveform dampeners. They are quite useful for covert operations but as they cancel all sound this means team members must rely on non-verbal communication.</p><p>When activated as a Free Action, a Stummer increases the Difficulty of sonic Awareness Tests made to detect unexpected sounds in the same Zone by three steps.</p><p>Its power lasts for 20 minutes; recharging takes several minutes once connected to a standard Imperial power source. Multiple Stummer effects do not stack.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 1000,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "V2OgwHeEr3qpTbBy",
+      "img": "modules/impmal-core/assets/icons/equipment/stummer.webp",
+      "effects": [],
+      "sort": 4200000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749079111964,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "respirator/gas mask": {
+    "name": "Respirator/Gas Mask",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Respirator/Gas Mask",
+      "system": {
+        "notes": {
+          "player": "<p>A basic item for operating for extended durations in toxic atmospheres, respirators and gas masks cover the majority of the face and offer much greater protection than @UUID[Compendium.impmal-core.items.Item.OdTP4DEK3oGAjMWZ]{Filtration Plugs}, at the cost of being bulky and obscuring the senses.</p><p>While wearing a Respirator, you automatically pass any Tests to resist the effects of airborne pathogens but suffer Disadvantage on Awareness (Sight) Tests.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 50,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "V9RLeedbeyoCIgOJ",
+      "img": "modules/impmal-core/assets/icons/equipment/respirator.webp",
+      "effects": [
+        "g6yRX5RGHvGwhgZG"
+      ],
+      "sort": 3800000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "14.361",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078122939,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Respirator/Gas Mask",
+        "_id": "g6yRX5RGHvGwhgZG",
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "transfer": true,
+        "statuses": [],
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          },
+          "core": {}
+        },
+        "tint": "#ffffff",
+        "_stats": {
+          "coreVersion": "14.361",
+          "systemId": null,
+          "systemVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": "Item.OdTP4DEK3oGAjMWZ.ActiveEffect.2zAmFIH3i4b4QsUk",
+          "duplicateSource": null,
+          "exportSource": null
+        },
+        "img": "modules/impmal-core/assets/icons/equipment/respirator.webp",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none"
+            },
+            "equipTransfer": true,
+            "prompt": false,
+            "zone": {}
+          },
+          "scriptData": [
+            {
+              "label": "Automatically pass tests to resist airborne pathogens",
+              "string": "",
+              "trigger": "dialog",
+              "options": {
+                "dialog": {
+                  "hideScript": "[Script.tL9YNmXaKogz1FAE]",
+                  "activateScript": "",
+                  "submissionScript": "[Script.mjcQXpfNgOKoFRV7]",
+                  "targeter": false
+                },
+                "immediate": {
+                  "deleteEffect": false
+                },
+                "hideScript": "[Script.tL9YNmXaKogz1FAE]",
+                "activateScript": "",
+                "submissionScript": "[Script.mjcQXpfNgOKoFRV7]",
+                "targeter": false,
+                "deleteEffect": false
+              },
+              "script": ""
+            },
+            {
+              "label": "Disadvantage on Awareness (Sight)",
+              "string": "[Script.phKn7W382yzG6G72]",
+              "trigger": "dialog",
+              "options": {
+                "dialog": {
+                  "hideScript": "[Script.DJ3asBVse5uURrlO]",
+                  "activateScript": "[Script.qZ1VkWzaV8Y6UwmA]",
+                  "submissionScript": "",
+                  "targeter": false
+                },
+                "immediate": {
+                  "deleteEffect": false
+                },
+                "hideScript": "[Script.DJ3asBVse5uURrlO]",
+                "activateScript": "[Script.qZ1VkWzaV8Y6UwmA]",
+                "submissionScript": "",
+                "targeter": false,
+                "deleteEffect": false
+              },
+              "script": "[Script.phKn7W382yzG6G72]"
+            },
+            {
+              "label": "Auto-succeed",
+              "string": "[Script.6OfSsEtNMEKzeVvt]",
+              "trigger": "preRollTest",
+              "options": {
+                "dialog": {
+                  "targeter": false
+                },
+                "immediate": {
+                  "deleteEffect": false
+                },
+                "targeter": false,
+                "deleteEffect": false
+              },
+              "script": "[Script.6OfSsEtNMEKzeVvt]"
+            }
+          ],
+          "changes": []
+        },
+        "sort": 0,
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "monotask servo-skull": {
+    "name": "Monotask Servo-Skull",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Monotask Servo-Skull",
+      "system": {
+        "notes": {
+          "player": "<p>@UUID[Compendium.impmal-core.actors.Actor.Y6oJff3F4qo2Xhlx]{Servo-Skulls} are the blessed remains of loyal Imperial servants who have been honoured to continue their service to the Emperor even after death. Each Skull is carefully cleaned and anointed, its machine spirit coaxed into action by arcane ritual, and miniature anti grav plates for flight. An attendant Servo-Skull is often a sign of status in the Imperium and especially the Tech-Priesthood; some Macharian leaders have Skulls thought to date back to the Crusade.</p><ul><li><p><strong>Additional Rules</strong>: A Servo-Skull hovers at roughly eye level and unless instructed otherwise keeps near its assigned user. Each has a specific ability as described below:</p></li><li><p><strong>Illuminator</strong>: The Skull has electric candles, burning torches, or other light sources mounted to its form and acts as a @UUID[Compendium.impmal-core.items.Item.1LgXZfag35FhcNoj]{glow globe or stablight}.</p></li><li><p><strong>Laud Hailer</strong>: The Servo-Skull has a @UUID[Compendium.impmal-core.items.Item.4CglrWXiksan6Wk0]{laud hailer} which can amplify pre-recorded sounds or the voice of anyone at Immediate range.</p></li><li><p><strong>Medicae</strong>: The Skull is fitted with devices to aid in medical efforts, and grants +10 to Medicae Tests made within Immediate range.</p></li><li><p><strong>Scanner</strong>: This Servo-Skull is fitted with an @UUID[Compendium.impmal-core.items.Item.dO7XoDXD9QYTy6zZ]{auspex} and allows a character at Short range to gain the benefits of that device.</p></li><li><p><strong>Utility</strong>: The Servo-Skull has a mix of tools to aid in mechanical tasks, which acts as a @UUID[Compendium.impmal-core.items.Item.xQ2vhqZTWMBZ3Jxi]{Combi-Tool} for a character at Immediate range.</p></li></ul><p>The Quality of Servo-Skulls can vary the abilities of any implanted devices in the same manner as that device, or can have other effects such as it hovering erratically or drifting away from the characters at times. Greater designs might anticipate their user's needs, be able to carry out simple commands, or subtly move towards possible dangers or heresies through the Omnissiah's Will.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 2000,
+        "availability": "rare",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "YKQFW45Eu7satkSX",
+      "img": "modules/impmal-core/assets/icons/equipment/monotask-servo-skull.webp",
+      "effects": [],
+      "sort": 3000000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078208931,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "void suit": {
+    "name": "Void Suit",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Void Suit",
+      "system": {
+        "notes": {
+          "player": "<p>Though most commonly found on ships that ply the spaces between planets and stars, the ability of Void Suits to provide air and other support in a vacuum means they are also worn in extremely hazardous manufactorum areas when breathable air might be lost at any moment. Though usually uncomfortable to wear, the alternative is always worse.</p><p>A Void Suit allows you to ignore the effects of vacuum and airborne pathogens through an integral Rebreather system that lasts 10 hours. Recharging the air supply takes 3 hours while the suit is in a normal atmosphere or by replacing the oxygen canister as an Action. Each canister costs 30 solars and are 1 Encumbrance each.</p><p>A Void Suit also contains micro-thrusters and Mag Boots that let the user navigate in Zero Gravity with relative ease. Additionally, Void Suits are armour, granting 2 AP to all locations and are typically Encumbrance 4 when worn.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 5
+        },
+        "cost": 2000,
+        "availability": "scarce",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "YKdnnpcXv14ITvE5",
+      "img": "modules/impmal-core/assets/icons/equipment/void-suit.webp",
+      "effects": [
+        "Zhvr9DnXwUNqntdc"
+      ],
+      "sort": 4500000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "14.361",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749077995922,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Void Suit",
+        "_id": "Zhvr9DnXwUNqntdc",
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "transfer": true,
+        "statuses": [],
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          },
+          "core": {}
+        },
+        "tint": "#ffffff",
+        "_stats": {
+          "coreVersion": "14.361",
+          "systemId": null,
+          "systemVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": "Actor.nQ8PPP7Rg9ZWCsI6.Item.VOSpwFNRqu62aQWm.ActiveEffect.nMWctOY7QHr6XITa",
+          "duplicateSource": null,
+          "exportSource": null
+        },
+        "img": "modules/impmal-core/assets/icons/equipment/void-suit.webp",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none"
+            },
+            "equipTransfer": true,
+            "prompt": false,
+            "zone": {}
+          },
+          "scriptData": [],
+          "changes": [
+            {
+              "key": "system.combat.armourModifier",
+              "value": 2,
+              "priority": null,
+              "type": "add"
+            }
+          ]
+        },
+        "sort": 0,
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "micro-bead/vox bead": {
+    "name": "Micro-Bead/Vox Bead",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Micro-Bead/Vox Bead",
+      "system": {
+        "notes": {
+          "player": "<p>Designed to fit inside the user's ear, these communication tools let someone effortlessly talk to and hear others on the same vox channel. As their range is far beyond shouting, and work in situations where shouting would call dangerous attention, they are almost essential for mission outfitting.</p><p>This item allows the wearer to communicate with other users on the same channel within a mile, though dense metallic obstructions and violent weather can lessen or disrupt the ability.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 150,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "Yp1Fmiml09wxHj4h",
+      "img": "modules/impmal-core/assets/icons/equipment/micro-bead.webp",
+      "effects": [],
+      "sort": 2900000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078224025,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "multikey": {
+    "name": "Multikey",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Multikey",
+      "system": {
+        "notes": {
+          "player": "<p>A Multikey is a very useful, though often highly illegal, tool. As so much Imperial technology is standardised, including most lock technology, each has integrated probes, rakes, and picks specifically designed to defeat most locks a user might encounter.</p><p>You can use a Multikey in combination with Dexterity (Lock Picking) Tests to bypass locks of Imperial design.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 200,
+        "availability": "scarce",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "",
+          "characteristic": "",
+          "skill": {
+            "key": "dexterity",
+            "specialisation": "Lock Picking"
+          },
+          "enabled": false,
+          "self": true
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "bRoqjRet8tuZzzTM",
+      "img": "modules/impmal-core/assets/icons/equipment/multikey.webp",
+      "effects": [],
+      "sort": 3200000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078193445,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "vox-caster": {
+    "name": "Vox-Caster",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Vox-Caster",
+      "system": {
+        "notes": {
+          "player": "<p>This is the standard Imperial communication device, based on especially reliable STC patterns, used across the galaxy for untold centuries. A Vox-Caster allows messages to be sent over long distances, even reaching vessels in low orbit.</p><p>A Vox-Caster allows transmission to other Vox-Casters and small units, such as Vox Beads, within 100 miles.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 1000,
+        "availability": "scarce",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "co63VYiRX0HauLYN",
+      "img": "modules/impmal-core/assets/icons/equipment/vox-caster.webp",
+      "effects": [],
+      "sort": 4600000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749077987841,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "auspex/scanner": {
+    "name": "Auspex/Scanner",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Auspex/Scanner",
+      "system": {
+        "notes": {
+          "player": "<p>A standard tool of many Imperial agents and warriors, these sensory devices can detect motion, energy emissions, light outside of Human vision, signs of life, and more. They are generally easy to use and invaluable when scouting unfamiliar terrain.</p><p>Using an Auspex or Scanner as an Action reveals energy, life signs, movement, and other data within Medium Range, potentially revealing @UUID[JournalEntry.hdElQAwiBr5AyoRf.JournalEntryPage.xf46pBDy93sT0ZDl#hide]{Hidden} creatures. The GM may call for a Tech Test to detect specific phenomena or overcome interference, with the GM determining the Test Difficulty based on the distance to and strength of the source.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 1000,
+        "availability": "scarce",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "dO7XoDXD9QYTy6zZ",
+      "img": "modules/impmal-core/assets/icons/equipment/auspex.webp",
+      "effects": [],
+      "sort": 200000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749077509022,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "signal jammer": {
+    "name": "Signal Jammer",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Signal Jammer",
+      "system": {
+        "notes": {
+          "player": "<p>Signal Jammers overload airborne electronic transmissions such as vox messages and data feeds, completely severing the connection. There is usually no attempt at subtlety and everyone with access to the transmissions can tell something is interfering, but if simple ceasing of communication is the goal, then Signal Jammers do the job quite well.</p><p>You can activate the Signal Jammer as a Free Action. While active, the Signal Jammer disrupts vox and data transmissions within 1 mile. If not connected to a power source, a jammer can operate for 2 hours before its battery is depleted.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 250,
+        "availability": "rare",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "deHQEH976yh9nI9y",
+      "img": "modules/impmal-core/assets/icons/equipment/signal-jammer.webp",
+      "effects": [],
+      "sort": 4100000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078043708,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "grav chute": {
+    "name": "Grav Chute",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Grav Chute",
+      "system": {
+        "notes": {
+          "player": "<p>Often used by elite @UUID[JournalEntry.GPqYZykonC12TJb1.JournalEntryPage.r6JYS3jOfrAEorvd]{Astra Militarum} units as part of airborne assaults, these items are worn around the torso and use small anti-grav units to allow for a relatively safe descent. They are not powerful enough to allow hovering or ascension.</p><p>While active, a Grav Chute allows a Medium-sized creature to ignore @UUID[JournalEntry.hdElQAwiBr5AyoRf.JournalEntryPage.zQYkbNcsJmGintdL#falling]{falling damage} for 10 minutes. After that time the chute must be recharged, which requires 10 hours connected into a standard Imperial power supply.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 2
+        },
+        "cost": 2000,
+        "availability": "rare",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "eXLd6neJC8fIPRT6",
+      "img": "modules/impmal-core/assets/icons/equipment/grav-chute.webp",
+      "effects": [],
+      "sort": 1900000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078358588,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "cameleoline cloak": {
+    "name": "Cameleoline Cloak",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Cameleoline Cloak",
+      "system": {
+        "notes": {
+          "player": "<p>The choice of garb for snipers and thieves alike, this cloak covers the entire body and uses exotic mimic fibres that automatically shift colouration to match the surroundings. If you do not move during your turn while wearing a Cameleoline Cloak, you gain +2 SL on Stealth Tests until you move or make a loud noise.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 500,
+        "availability": "rare",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "fhXBHDbBiY6PUUTc",
+      "img": "modules/impmal-core/assets/icons/equipment/cameleoline-cloak.webp",
+      "effects": [
+        "NYEJvBT8D4OlM1kt"
+      ],
+      "sort": 500000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "14.361",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749077500004,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Cameleoline Cloak",
+        "_id": "NYEJvBT8D4OlM1kt",
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "transfer": true,
+        "statuses": [],
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "tint": "#ffffff",
+        "_stats": {
+          "coreVersion": "14.361",
+          "systemId": null,
+          "systemVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        },
+        "img": "modules/impmal-core/assets/icons/equipment/cameleoline-cloak.webp",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none"
+            },
+            "equipTransfer": true,
+            "prompt": false,
+            "zone": {}
+          },
+          "scriptData": [
+            {
+              "label": "Stealth when not moving",
+              "string": "[Script.mI2znx2zEeLSd1Wn]",
+              "trigger": "dialog",
+              "options": {
+                "dialog": {
+                  "hideScript": "[Script.956i9t1cYpghLXfV]",
+                  "activateScript": "",
+                  "submissionScript": "",
+                  "targeter": false
+                },
+                "immediate": {
+                  "deleteEffect": false
+                },
+                "hideScript": "[Script.956i9t1cYpghLXfV]",
+                "activateScript": "",
+                "submissionScript": "",
+                "targeter": false,
+                "deleteEffect": false
+              },
+              "script": "[Script.mI2znx2zEeLSd1Wn]"
+            }
+          ],
+          "changes": []
+        },
+        "sort": 0,
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "dataslate": {
+    "name": "Dataslate",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Dataslate",
+      "system": {
+        "notes": {
+          "player": "<p>Dataslates can be found everywhere in the Imperium and are the most common way to store recorded data of all kinds. They can be used to interface with many machines by making a <strong>Routine (+20) Tech</strong> Test, though obscure or well-protected machinery might require a more difficult Test, or may simply lack the necessary interfaces entirely.</p><p>A Dataslate can store and display multiple text data, picts, and vid files. Each can be locked with a biometric password, requiring a <strong>Hard (−20) Tech</strong> Test to bypass.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 100,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "routine",
+          "characteristic": "",
+          "skill": {
+            "key": "tech",
+            "specialisation": ""
+          },
+          "enabled": false,
+          "self": true
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "h1g1g9Rrjt7CnYeW",
+      "img": "modules/impmal-core/assets/icons/equipment/data-slate.webp",
+      "effects": [],
+      "sort": 1000000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749077182108,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "grapnel launcher": {
+    "name": "Grapnel Launcher",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Grapnel Launcher",
+      "system": {
+        "notes": {
+          "player": "<p>This set combines a @UUID[Compendium.impmal-core.items.Item.mPC8f9qwwscyRQNs]{Climbing Harness} with a pistol-like launcher that fires a magnetic hook on a line. Once the hook adheres to a wall or other spot, the grapnel's motor lifts the user plus one other person to the top for a rapid ascent.</p><p>The Grapnel Launcher can reach 50 metres and, once affixed, can lift two Medium-sized creatures or objects at a rate of 5 metres per round. Using the Grapnel Launcher is an Action, and requires an <strong>Routine (+20) Ranged (Pistols)</strong> Test.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 550,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "routine",
+          "characteristic": "",
+          "skill": {
+            "key": "ranged",
+            "specialisation": "Pistols"
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "iG45nxwOAfNkpKYJ",
+      "img": "modules/impmal-core/assets/icons/equipment/grapnel-launcher.webp",
+      "effects": [],
+      "sort": 1800000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078361656,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "diagnostor": {
+    "name": "Diagnostor",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Diagnostor",
+      "system": {
+        "notes": {
+          "player": "<p>Diagnostors are handheld medicae scanners that can detect and identify most known ailments Humans can suffer from. They are relatively simple to operate, and small enough that they can be mounted onto Servo-Skulls or the wrist.</p><p>You can use a Diagnostor in combination with Medicae and Perception Tests to reveal an illness or disease in a Human, with the GM determining the Difficulty depending on how rare or exotic the ailment is.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 2000,
+        "availability": "rare",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "medicae",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "kous2Ot3MNPfthuo",
+      "img": "modules/impmal-core/assets/icons/equipment/diagnostor.webp",
+      "effects": [],
+      "sort": 1100000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749077269290,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "synskin": {
+    "name": "Synskin",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Synskin",
+      "system": {
+        "notes": {
+          "player": "<p>Synskin is a highly advanced tight-fitting body glove made of spectrally inert non-reflective fabrics that also dissipate or mask heat signatures to allow the wearer to disappear into the dark as well as provide a modicum of protection against attackers who do manage to detect them.</p><p>Synskin counts as an @UUID[Compendium.impmal-core.items.Item.sYDTAe3hDjoSD0Gb]{Armoured Bodyglove}. If it is not worn in addition to other clothing or armour, the Synskin grants +1 SL to Stealth (Hide) Tests.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 3000,
+        "availability": "exotic",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "lQRyEhqOLWGKVvFD",
+      "img": "modules/impmal-core/assets/icons/equipment/synskin.webp",
+      "effects": [
+        "zYob4KqbSmddiyRk"
+      ],
+      "sort": 4400000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "14.361",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078003845,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Synskin",
+        "_id": "zYob4KqbSmddiyRk",
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "transfer": true,
+        "statuses": [],
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          },
+          "core": {}
+        },
+        "tint": "#ffffff",
+        "_stats": {
+          "coreVersion": "14.361",
+          "systemId": null,
+          "systemVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": "Actor.nQ8PPP7Rg9ZWCsI6.Item.VOSpwFNRqu62aQWm.ActiveEffect.nMWctOY7QHr6XITa",
+          "duplicateSource": null,
+          "exportSource": null
+        },
+        "img": "modules/impmal-core/assets/icons/equipment/synskin.webp",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none"
+            },
+            "equipTransfer": true,
+            "prompt": false,
+            "zone": {}
+          },
+          "scriptData": [
+            {
+              "label": "Stealth (Hide) when only wearing Synskin",
+              "string": "[Script.6yX3fQEJHfGmXLwW]",
+              "trigger": "dialog",
+              "options": {
+                "dialog": {
+                  "hideScript": "[Script.UDtTAGvJXbcxpIWr]",
+                  "activateScript": "[Script.DWkkxPnfNIdT0xvQ]",
+                  "submissionScript": "",
+                  "targeter": false
+                },
+                "immediate": {
+                  "deleteEffect": false
+                },
+                "hideScript": "[Script.UDtTAGvJXbcxpIWr]",
+                "activateScript": "[Script.DWkkxPnfNIdT0xvQ]",
+                "submissionScript": "",
+                "targeter": false,
+                "deleteEffect": false
+              },
+              "script": "[Script.6yX3fQEJHfGmXLwW]"
+            }
+          ],
+          "changes": [
+            {
+              "key": "system.combat.hitLocations.body.armour",
+              "value": 2,
+              "priority": null,
+              "type": "add"
+            },
+            {
+              "key": "system.combat.hitLocations.leftArm.armour",
+              "value": 2,
+              "priority": null,
+              "type": "add"
+            },
+            {
+              "key": "system.combat.hitLocations.rightArm.armour",
+              "value": 2,
+              "priority": null,
+              "type": "add"
+            },
+            {
+              "key": "system.combat.hitLocations.leftLeg.armour",
+              "value": 2,
+              "priority": null,
+              "type": "add"
+            },
+            {
+              "key": "system.combat.hitLocations.rightLeg.armour",
+              "value": 2,
+              "priority": null,
+              "type": "add"
+            }
+          ]
+        },
+        "sort": 0,
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "inhaler/injector": {
+    "name": "Inhaler/Injector",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Inhaler/Injector",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 65,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "lYL4lXBggaVoxsNP",
+      "img": "modules/impmal-core/assets/icons/equipment/inhaler.webp",
+      "effects": [],
+      "sort": 2100000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078347881,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "climbing harness": {
+    "name": "Climbing Harness",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Climbing Harness",
+      "system": {
+        "notes": {
+          "player": "<p>This tool set uses a coil of thin but robust rope, an attachment harness, and a multi-anchor to allow the user to rappel or climb with much more safety than they would have otherwise.</p><p>A climbing harness line is 50 metres in length and can support the weight of a Medium-sized creature or object. It takes an Action to set up a climbing harness. Additionally, the harness automatically arrests its payload should it detect the user falling too fast.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 100,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "mPC8f9qwwscyRQNs",
+      "img": "modules/impmal-core/assets/icons/equipment/climbing-harness.webp",
+      "effects": [],
+      "sort": 700000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749077494534,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "holy icon": {
+    "name": "Holy Icon",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Holy Icon",
+      "system": {
+        "notes": {
+          "player": "<p>A Holy Icon might take any number of forms depending on an individual's faith and the specific version of the Imperial Creed they follow. For many it is a small Aquila, perhaps hand-made or gained during a pilgrimage to a sacred location. Icons carved from the ground upon which Saint Macharius trod are popular as well.</p><p>A character with a Holy Icon who has shown sufficient faith may add +1 SL to Discipline (Fear) Tests.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 10,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "oaY0wS7LewD6DXK6",
+      "img": "modules/impmal-core/assets/icons/equipment/holy-icon.webp",
+      "effects": [
+        "bpNwPrTPQ9cksVEb"
+      ],
+      "sort": 2000000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "14.361",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078350832,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Holy Icon",
+        "_id": "bpNwPrTPQ9cksVEb",
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "transfer": true,
+        "statuses": [],
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "tint": "#ffffff",
+        "_stats": {
+          "coreVersion": "14.361",
+          "systemId": null,
+          "systemVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        },
+        "img": "modules/impmal-core/assets/icons/equipment/holy-icon.webp",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none"
+            },
+            "equipTransfer": true,
+            "prompt": false,
+            "zone": {}
+          },
+          "scriptData": [
+            {
+              "label": "+1 SL for those who have shown sufficient faith",
+              "string": "[Script.6yX3fQEJHfGmXLwW]",
+              "trigger": "dialog",
+              "options": {
+                "dialog": {
+                  "hideScript": "[Script.9KZE5gliwJ1ADoOG]",
+                  "activateScript": "",
+                  "submissionScript": "",
+                  "targeter": false
+                },
+                "immediate": {
+                  "deleteEffect": false
+                },
+                "hideScript": "[Script.9KZE5gliwJ1ADoOG]",
+                "activateScript": "",
+                "submissionScript": "",
+                "targeter": false,
+                "deleteEffect": false
+              },
+              "script": "[Script.6yX3fQEJHfGmXLwW]"
+            }
+          ],
+          "changes": []
+        },
+        "sort": 0,
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "explosive collar": {
+    "name": "Explosive Collar",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Explosive Collar",
+      "system": {
+        "notes": {
+          "player": "<p>Though most often seen around the necks of penal legionnaires such as the infamous Ghasts of Voll, explosive collars are often also part of the standard kit for many bounty hunters and even for transporting dangerous Macharian psykers onto the Black Ships. These devices are exactly what their name suggests; each has an integral grenade or other explosive within it which can be detonated if improperly removed or via remote action.</p><p>Explosive collars come with a Remote Detonator which sets off a miniature Krak Grenade placed against the back of the neck, automatically killing the wearer. Attaching an Explosive Collar requires that the target is unconscious or @UUID[JournalEntry.DjxnvYJajGflu7IY.JournalEntryPage.Tu0sU1bo9eZI6qoe#incapacitated]{Incapacitated} for at least 1 minute. Removing the collar requires a <strong>Very Hard (−30) Tech (Engineering)</strong> Test; this Test is made with Disadvantage if the wearer is attempting this.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 150,
+        "availability": "scarce",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "veryHard",
+          "characteristic": "",
+          "skill": {
+            "key": "tech",
+            "specialisation": "Engineering"
+          },
+          "enabled": false,
+          "self": true
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "p5bbKpPoAek6oSIQ",
+      "img": "modules/impmal-core/assets/icons/equipment/explosive-collar.webp",
+      "effects": [],
+      "sort": 1600000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749077425538,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "excruciator kit": {
+    "name": "Excruciator Kit",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Excruciator Kit",
+      "system": {
+        "notes": {
+          "player": "<p>Not all subjects readily divulge crucial information, making these kits very useful as a way to encourage them. Excruciator Kits contain chems, needles, neural probes, blades, and other implements to extract essential data when combined with training to separate revealed truths from desperate lies.</p><p>You can use an Excruciator Kit in combination with Presence (Interrogation) Tests to gain information from an unwilling prisoner.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 500,
+        "availability": "exotic",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "",
+          "characteristic": "",
+          "skill": {
+            "key": "presence",
+            "specialisation": "Interrogation"
+          },
+          "enabled": false,
+          "self": true
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "paXqMCUFqcpVEEBE",
+      "img": "modules/impmal-core/assets/icons/equipment/excruciator-kit.webp",
+      "effects": [],
+      "sort": 1500000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749077411023,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "chirurgeon's kit (5 uses)": {
+    "name": "Chirurgeon's Kit (5 uses)",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Chirurgeon's Kit (5 uses)",
+      "system": {
+        "notes": {
+          "player": "<p>This is a small, portable pack of autoscalpels, haemo-staunchers, wound sealers, bandages, and other items to aid surgical efforts done outside of proper facilities. Even those with little skill in these matters might be able to save lives with this kit.</p><p>A Chirurgeon's Kit is required to treat many @UUID[JournalEntry.hdElQAwiBr5AyoRf.JournalEntryPage.UaRHLqZ99zmg7AeE#critical-wounds]{Critical Wounds} as well as certain @UUID[JournalEntry.hdElQAwiBr5AyoRf.JournalEntryPage.UaRHLqZ99zmg7AeE#injuries]{Injuries}. A Chirurgeon's Kit is also required to gain the benefits of the @UUID[Compendium.impmal-core.items.Item.au8V1ieKIHkTeA8l]{Chirurgeon} Talent.</p><p>You can use the Chirurgeon's Kit five times before it must be replenished. The cost to replenish the Chirurgeon's Kit is equal to half the cost of a Chirurgeons Kit based on its @UUID[JournalEntry.wqlquQ8Njtd5fb4Y.JournalEntryPage.k5sND1C17nY9xB1G#availability]{availability}. You may expend one use of the kit to remove a @UUID[JournalEntry.DjxnvYJajGflu7IY.JournalEntryPage.Tu0sU1bo9eZI6qoe#bleeding]{Bleeding} Condition not gained from a Critical Wound with a <strong>Easy (+40) Medicae</strong> Test. Using the Chirurgeon's Kit to treat a wound or injury, or to remove a @UUID[JournalEntry.DjxnvYJajGflu7IY.JournalEntryPage.Tu0sU1bo9eZI6qoe#poisoned]{Poisoned} Condition, also requires a Medicae Test. Unless stated otherwise, the Difficulty of the Test is Challenging (+0). On a failure, one use of the supplies is consumed to no effect.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 500,
+        "availability": "rare",
+        "quantity": 1,
+        "uses": {
+          "value": 5,
+          "max": 5,
+          "enabled": true
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "medicae",
+            "specialisation": ""
+          },
+          "enabled": false,
+          "self": true
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "qjjlckQ3WvF4KLxO",
+      "img": "modules/impmal-core/assets/icons/equipment/chirugeons-kit.webp",
+      "effects": [],
+      "sort": 600000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749076925402,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "pict recorder": {
+    "name": "Pict Recorder",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Pict Recorder",
+      "system": {
+        "notes": {
+          "player": "<p>Pict Recorders essentially have one use: capturing still pict images and vid scenes. Most can also play the recorded media to the user and are generally lightweight and durable enough to be used in rough climates and rougher taverns. A Pict Recorder can record and store hundreds of images and roughly 10 hours of video.</p><p>Operating a handheld Pict Recorder requires an Action for each round it is in use, but does not require a Test.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 200,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "rgkUmSGkBrOKvo5p",
+      "img": "modules/impmal-core/assets/icons/equipment/pict-recorder.webp",
+      "effects": [],
+      "sort": 3400000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078173391,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "mag boots": {
+    "name": "Mag Boots",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Mag Boots",
+      "system": {
+        "notes": {
+          "player": "<p>Mag Boots are commonly part of @UUID[Compendium.impmal-core.items.Item.YKdnnpcXv14ITvE5]{Void Suits} but are also useful on their own when working in pressurised vessels with failed or damaged grav plates.</p><p>As an Action, you can activate the Mag Boots to stick to a ferromagnetic surface. This allows you to ignore the effects of zero or low gravity, but your Speed is reduced to Slow. In normal gravity, you can make a <strong>Challenging (+0) Athletics (Climbing) or Reflexes (Acrobatics)</strong> Test to walk on metallic walls and ceilings. Your Speed is Slow when doing so.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 400,
+        "availability": "rare",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "athletics",
+            "specialisation": "Climbing"
+          },
+          "enabled": false,
+          "self": true
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "tNz22cmtCLm6XPLs",
+      "img": "modules/impmal-core/assets/icons/equipment/mag-boots.webp",
+      "effects": [],
+      "sort": 2600000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078275310,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "regicide set": {
+    "name": "Regicide Set",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Regicide Set",
+      "system": {
+        "notes": {
+          "player": "",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 40,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "uSlUGjAxn1v6DvhG",
+      "img": "modules/impmal-core/assets/icons/equipment/regicide-set.webp",
+      "effects": [],
+      "sort": 3700000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078154886,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "auto-quill": {
+    "name": "Auto-Quill",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Auto-Quill",
+      "system": {
+        "notes": {
+          "player": "<p>These items allow you to transcribe spoken words or copy written ones onto parchment. Auto-Quills work through an impossibly complex system of brass mechanisms, ink generators, and vat-grown quills, all with a great exactitude and faster than even a literate scribe.</p><p>While you have an Auto-Quill on your person, you can use it to dictate and transcribe spoken word onto parchment, or copy written text and diagrams onto fresh parchment.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 2
+        },
+        "cost": 150,
+        "availability": "scarce",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "wazqwH6rG3lKCQUR",
+      "img": "modules/impmal-core/assets/icons/equipment/auto-quill.webp",
+      "effects": [],
+      "sort": 300000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749077506133,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "combi-tool": {
+    "name": "Combi-Tool",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Combi-Tool",
+      "system": {
+        "notes": {
+          "player": "<p>These items feature a plethora of probes, blades, socket plugs, cleaning hooks, and other aids to appease stubborn Machine Spirits and awakening slumbering ones to service.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 300,
+        "availability": "rare",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "xQ2vhqZTWMBZ3Jxi",
+      "img": "modules/impmal-core/assets/icons/equipment/combi-tool.webp",
+      "effects": [],
+      "sort": 800000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749079111965,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "comm leech": {
+    "name": "Comm Leech",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Comm Leech",
+      "system": {
+        "notes": {
+          "player": "<p>Comm Leeches tap into airborne signals, whether they are vox messages or data transmissions.</p><p>You can use a Comm Leech to make a <strong>Challenging (+0) Tech</strong> Test to intercept electronic signals out to 3 miles, with the GM making the final determination of Test Difficulty and distance based on the current circumstances. You can intercept messages a number of minutes long equal to the SL. On a failure, the leech attempt is detected by the transmitter.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 1000,
+        "availability": "rare",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "tech",
+            "specialisation": ""
+          },
+          "enabled": false,
+          "self": true
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "ypTbWrEOkiGLSsm1",
+      "img": "modules/impmal-core/assets/icons/equipment/comm-leech.webp",
+      "effects": [],
+      "sort": 900000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749077491544,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "psy focus": {
+    "name": "Psy Focus",
+    "packId": "impmal-core",
+    "item": {
+      "type": "equipment",
+      "name": "Psy Focus",
+      "system": {
+        "notes": {
+          "player": "<p>These small, simple trinkets might be mistaken for detritus littering a habway, oddly glowing crystals, or elaborately carved icons, but in the hands of a psyker they allow for greater mental clarity when accessing the powers of the Warp. Some might be made personally during training on Terra, others passed down from one rogue psyker to another as a part of joining a cult. All possess a special value their owner might treasure above all else.</p><p>When using a Psy Focus, you gain +1 SL to Psychic Mastery Tests. You can not benefit from more than one Psy Focus at a time.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 100,
+        "availability": "exotic",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "_id": "zGBSIFsZKtOoVV5T",
+      "img": "modules/impmal-core/assets/icons/equipment/psy-focus.webp",
+      "effects": [
+        "hOdN7lUZvJjlqVwT"
+      ],
+      "sort": 3500000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "14.361",
+        "createdTime": 1689196494297,
+        "modifiedTime": 1749078163531,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Psy Focus",
+        "_id": "hOdN7lUZvJjlqVwT",
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "transfer": true,
+        "statuses": [],
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "tint": "#ffffff",
+        "_stats": {
+          "coreVersion": "14.361",
+          "systemId": null,
+          "systemVersion": null,
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        },
+        "img": "modules/impmal-core/assets/icons/equipment/psy-focus.webp",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none"
+            },
+            "equipTransfer": true,
+            "prompt": false,
+            "zone": {}
+          },
+          "scriptData": [
+            {
+              "label": "Psychic Mastery Tests",
+              "string": "[Script.6yX3fQEJHfGmXLwW]",
+              "trigger": "dialog",
+              "options": {
+                "dialog": {
+                  "hideScript": "[Script.ndJFK6FvHGOx8mxK]",
+                  "activateScript": "[Script.l5OpGmZWxfgl2CFR]",
+                  "submissionScript": "",
+                  "targeter": false
+                },
+                "immediate": {
+                  "deleteEffect": false
+                },
+                "hideScript": "[Script.ndJFK6FvHGOx8mxK]",
+                "activateScript": "[Script.l5OpGmZWxfgl2CFR]",
+                "submissionScript": "",
+                "targeter": false,
+                "deleteEffect": false
+              },
+              "script": "[Script.6yX3fQEJHfGmXLwW]"
+            }
+          ],
+          "changes": []
+        },
+        "sort": 0,
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "macharian clothing": {
+    "name": "Macharian Clothing",
+    "packId": "impmal-core",
+    "item": {
+      "name": "Macharian Clothing",
+      "type": "equipment",
+      "_id": "zYPcyngZ4PQNZTtx",
+      "img": "modules/impmal-core/assets/icons/equipment/macharian-clothing.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Imperial attire is defined by three factors: tradition, function, and decay. Outside of the nobility and affluent merchant classes, an Imperial citizen would count themselves lucky to own more than one set of clothes. In most cases, citizens are handed a uniform by the faction they serve, to wear until their final breath, after which it is peeled from their cooling corpse and handed to the next citizen in line. Most Imperial attire is generations old, patched, stained, and modified over centuries of bare-minimum maintenance — the deteriorating funeral garb of a dying civilisation. A great deal of Imperial attire is simply made, often inherited, old, patched, stained, and modified over years of use — the deteriorating funeral garb of a dying civilisation.</p><p>Still, for those who have the right privilege, the Macharian Sector is home to an interesting array of clothing styles. In keeping with tradition, many are the product of the uniforms worn during the Macharian Crusade. Some nobles, for example, wear the ceremonial armour from storied ancestors, or emulate the dress uniforms of Macharius’s senior staff — tall boots and long coats with lion motifs in tribute to the Lord Solar. Pilgrims often adopt a similar, though less elegant, garb as they travel in the footsteps of Saint Macharius. </p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 0,
+        "availability": "common",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        }
+      },
+      "effects": [],
+      "sort": 2500000,
+      "flags": {},
+      "_stats": {
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "coreVersion": "13.344",
+        "createdTime": 1689199030936,
+        "modifiedTime": 1749078283818,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "null hood": {
+    "name": "Null Hood",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Null Hood",
+      "type": "equipment",
+      "_id": "3vv5uYDQNKXMZeWe",
+      "img": "modules/impmal-core/assets/icons/equipment/equipment.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Also known as a Psychic Hood, this device features a large and heavy collar with a rising hood-like projection over the head of the wearer. The Null Hood uses a delicate array of specially aligned crystals to create a nullifying psychic matrix about the wearer’s brain, dampening and dispersing enemy psychic attacks or effects. The Null Hood is commonly used by members of the Inquisition who are psychic themselves, especially members of the Ordo Malleus, who confront the foul powers of the Immaterium. </p><p>An enemy psyker has Disadvantage on all Tests made to manifest a psychic power targeting the wearer of a Null Hood.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 5000,
+        "availability": "exotic",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        },
+        "slots": {
+          "list": [],
+          "value": 0
+        }
+      },
+      "effects": [
+        "QhBoQFMKgVeBBsqD"
+      ],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.363",
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "createdTime": 1739573934918,
+        "modifiedTime": 1749079111910,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Warded Armour",
+        "img": "modules/impmal-core/assets/icons/equipment/equipment.webp",
+        "_id": "QhBoQFMKgVeBBsqD",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "originalType": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none",
+              "opposed": false,
+              "prevention": true,
+              "reversed": false,
+              "skill": {}
+            },
+            "testIndependent": false,
+            "equipTransfer": true,
+            "selfOnly": false,
+            "prompt": false,
+            "area": {
+              "templateData": {
+                "borderColor": null,
+                "fillColor": null,
+                "texture": null
+              },
+              "keep": false,
+              "aura": {
+                "transferred": false,
+                "render": false
+              },
+              "duration": "sustained"
+            },
+            "zone": {
+              "type": "zone",
+              "transferred": false,
+              "traits": {},
+              "skipImmediateOnPlacement": false,
+              "keep": false
+            }
+          },
+          "itemTargetData": {
+            "ids": [],
+            "allItems": false
+          },
+          "scriptData": [
+            {
+              "script": "[Script.SBE9V0rhjc1c0Vcn]",
+              "label": "Disadvantage to manifest Psychic Powers",
+              "trigger": "dialog",
+              "options": {
+                "targeter": true,
+                "defending": false,
+                "hideScript": "[Script.QcOPkOjl7SyMtSp3]",
+                "activateScript": "[Script.QaW538nDW3sFbBQG]",
+                "submissionScript": "",
+                "deleteEffect": false
+              },
+              "async": false
+            }
+          ],
+          "zone": {
+            "type": "zone",
+            "traits": {
+              "barrier": false,
+              "difficult": false,
+              "warpTouched": false
+            },
+            "skipImmediateOnPlacement": false
+          },
+          "sourceData": {
+            "test": {}
+          },
+          "computed": false,
+          "changes": []
+        },
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "tint": "#ffffff",
+        "transfer": true,
+        "statuses": [],
+        "sort": 0,
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "_stats": {
+          "compendiumSource": "Compendium.impmal-inquisition.items.Item.vxMXZAPXzHavbkDz.ActiveEffect.zLJ37GmvzscwWyqt",
+          "duplicateSource": null,
+          "coreVersion": "14.363",
+          "systemId": "impmal",
+          "systemVersion": "2.1.0",
+          "createdTime": 1739671448910,
+          "modifiedTime": 1740038058363,
+          "lastModifiedBy": "ADcTWlVqmDmCrquZ",
+          "exportSource": null
+        },
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "psyocculum": {
+    "name": "Psyocculum",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Psyocculum",
+      "type": "equipment",
+      "_id": "7zxAcZPjoFW6mDR5",
+      "img": "modules/impmal-core/assets/icons/equipment/equipment.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Known as witch-finder glasses, the arcane assembly of this visor combines psychically-treated lenses and psycho-reactive circuitry to allow the wearer a glimpse into the Immaterium, highlighting the movement of daemons and psykers. While tracking such creatures, however, the shifting and distorted images of the Warp confound perception of reality. </p><p>A creature wearing a Psyocculum has Advantage on all Tests to perceive daemons or creatures with a Warp Threshold and Disadvantage on all regular Perception based Tests. The wearer gains +10 to all Ranged Attacks against daemons or creatures with a Warp Threshold.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 5000,
+        "availability": "exotic",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        },
+        "slots": {
+          "list": [],
+          "value": 0
+        }
+      },
+      "effects": [
+        "T8Axc0ZYoGh3t3is"
+      ],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.363",
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "createdTime": 1739573934918,
+        "modifiedTime": 1749079111913,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Psyocculum",
+        "img": "modules/impmal-core/assets/icons/equipment/equipment.webp",
+        "_id": "T8Axc0ZYoGh3t3is",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "originalType": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none",
+              "opposed": false,
+              "prevention": true,
+              "reversed": false,
+              "skill": {}
+            },
+            "testIndependent": false,
+            "equipTransfer": true,
+            "selfOnly": false,
+            "prompt": false,
+            "area": {
+              "templateData": {
+                "borderColor": null,
+                "fillColor": null,
+                "texture": null
+              },
+              "keep": false,
+              "aura": {
+                "transferred": false,
+                "render": false
+              },
+              "duration": "sustained"
+            },
+            "zone": {
+              "type": "zone",
+              "transferred": false,
+              "traits": {},
+              "skipImmediateOnPlacement": false,
+              "keep": false
+            }
+          },
+          "itemTargetData": {
+            "ids": [],
+            "allItems": false
+          },
+          "scriptData": [
+            {
+              "script": "[Script.8TiH0eh0Ju8FKdSB]",
+              "label": "Perceiving Daemons or creatures with Warp Threshold",
+              "trigger": "dialog",
+              "options": {
+                "targeter": false,
+                "defending": false,
+                "hideScript": "[Script.NocEnzQv7tRfnDcY]",
+                "activateScript": "",
+                "submissionScript": "",
+                "deleteEffect": false
+              },
+              "async": false
+            },
+            {
+              "script": "[Script.ZXOeUtxqCn7N1s16]",
+              "label": "Regular Perception Tests",
+              "trigger": "dialog",
+              "options": {
+                "targeter": false,
+                "defending": false,
+                "hideScript": "[Script.Jc1ajIjmKgxaegDc]",
+                "activateScript": "[Script.6CvRorx8u5E5BdIh]",
+                "submissionScript": "",
+                "deleteEffect": false
+              },
+              "async": false
+            },
+            {
+              "script": "[Script.lXmBRGuwdu8XUL75]",
+              "label": "Ranged Attacks against Daemons or Psykers",
+              "trigger": "dialog",
+              "options": {
+                "targeter": false,
+                "defending": false,
+                "hideScript": "[Script.Q0mJ0cN6RhE9nspw]",
+                "activateScript": "[Script.iJkl5fNPfwM8yYhh]",
+                "submissionScript": "",
+                "deleteEffect": false
+              },
+              "async": false
+            }
+          ],
+          "zone": {
+            "type": "zone",
+            "traits": {
+              "barrier": false,
+              "difficult": false,
+              "warpTouched": false
+            },
+            "skipImmediateOnPlacement": false
+          },
+          "sourceData": {
+            "test": {}
+          },
+          "computed": false,
+          "changes": []
+        },
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "tint": "#ffffff",
+        "transfer": true,
+        "statuses": [],
+        "sort": 0,
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "_stats": {
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "coreVersion": "14.363",
+          "systemId": "impmal",
+          "systemVersion": "2.1.0",
+          "createdTime": 1739671713927,
+          "modifiedTime": 1740038058372,
+          "lastModifiedBy": "ADcTWlVqmDmCrquZ",
+          "exportSource": null
+        },
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "bio-sample extractor": {
+    "name": "Bio-sample Extractor",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Bio-sample Extractor",
+      "type": "equipment",
+      "_id": "Ao3ReFn4WBUSjSY2",
+      "img": "modules/impmal-core/assets/icons/equipment/equipment.webp",
+      "system": {
+        "notes": {
+          "player": "<p>A complex tool used primarily by the Adeptus Arbites to pursue criminals, the Bio-sample Extractor consists of a small array of clinical extractors and analysing tools. Despite functioning more accurately with strong physical products — such as flesh or blood — the Biosample Extractor can also follow pheromone traces. The device can additionally function as an auspex, using the gathered samples to gain an unerring trace on the criminal or heretic.</p><p>The wielder can use the Bio-sample Extractor to make a <strong>Challenging (+0) Tech (Security)</strong> Test at a scene to attempt to gather biological samples. The presence of blood or flesh may make this test easier, while reliance on trace pheromones may make this test more difficult. </p><p>With a bio-sample locked into the extractor and analysed, the wielder can use the device to follow the target. The wielder may be required to make additional Tech Tests to follow a weak signal, especially while at Long Range or further, but the extractor becomes more accurate closer to the target.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 150,
+        "availability": "scarce",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": true
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "tech",
+            "specialisation": "Security"
+          },
+          "enabled": false,
+          "self": true
+        },
+        "traits": {
+          "list": []
+        },
+        "slots": {
+          "list": [],
+          "value": 0
+        }
+      },
+      "effects": [],
+      "sort": 100000,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.344",
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "createdTime": 1739573934918,
+        "modifiedTime": 1749079144057,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "polymorphine": {
+    "name": "Polymorphine",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Polymorphine",
+      "type": "equipment",
+      "_id": "LrGS0OaZoKhVrqUm",
+      "img": "modules/impmal-core/assets/icons/equipment/equipment.webp",
+      "system": {
+        "notes": {
+          "player": "<p>A dangerous and exotic drug used primarily by the Callidus Assassins of the Officio Assassinorum, it allows the imbiber to mould their flesh and shapeshift into another creature. The training and biological engineering of a full Callidus Assassin allows them to adopt an array of forms, even impersonating xenos creatures. Still, an acolyte without such training is limited to mimicking Humans. </p><p>The Polymorphine transformation takes 1d5 Rounds and a <strong>Challenging (+0) Fortitude (Endurance)</strong> Test. If the Test fails, the character is caught part way through the transformation, suffers the @UUID[Compendium.impmal-core.journals.JournalEntry.DjxnvYJajGflu7IY.JournalEntryPage.Tu0sU1bo9eZI6qoe#fatigued]{Fatigued} condition, and remains that way for 30 minutes. If the Test succeeds, the character transforms into the new form for up to 2 hours. For the duration of the transformation, the character gains Advantage on any Test where the disguise or form would be useful.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 1000,
+        "availability": "exotic",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "fortitude",
+            "specialisation": "Endurance"
+          },
+          "enabled": false,
+          "self": true
+        },
+        "traits": {
+          "list": []
+        },
+        "slots": {
+          "list": [],
+          "value": 0
+        }
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.344",
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "createdTime": 1739573934918,
+        "modifiedTime": 1749079219434,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "inquisitorial tome": {
+    "name": "Inquisitorial Tome",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Inquisitorial Tome",
+      "type": "equipment",
+      "_id": "OwMojPSv6Jp5YSNt",
+      "img": "modules/impmal-core/assets/icons/equipment/equipment.webp",
+      "system": {
+        "notes": {
+          "player": "<p>An armoured and heavy tome containing protocol, knowledge, and secrets of the Inquistion. A text assembled by former Inquisitors or the collective knowledge of the Ordos, such as the Liber Heresius or the Rubric of Protocol. No single Tome contains the same knowledge as an other, containing bespoke knowledge and accounts of cults, their cyphers, the tactics of the heretics, and their multitude of plans and schemes. </p><p>An Inquisitorial Tome can be read as an @UUID[Compendium.impmal-core.journals.JournalEntry.eUFS6mIQy2oiz6IX.JournalEntryPage.AuM2Lzd784VPe32b]{Endeavour}, and grants you Advantage on your next Test related to identifying and otherwise gaining knowledge about heretical cults, their methods, and ways to oppose them. Furthermore, it reduces the XP cost of your first Skill or Specialisation Advance in Lore (Forbidden), Rapport (Inquiry), or Presence (Interrogation) to 25 XP instead of 50 XP (advances beyond the first still cost the same). </p><p>In addition, when the acolytes enter combat with a heretical cult, they can use knowledge within the Tome to ‘@UUID[Compendium.impmal-core.journals.JournalEntry.hdElQAwiBr5AyoRf.JournalEntryPage.3j1kargHBeCTssE7#know-thy-foe]{Know Thy Foe}’ for the purpose of gauging Superiority. But any Tome can only be used against a specific cult in this way once.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 1000,
+        "availability": "exotic",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        },
+        "slots": {
+          "list": [],
+          "value": 0
+        }
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.344",
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "createdTime": 1739573934918,
+        "modifiedTime": 1749079111947,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "inquisitorial rosette": {
+    "name": "Inquisitorial Rosette",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Inquisitorial Rosette",
+      "type": "equipment",
+      "_id": "UmYkx98dKv97QSJy",
+      "img": "modules/impmal-inquisition/assets/misc/rosette-cover.webp",
+      "system": {
+        "notes": {
+          "player": "<blockquote class=\"foundry-note\"><p>You can generate a unique Rosette by adding this Item to a character, then clicking <strong>Generate Rosette </strong>from the Equipment tab.</p><p>This requires the <strong>Inquisition Guide</strong> tables to be imported from the Compendium.</p></blockquote>",
+          "gm": "<p>@UUID[Compendium.impmal-inquisition.journals.JournalEntry.b06xyMjo4E4cYc40.JournalEntryPage.1UtqIsnM8RGPn47p]{Rosettes}</p>"
+        },
+        "equipped": {
+          "value": false,
+          "hand": "",
+          "force": false
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 0,
+        "availability": "",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        },
+        "slots": {
+          "list": [],
+          "value": 0
+        }
+      },
+      "effects": [
+        "9sGFmkIsnbCPFTe4"
+      ],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.363",
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "createdTime": 1745206710027,
+        "modifiedTime": 1749079111947,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "exportSource": null
+      },
+      "sort": 0
+    },
+    "effectDocs": [
+      {
+        "name": "Inquisitorial Rosette",
+        "img": "modules/impmal-inquisition/assets/misc/rosette-cover.webp",
+        "_id": "9sGFmkIsnbCPFTe4",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "originalType": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none",
+              "opposed": false,
+              "prevention": true,
+              "reversed": false,
+              "skill": {}
+            },
+            "testIndependent": false,
+            "equipTransfer": false,
+            "selfOnly": false,
+            "prompt": false,
+            "area": {
+              "templateData": {
+                "borderColor": null,
+                "fillColor": null,
+                "texture": null
+              },
+              "keep": false,
+              "aura": {
+                "transferred": false,
+                "render": false
+              },
+              "duration": "sustained"
+            },
+            "zone": {
+              "type": "zone",
+              "transferred": false,
+              "traits": {},
+              "skipImmediateOnPlacement": false,
+              "keep": false
+            }
+          },
+          "itemTargetData": {
+            "ids": [],
+            "allItems": false
+          },
+          "scriptData": [
+            {
+              "script": "[Script.It4DDknBC85Q3D19]",
+              "label": "Generate Rosette",
+              "trigger": "manual",
+              "options": {
+                "targeter": false,
+                "defending": false,
+                "deleteEffect": false
+              },
+              "async": false
+            }
+          ],
+          "zone": {
+            "type": "zone",
+            "traits": {
+              "barrier": false,
+              "difficult": false,
+              "warpTouched": false
+            },
+            "skipImmediateOnPlacement": false
+          },
+          "sourceData": {
+            "test": {}
+          },
+          "computed": false,
+          "changes": []
+        },
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "tint": "#ffffff",
+        "transfer": true,
+        "statuses": [],
+        "sort": 0,
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "_stats": {
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "coreVersion": "14.363",
+          "systemId": "impmal",
+          "systemVersion": "2.1.1",
+          "createdTime": null,
+          "modifiedTime": 1745294269434,
+          "lastModifiedBy": "JOxRGiqVnJ3u6pvr",
+          "exportSource": null
+        },
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "hexagrammic wards": {
+    "name": "Hexagrammic Wards",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Hexagrammic Wards",
+      "type": "equipment",
+      "_id": "X4aoeaq91c7VNWWf",
+      "img": "modules/impmal-core/assets/icons/equipment/equipment.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Often a collection of power charms and canticles of faith, they are worn to combat the minds of powerful and rogue psykers. Blessed parchment carefully inscribed with liturgies of the God-Emperor, or truesilver charms engraved with wards and sigils against the power of the Immaterium are banes to unclean minds and their warp-spawned powers. Such tools are commonly used by Ordo Hereticus Inquisitors and acolytes, but not exclusively.</p><p>While worn, the first time a creature attempts to manifest a Psychic Power targeting the wearer has Disadvantage. The Hexagrammic Ward then briefly burns out and can be restored by spending an hour in meditation and devotion.</p><p>Additionally, Hexagrammic Wards can be surgically grafted to an acolyte. This involves carefully engraving wards into the skull, crafting sigils and potentially weaving truesilver filigree beneath the skin. The Hexagrammic Wards become very difficult to notice, except in face-to-face encounters.</p><p>Surgically grafted Hexagrammic Wards function the same as above and can be restored over an hour, requiring a Chirugeon’s Kit or a specialised @UUID[Compendium.impmal-core.journals.JournalEntry.wqlquQ8Njtd5fb4Y.JournalEntryPage.XXSPEv1YwIKDyQx4#medical-care]{Medical Service}.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 1000,
+        "availability": "exotic",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        },
+        "slots": {
+          "list": [],
+          "value": 0
+        }
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.344",
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "createdTime": 1739573934918,
+        "modifiedTime": 1749079111949,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "listening vox": {
+    "name": "Listening Vox",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Listening Vox",
+      "type": "equipment",
+      "_id": "lpYj8fO2kMR1F9sG",
+      "img": "modules/impmal-core/assets/icons/equipment/equipment.webp",
+      "system": {
+        "notes": {
+          "player": "<p>The Listening Vox is a more compact and long-range version of a Vox Caster, designed to continuously record and relay audio waves within a close vicinity and fit within a closed grasp, allowing an acolyte to eavesdrop on conversations or listen for particular occurrences. Despite their small size, they work best when concealed carefully in an environment to prevent them from being spotted.</p><p>A Listening Vox can record audio within the range of a Zone. For transmitting, the device has a range of 100 miles and must be paired with a @UUID[Compendium.impmal-core.items.Item.co63VYiRX0HauLYN]{Vox-Caster} or a prepared Cogitator unit to receive the signal. Unless the Listening Vox is hooked up to a continuous power supply, the unit’s battery lasts around 24 hours until it needs to be replaced. Appropriate tools, such as a @UUID[Compendium.impmal-core.items.Item.deHQEH976yh9nI9y]{Signal Jammer}, can interfere with the Vox’s signal, and devices such as an @UUID[Compendium.impmal-core.items.Item.dO7XoDXD9QYTy6zZ]{Auspex} can detect the Listening Vox’s presence by their operator making a <strong>Hard (−20) Tech (Security)</strong> Test to pick up its signal or electronic field.</p><p></p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "cost": 300,
+        "availability": "rare",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        },
+        "slots": {
+          "list": [],
+          "value": 0
+        }
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.344",
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "createdTime": 1739573934918,
+        "modifiedTime": 1749079111950,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  },
+  "soulguilt scanner": {
+    "name": "Soulguilt Scanner",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Soulguilt Scanner",
+      "type": "equipment",
+      "_id": "uO5IZi3jF2NrIUqS",
+      "img": "modules/impmal-core/assets/icons/equipment/equipment.webp",
+      "system": {
+        "notes": {
+          "player": "<p>An amalgam of unusual investigative instruments, the Soulguilt Scanner can identify present threats to Adeptus Arbites and acolytes alike, divining malcontent within a crowd of citizens. While primarily comprised of specialised, conventional tools such as trace pheromone sniffers and scanners that can read a target’s brain’s broad electromagnetic activity to glean their intentions and mood — the heart of a Soulguilt Scanner is more esoteric. Using a similar arcane assemblage as the Psyocculum, psycho-reactive circuitry and a focused lens can read the flickering emanations of the Warp around a creature’s mind. The guilty, the impure, the dangerous, or the doubtful will create a warbling resonance that the scanner can pick up and use to isolate the target. </p><p>The wielder gains +2 SL on Awareness and Intuition Tests to identify and hunt malcontents, heretics, or criminals.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 2000,
+        "availability": "exotic",
+        "quantity": 1,
+        "uses": {
+          "value": null,
+          "max": null,
+          "enabled": false
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        },
+        "slots": {
+          "list": [],
+          "value": 0
+        }
+      },
+      "effects": [
+        "baIofNiOcPYQRvcK"
+      ],
+      "sort": 50000,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.363",
+        "systemId": "impmal",
+        "systemVersion": "3.0.0",
+        "createdTime": 1739573934918,
+        "modifiedTime": 1749079111951,
+        "lastModifiedBy": "SoIlYKCFgdH7s1a1",
+        "exportSource": null
+      }
+    },
+    "effectDocs": [
+      {
+        "name": "Soulguilt Scanner",
+        "img": "modules/impmal-core/assets/icons/equipment/equipment.webp",
+        "_id": "baIofNiOcPYQRvcK",
+        "type": "base",
+        "system": {
+          "transferData": {
+            "type": "document",
+            "originalType": "document",
+            "documentType": "Actor",
+            "avoidTest": {
+              "value": "none",
+              "opposed": false,
+              "prevention": true,
+              "reversed": false,
+              "skill": {}
+            },
+            "testIndependent": false,
+            "equipTransfer": false,
+            "selfOnly": false,
+            "prompt": false,
+            "area": {
+              "templateData": {
+                "borderColor": null,
+                "fillColor": null,
+                "texture": null
+              },
+              "keep": false,
+              "aura": {
+                "transferred": false,
+                "render": false
+              },
+              "duration": "sustained"
+            },
+            "zone": {
+              "type": "zone",
+              "transferred": false,
+              "traits": {},
+              "skipImmediateOnPlacement": false,
+              "keep": false
+            }
+          },
+          "itemTargetData": {
+            "ids": [],
+            "allItems": false
+          },
+          "scriptData": [
+            {
+              "script": "[Script.w3i6c83d4xNP09Ay]",
+              "label": "Identify and hunt malcontents, heretics and criminals",
+              "trigger": "dialog",
+              "options": {
+                "targeter": false,
+                "defending": false,
+                "hideScript": "[Script.pV0iWOzHZLdxZOQB]",
+                "activateScript": "[Script.EZbGBJzDPh5ALvrZ]",
+                "submissionScript": "",
+                "deleteEffect": false
+              },
+              "async": false
+            }
+          ],
+          "zone": {
+            "type": "zone",
+            "traits": {
+              "barrier": false,
+              "difficult": false,
+              "warpTouched": false
+            },
+            "skipImmediateOnPlacement": false
+          },
+          "sourceData": {
+            "test": {}
+          },
+          "computed": false,
+          "changes": []
+        },
+        "disabled": false,
+        "duration": {
+          "value": null,
+          "units": "seconds",
+          "expiry": null,
+          "expired": false
+        },
+        "description": "",
+        "origin": null,
+        "tint": "#ffffff",
+        "transfer": true,
+        "statuses": [],
+        "sort": 0,
+        "flags": {
+          "impmal": {
+            "manualEffectKeys": false
+          }
+        },
+        "_stats": {
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "coreVersion": "14.363",
+          "systemId": "impmal",
+          "systemVersion": "2.1.0",
+          "createdTime": null,
+          "modifiedTime": 1740038058621,
+          "lastModifiedBy": "ADcTWlVqmDmCrquZ",
+          "exportSource": null
+        },
+        "start": null,
+        "showIcon": 1,
+        "folder": null
+      }
+    ]
+  },
+  "consecrated scroll": {
+    "name": "Consecrated Scroll",
+    "packId": "impmal-inquisition",
+    "item": {
+      "name": "Consecrated Scroll",
+      "type": "equipment",
+      "_id": "w0d1vM9TrGQ67SpL",
+      "img": "modules/impmal-core/assets/icons/equipment/equipment.webp",
+      "system": {
+        "notes": {
+          "player": "<p>Scrolls blessed with sacred incense and unguents, bearing the scriptures and tenets of the God-Emperor in anointed inks, Consecrated Scrolls are used by Inquisitors with a measure of psychic might. Each scroll is carefully crafted for the wielder, requiring their devotion and presence. When the scroll absorbs a touch of the Warp, it is said to crumble to dust. When the wielder of a Consecrated Scroll rolls on the @UUID[Compendium.impmal-core.tables.RollTable.9aSbu2mswOOI43J1]{Psychic Phenomena} or @UUID[Compendium.impmal-core.tables.RollTable.2YYlAUyaVIt4bZVa]{Perils of the Warp} Table, they can choose to reroll the result. If they do, the Consecrated Scroll is destroyed.</p>",
+          "gm": ""
+        },
+        "equipped": {
+          "value": false,
+          "hand": ""
+        },
+        "encumbrance": {
+          "value": 1
+        },
+        "cost": 250,
+        "availability": "exotic",
+        "quantity": 1,
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "enabled": true
+        },
+        "test": {
+          "difficulty": "challenging",
+          "characteristic": "",
+          "skill": {
+            "key": "",
+            "specialisation": ""
+          },
+          "enabled": false
+        },
+        "traits": {
+          "list": []
+        },
+        "slots": {
+          "list": [],
+          "value": 0
+        }
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.344",
+        "systemId": "impmal",
+        "systemVersion": "2.0.8",
+        "createdTime": 1739573934918,
+        "modifiedTime": 1739573934918,
+        "lastModifiedBy": "OvDs1hgofr7TnbvV",
+        "exportSource": null
+      }
+    },
+    "effectDocs": []
+  }
+}
