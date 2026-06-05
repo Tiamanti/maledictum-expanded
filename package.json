@@ -6,7 +6,12 @@
   "scripts": {
     "build": "cross-env NODE_ENV=development rollup --config rollup.config.mjs --watch",
     "release": "cross-env NODE_ENV=production rollup --config rollup.config.mjs",
-    "import": "node tools/build-compendiums.mjs"
+    "import": "node tools/build-compendiums.mjs",
+    "registries": "node tools/generate-item-registries.mjs",
+    "docs:traits": "node tools/generate-trait-docs.mjs",
+    "docs:items": "node tools/generate-items-docs.mjs",
+    "docs": "npm run docs:traits && npm run docs:items",
+    "check:packs": "node tools/check-pack-types.mjs"
   },
   "devDependencies": {
     "classic-level": "^1.4.1",

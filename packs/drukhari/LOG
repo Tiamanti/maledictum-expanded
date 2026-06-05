@@ -1,1 +1,5 @@
-2026/06/05-01:22:06.455 c520 Delete type=3 #1
+2026/06/05-02:08:45.891 118cc Recovering log #3
+2026/06/05-02:08:45.892 118cc Level-0 table #5: started
+2026/06/05-02:08:45.897 118cc Level-0 table #5: 98302 bytes OK
+2026/06/05-02:08:45.909 118cc Delete type=0 #3
+2026/06/05-02:08:45.909 118cc Delete type=3 #2

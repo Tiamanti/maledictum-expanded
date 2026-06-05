@@ -1,1 +1,5 @@
-2026/06/05-01:22:13.996 a854 Delete type=3 #1
+2026/06/05-02:08:52.982 2adc Recovering log #3
+2026/06/05-02:08:52.982 2adc Level-0 table #5: started
+2026/06/05-02:08:52.987 2adc Level-0 table #5: 43298 bytes OK
+2026/06/05-02:08:53.001 2adc Delete type=0 #3
+2026/06/05-02:08:53.001 2adc Delete type=3 #2

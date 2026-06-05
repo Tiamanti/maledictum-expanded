@@ -289,6 +289,37 @@ def extract_powers_from_traits(traits):
     return result
 
 
+_RULE_NOTE_RE = re.compile(
+    r"^(they\b|may\b|replace\b|if\s+the\b|if\s+they\b|any\s+equipment\b|possession\s+description\b)",
+    re.IGNORECASE,
+)
+
+
+def _split_possessions(text):
+    """Split a possessions string on commas not inside parentheses, then filter rule notes."""
+    parts = []
+    depth = 0
+    current = []
+    for ch in text:
+        if ch == "(":
+            depth += 1
+            current.append(ch)
+        elif ch == ")":
+            depth = max(0, depth - 1)
+            current.append(ch)
+        elif ch == "," and depth == 0:
+            s = "".join(current).strip()
+            if s:
+                parts.append(s)
+            current = []
+        else:
+            current.append(ch)
+    s = "".join(current).strip()
+    if s:
+        parts.append(s)
+    return [p for p in parts if not _RULE_NOTE_RE.match(p)]
+
+
 def parse_file(path):
     text = file_to_text(path)
     lines = [strip_pipe(l) for l in text.split("\n")]
@@ -458,7 +489,7 @@ def parse_file(path):
         if m:
             flush_section()
             poss_text = m.group(1).rstrip(".")
-            actor["possessions"] = [p.strip() for p in poss_text.split(",")]
+            actor["possessions"] = _split_possessions(poss_text)
             continue
 
         if section is not None:

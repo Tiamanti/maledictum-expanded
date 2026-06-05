@@ -105,7 +105,6 @@ function processDir(dir) {
 
 function buildPack(slug, name, dir) {
   const packDir = path.join(PACKS_DIR, slug);
-  if (fs.existsSync(packDir)) fs.rmSync(packDir, { recursive: true, force: true });
   fs.mkdirSync(packDir, { recursive: true });
 
   process.stdout.write(`  Building "${name}" → packs/${slug} ... `);

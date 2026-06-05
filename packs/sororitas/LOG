@@ -1,1 +1,5 @@
-2026/06/05-01:22:04.154 1508c Delete type=3 #1
+2026/06/05-02:08:43.727 d8dc Recovering log #3
+2026/06/05-02:08:43.728 d8dc Level-0 table #5: started
+2026/06/05-02:08:43.736 d8dc Level-0 table #5: 128675 bytes OK
+2026/06/05-02:08:43.749 d8dc Delete type=0 #3
+2026/06/05-02:08:43.749 d8dc Delete type=3 #2

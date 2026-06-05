@@ -10,20 +10,20 @@ Adeptus Administratum · Adeptus Arbites · Adeptus Astartes · Adeptus Astra Te
 
 NPC actors include properly linked system items where names match official compendium entries:
 
-- **Weapons, armour, equipment** — system items with full descriptions, icons, and stats
-- **Talents** — linked to system talent entries with active effects
-- **Psychic powers** — linked to system power entries (discipline, rating, duration)
-- **Modifications & ammo** — Mono-edge, Silencer, Man-Stopper Bullets, etc.
-- **Protection** — Flak Vest, Mesh Vest, Carapace armour, etc.
+-   **Weapons, armour, equipment** — system items with full descriptions, icons, and stats
+-   **Talents** — linked to system talent entries with active effects
+-   **Psychic powers** — linked to system power entries (discipline, rating, duration)
+-   **Modifications & ammo** — Mono-edge, Silencer, Man-Stopper Bullets, etc.
+-   **Protection** — Flak Vest, Mesh Vest, Carapace armour, etc.
 
 Two custom NPC roles are also added: **Master** and **Overseer**.
 
 ## Requirements
 
-- Foundry VTT 14+
-- [Imperium Maledictum](https://foundryvtt.com/packages/impmal) system
-- [impmal-core](https://foundryvtt.com/packages/impmal-core) module (v3.3.0+)
-- [impmal-inquisition](https://foundryvtt.com/packages/impmal-inquisition) module (v3.3.0+)
+-   Foundry VTT 14+
+-   [Imperium Maledictum](https://foundryvtt.com/packages/impmal) system
+-   [impmal-core](https://foundryvtt.com/packages/impmal-core) module (v3.3.0+)
+-   [impmal-inquisition](https://foundryvtt.com/packages/impmal-inquisition) module (v3.3.0+)
 
 ## Development
 
