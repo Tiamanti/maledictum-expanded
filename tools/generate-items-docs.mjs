@@ -171,7 +171,7 @@ const JUNK_POSSESSION_RE = new RegExp(
     "^[-–—\\s]+$",          // "-", "–", "—", or any combination of dashes/spaces
     "^none$",                          // literal "None" / "none"
     "^possession description$",        // template placeholder
-    "^(they|may|replace|if\\s+the|if\\s+they|any\\s+equipment)\\b", // sentence openers
+    "^(they|may|replace|some|if\\s+the|if\\s+they|any\\s+equipment)\\b", // sentence openers
   ].join("|"),
   "i"
 );
