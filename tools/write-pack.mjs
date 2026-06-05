@@ -170,8 +170,8 @@ function parseEquipmentName(rawName) {
   // Strip leading articles: "a Backpack" → "Backpack"
   name = name.replace(/^(a|an|the)\s+/i, "");
 
-  // Apply known aliases
-  const aliasKey = name.toLowerCase();
+  // Apply known aliases (normalise curly apostrophes to straight before lookup)
+  const aliasKey = name.toLowerCase().replace(/[''ʼ]/g, "'");
   if (EQUIPMENT_ALIASES[aliasKey]) name = EQUIPMENT_ALIASES[aliasKey];
 
   return { baseName: name, quantity };

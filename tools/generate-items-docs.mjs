@@ -95,12 +95,14 @@ function resolveWeapon(atk) {
   let quantity = 1;
   const modNames = [];
   let ammoAlias = null;
+  let hadWsuffix = false;
 
   const qtyM = name.match(/^(\d+)\s*[x×]\s+(.+)$/i);
   if (qtyM) { quantity = parseInt(qtyM[1]); name = qtyM[2].trim(); }
 
   const ammoSuffix = name.match(/^(.+?)\s+w\/\s*(.+)$/i);
   if (ammoSuffix) {
+    hadWsuffix = true;
     name = ammoSuffix[1].trim();
     const raw = ammoSuffix[2].trim();
     for (const { re, alias } of AMMO_CLIP_PATTERNS) {
@@ -135,7 +137,7 @@ function resolveWeapon(atk) {
   const modEntries = modNames.map(m => findInRegistry(SYSTEM_MODIFICATIONS, m)).filter(Boolean);
 
   return { rawName: atk.name, baseName: name, quantity, attackType: atk.attackType,
-           systemEntry, categoryOverride, modNames, modEntries,
+           systemEntry, categoryOverride, modNames, modEntries, hadWsuffix,
            ammoAlias: ammoEntry ? ammoAlias : null, ammoEntry };
 }
 
@@ -148,7 +150,7 @@ function resolveEquipment(raw) {
   if (qtyM) { quantity = parseInt(qtyM[1]); name = qtyM[2].trim(); }
 
   name = name.replace(/^(a|an|the)\s+/i, "");
-  const aliasKey = name.toLowerCase();
+  const aliasKey = name.toLowerCase().replace(/[‘’ʼ]/g, "'");
   if (EQUIPMENT_ALIASES[aliasKey]) name = EQUIPMENT_ALIASES[aliasKey];
 
   const ammoAlias = isAmmoClipName(name);
@@ -161,6 +163,21 @@ function resolveEquipment(raw) {
   const sysProt  = !sysEquip ? findInRegistry(SYSTEM_PROTECTION, name) : null;
   return { rawName: raw, baseName: name, quantity, isAmmo: false,
            systemEntry: sysEquip || sysProt, ammoEntry: null, protEntry: sysProt };
+}
+
+// Junk possession values that should not appear in the docs table
+const JUNK_POSSESSION_RE = new RegExp(
+  [
+    "^[-–—\\s]+$",          // "-", "–", "—", or any combination of dashes/spaces
+    "^none$",                          // literal "None" / "none"
+    "^possession description$",        // template placeholder
+    "^(they|may|replace|if\\s+the|if\\s+they|any\\s+equipment)\\b", // sentence openers
+  ].join("|"),
+  "i"
+);
+
+function isJunkPossession(raw) {
+  return JUNK_POSSESSION_RE.test(raw.trim());
 }
 
 // ── Find leaf RTF directories ─────────────────────────────────────────────────
@@ -202,7 +219,7 @@ for (const dir of leafDirs) {
       weaponMap.get(atk.name).actors.add(actor.name);
     }
     for (const raw of actor.possessions || []) {
-      if (!raw.trim()) continue;
+      if (!raw.trim() || isJunkPossession(raw)) continue;
       if (!equipMap.has(raw)) equipMap.set(raw, { resolved: resolveEquipment(raw), actors: new Set() });
       equipMap.get(raw).actors.add(actor.name);
     }
@@ -231,7 +248,7 @@ const weapCustom   = []; // { rawName, resolved, actors } — fully unrecognised
 
 for (const [rawName, { resolved, actors }] of weaponMap) {
   const entry = { rawName, resolved, actors };
-  const hasMods = resolved.modNames.length > 0 || resolved.ammoAlias;
+  const hasMods = resolved.modNames.length > 0 || resolved.ammoAlias || resolved.hadWsuffix;
   const powerCustom = resolved.categoryOverride && !resolved.systemEntry;
   if (hasMods || powerCustom) weapModified.push(entry);
   else if (resolved.systemEntry) weapMatched.push(entry);

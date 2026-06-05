@@ -1,7 +1,7 @@
 # Item Reference
 
 Generated automatically from all NPC stat block RTF files.
-**70 system weapons**, **21 derived weapons** (base + mods/ammo/Power), **231 fully custom weapons**. **59 system equipment/protection matches**, **311 custom possessions**. **20 system powers**, **1 unmatched**.
+**69 system weapons**, **24 derived weapons** (base + mods/ammo/Power), **229 fully custom weapons**. **61 system equipment/protection matches**, **291 custom possessions**. **20 system powers**, **1 unmatched**.
 
 ## Weapons
 
@@ -74,7 +74,6 @@ These attack entries resolve directly to a system compendium weapon.
 | Splinter Rifle | `impmal-inquisition` | ranged | Kabalite Warrior |
 | Staff | `impmal-core` | melee | Psi-Hound, Sister Novitiate Dialogus |
 | Stub Pistol | `impmal-core` | ranged | Atalan Jackal, Atalan Jackal Alphus, Back Alley Doc, Chirurgeon, Clamavus, Dome Runner, Ganger, Initiate, Juve, Lookout, Mind-Locked Wyrd, Neophyte Hybrid |
-| Stub Pistol w/ Dumdums *(base: Stub Pistol)* | `impmal-core` | melee | Kill Squad Trooper |
 | Stub Revolver | `impmal-core` | ranged | Cyber Mastiff Handler, Enforcer, Grease Monkey, Mutant Abomination, Rogue Doc |
 | Sword | `impmal-core` | melee | Amaranthine Captain, Beastman Auxiliary, Chaos Beastman, Cult Fanatic, Cultist, Naval Officer, Rogue Doc, Sister Novitiate Hospitaller, Sister Novitiate Militant |
 | Unarmed | `impmal-core` | melee | Beastman Citizen, Felinid Citizen, Hybrid Metamorph, Imperial Citizen, Longshank Citizen, Nightsider Citizen, Ogryn Bodyguard, Ogryn Citizen, Ogryn Gunner, Ratling Citizen, Snotling Swarm, Squat Citizen |
@@ -89,9 +88,11 @@ These entries produce a base weapon (custom or system) plus modifications, ammo,
 | RTF Name | Base Weapon | Mods / Ammo / Notes | Actors |
 |---|---|---|---|
 | **2x Mono-Swords** | `impmal-core` Sword | mod: Mono-edge, ×2 | Inquisitorial Enlightener, Sister Novitiate Duelist |
+| **Auto-Grenade Launcher w/ Choke Grenades** | *custom* Auto-Grenade Launcher |  | Supressor Servitor |
 | **Autopistol w/ Manstopper** | `impmal-core` Autopistol | ammo: man-stopper bullets | Oathsworn Bodyguard |
 | **Autopistol w/ Manstoppers** | `impmal-core` Autopistol | ammo: man-stopper bullets | Amaranthine Agent, Assassin, Recidivist |
 | **Eviscerator w/ Exterminator Cartridge** | `impmal-core` Eviscerator | mod: Exterminator Cartridge | Missionary |
+| **Missile Pods w/ Frag Missiles** | *custom* Missile Pods |  | XV8 Crisis Battlesuit, XV8 Crisis Commander |
 | **Mono-Edge Ornamental Sword** | *custom* Edge Ornamental Sword | mod: Mono-edge | Imperial Nobilite |
 | **Mono-Knife** | `impmal-core` Knife | mod: Mono-edge | Arbites Detective, Astra Militarum Scout, Heretek Scavenger, Recidivist, Skulker |
 | **Mono-sword** | `impmal-core` Sword | mod: Mono-edge | Household Trooper |
@@ -108,6 +109,7 @@ These entries produce a base weapon (custom or system) plus modifications, ammo,
 | **Silenced Stub Pistol** | `impmal-core` Stub Pistol | mod: Silencer | Arbites Detective, Inquisitorial Acolyte, Inquisitorial Blank |
 | **Silenced Stub Revolver** | `impmal-core` Stub Revolver | mod: Silencer | Smuggler |
 | **Sniper Rifle w/ Silencer** | `impmal-core` Sniper Rifle | mod: Silencer | Assassin |
+| **Stub Pistol w/ Dumdums** | `impmal-core` Stub Pistol |  | Kill Squad Trooper |
 | **Suppressed Autopistol** | `impmal-core` Autopistol | mod: Silencer | Inquisitorial Pistolier |
 
 ### Custom Weapons
@@ -136,7 +138,6 @@ These attack entries have no matching system compendium weapon and no derived in
 | **Assault Needler** | ranged | Sister of Silence Prosecutor, Sister of Silence Witchseeker |
 | **Astartes Combat Knife** | melee | Scout Marine, Tactical Space Marine, Traitor Legionnaire |
 | **Astartes Sniper Rifle** | ranged | Scout Marine |
-| **Auto-Grenade Launcher w/ Choke Grenades** | ranged | Supressor Servitor |
 | **Avenger Shuriken Catapult** | ranged | Dire Avengers |
 | **Axe of Khorne** | melee | Bloodthirster |
 | **Baton** | melee | Literati |
@@ -245,7 +246,6 @@ These attack entries have no matching system compendium weapon and no derived in
 | **Mastercrafted Sanctified Power Sword** | melee | Crusader |
 | **Mechanical Appendages** | melee | Inquisitorial Autosavant |
 | **Melee Attack** | melee | Hexacation Specialist, Wyrd Gunslinger |
-| **Missile Pods w/ Frag Missiles** | ranged | XV8 Crisis Battlesuit, XV8 Crisis Commander |
 | **MIU Maxim Bolter** | ranged | Secutor |
 | **Monstrous Weapons** | melee | Grotesque |
 | **Multi-Melta** | ranged | Sister Retributor |
@@ -362,6 +362,7 @@ These possessions resolve to a system compendium item (equipment, protection, or
 | 2x Manstopper Clips *(→ Manstopper Clips)* *(→ Man-Stopper Bullets)* [×2] | `impmal-core` | ammo | Recidivist |
 | a Boarding Shield *(→ Boarding Shield)* | `impmal-core` | protection | Naval Breacher |
 | a Cameleoline Cloak *(→ Cameleoline Cloak)* | `impmal-core` | equipment | Astra Militarum Scout |
+| a Chirurgeon’s Kit *(→ chirurgeon's kit (5 uses))* | `impmal-core` | equipment | Inquisitorial Stormtrooper, Kasrkin, PDF Grenadier, PDF Grenadier Officer, Renegade Veteran, Tempestor Aquilon, Tempestor Prime, Tempestus Aquilon, Tempestus Scion |
 | a chrono *(→ chrono)* | `impmal-core` | equipment | Amaranthine Captain |
 | a Chrono *(→ Chrono)* | `impmal-core` | equipment | Cold Trader, Inquisitor, Inquisitorial Acolyte, Inquisitorial Blank, Interrogator, Literati, Naval Officer, Smuggler |
 | a Combi Tool *(→ Combi Tool)* *(→ Combi-Tool)* | `impmal-core` | equipment | Magos |
@@ -390,6 +391,7 @@ These possessions resolve to a system compendium item (equipment, protection, or
 | Auto-Quill | `impmal-core` | equipment | Law-Wright, Magistrate, Offense Barker, Sentencing Lord, Sister Dialogus |
 | Cameleoline Cloak | `impmal-core` | equipment | Assassin, Sanctus, Scout Marine |
 | Carapace Chestplate | `impmal-core` | protection | Amaranthine Captain, Astra Militarum Officer, Butcher, Master of Ordnance, Nexos, Officer of the Fleet, PDF Officer, Primus |
+| Chirurgeon’s Kit *(→ chirurgeon's kit (5 uses))* | `impmal-core` | equipment | Chirurgeon, Rejuvenant Adept, Sister Hospitaller, Sister Novitiate Hospitaller |
 | Chirurgeons Kit *(→ chirurgeon's kit (5 uses))* | `impmal-core` | equipment | Rogue Doc |
 | Chrono | `impmal-core` | equipment | Bonded Emissary, House Operative, Imperial Nobilite, Imperial Prince, Navigator, Navigator Primaris, Novator, Rogue Trader Captain, Wyrd Gunslinger |
 | Combi-Tool | `impmal-core` | equipment | Squat Citizen |
@@ -422,7 +424,6 @@ These possessions have no matching system compendium entry.
 
 | Name | Actors |
 |---|---|
-| **-** | Aberrant, Abominant, Ambull, Apprentek, Ariadne Helspider, Beast of Nurgle, Bloodthirster, Bomb Disposal Servitor, Boreworm, Canoptek Plasmacyte, Canoptek Scarab Swarm, Canoptek Spyder, Canoptek Wraith, Chaos Hound, Chronomancer, Clawed Fiend, Cryptothrall, Cyber Altered Task (CAT) Unit, Daemon Prince, Daemonette, Deathmark, Fiend of Slaanesh, Flamer of Tzeentch, Flayed One, Flesh Hound, Genestealer Patriarch, Gloomhaunt, Grapplehawk, Great Knarloc, Great Unclean One, Grotesque, Grox, Harrier-Skull, Herald of Khorne, Herald of Nurgle, Herald of Slaanesh, Herald of Tzeentch, Hexmark Destroyer, Horse, Juggernaut, Kastelan Robot, Keeper of Secrets, Khymera, Knarloc, Kroot Hound, Krootox, Lingua-Vox Skull, Lokhust Destroyer, Lokhust Heavy Destroyer, Lokhust Lord, Lord of Change, Mutant Rat Swarm, Navis Gheistskull, Necron Immortal, Necron Lord, Necron Pariah, Necron Warrior, Ophydian Destroyer, Pink Horror, Pit Thing, Plaguebearer, Plasmancer, Poxwalker, Psychomancer, Purestrain Genestealer, Razorwing, Rot Fly, Royal Warden, Screamer of Tzeentch, Serberys, Servo-Hunter, Servo-Skull, Skorpekh Destroyer, Skorpekh Lord, Steed of Slaanesh, Supressor Servitor, T'au Drone, Tomb Stalker, Xothic Blood Locust Swarm |
 | **‘Ard Arma** | Ork Meganob, Ork Nob, Ork Warboss |
 | **1 dose of a single combat drug** | Beastmaster, Hekatrix, Wych |
 | **100 solars** | Arbites Chastener, Inquisitorial Acolyte, Inquisitorial Blank |
@@ -475,7 +476,6 @@ These possessions have no matching system compendium entry.
 | **6 doses of Slaught** | Wrack |
 | **a Backpack *(→ Backpack)*** | Household Trooper, Interrogator |
 | **a book of abominable knowledge *(→ book of abominable knowledge)*** | Cult Leader |
-| **a Chirurgeon’s Kit *(→ Chirurgeon’s Kit)*** | Inquisitorial Stormtrooper, Kasrkin, PDF Grenadier, PDF Grenadier Officer, Renegade Veteran, Tempestor Aquilon, Tempestor Prime, Tempestus Aquilon, Tempestus Scion |
 | **A Clone Field *(→ Clone Field)*** | Haemonculus |
 | **a collection of horrific battle trophies *(→ collection of horrific battle trophies)*** | Archon, Beastmaster, Hekatrix, Kabalite Warrior, Succubus, Trueborn Kabalite, Wych |
 | **a copy of the Imperial Infantryman’s Uplifting Primer *(→ copy of the Imperial Infantryman’s Uplifting Primer)*** | Astra Militarum Breacher, Astra Militarum Engineer, Astra Militarum Officer, Astra Militarum Rough Rider, Astra Militarum Scout, Astra Militarum Sergeant, Astra Militarum Trooper, Felinid Scout, Gland Warrior, Inquisitorial Stormtrooper, Kasrkin, Master of Ordnance, Nightsider Sentry, Officer of the Fleet, PDF Grenadier, PDF Grenadier Officer, Penal Legionnaire, Ratling Sniper, Renegade Veteran, Tempestor Aquilon, Tempestor Prime, Tempestus Aquilon, Tempestus Scion, Veteran Guardsman, Veteran Guardsman Sgt. |
@@ -518,7 +518,7 @@ These possessions have no matching system compendium entry.
 | **a set of Magnoculars *(→ set of Magnoculars)*** | Inquisitorial Acolyte, Inquisitorial Blank, Inquisitorial Stormtrooper, Kasrkin, PDF Grenadier, PDF Grenadier Officer, Renegade Veteran, Tempestor Aquilon, Tempestor Prime, Tempestus Aquilon, Tempestus Scion |
 | **a set of Manacles *(→ set of Manacles)*** | Arbites Chastener, Arbites Detective, Astynomia Enforcer, Cyber Mastiff Handler, Enforcer, Inquisitor, Inquisitorial Acolyte, Inquisitorial Blank, Inquisitorial Enlightener, Inquisitorial Questkeeper, Interrogator, Riot Enforcer, Tactical Response Enforcer |
 | **A set of Mk. VII “Aquila” Power Armor *(→ set of Mk. VII “Aquila” Power Armor)*** | Tactical Space Marine, Traitor Legionnaire |
-| **a set of Naval Breacher Carapace (built in Photo-visors *(→ set of Naval Breacher Carapace (built in Photo-visors)*** | Naval Breacher |
+| **a set of Naval Breacher Carapace (built in Photo-visors, Respirator, Vox Bead and Void Suit) *(→ set of Naval Breacher Carapace (built in Photo-visors, Respirator, Vox Bead and Void Suit))*** | Naval Breacher |
 | **A set of Ogryn-sized Flak Armour *(→ set of Ogryn-sized Flak Armour)*** | Ogryn Bodyguard, Ogryn Gunner |
 | **a set of Photo visors *(→ set of Photo visors)*** | Inquisitorial Acolyte, Inquisitorial Blank |
 | **a set of Riding Tack *(→ set of Riding Tack)*** | Astra Militarum Rough Rider |
@@ -529,9 +529,9 @@ These possessions have no matching system compendium entry.
 | **a set of survival Gear in a Backpack *(→ set of survival Gear in a Backpack)*** | Felinid Scout, Nightsider Sentry, Penal Legionnaire |
 | **a set of Survival Gear in a backpack *(→ set of Survival Gear in a backpack)*** | Renegade Guardsman, Renegade Sergeant |
 | **a set of Survival Gear in a Backpack *(→ set of Survival Gear in a Backpack)*** | Astra Militarum Breacher, Astra Militarum Engineer, Astra Militarum Officer, Astra Militarum Rough Rider, Astra Militarum Scout, Astra Militarum Sergeant, Astra Militarum Trooper, Gland Warrior, Master of Ordnance, Officer of the Fleet, PDF Officer, PDF Sergeant, PDF Trooper, Ratling Sniper, Renegade Officer, Veteran Guardsman, Veteran Guardsman Sgt. |
-| **A set of Tempestus Carapace armour incorporating an Omnishield Helm (built in photo-visors *(→ set of Tempestus Carapace armour incorporating an Omnishield Helm (built in photo-visors)*** | Inquisitorial Stormtrooper |
-| **A set of Tempestus Carapace armour incorporating an Omnishield Helm (built in Photo-visors *(→ set of Tempestus Carapace armour incorporating an Omnishield Helm (built in Photo-visors)*** | Kasrkin, Renegade Veteran, Tempestor Aquilon, Tempestor Prime, Tempestus Aquilon, Tempestus Scion |
-| **A set of Tempestus Carapace armour incorporating an Omnishield Helm (built in Photovisors *(→ set of Tempestus Carapace armour incorporating an Omnishield Helm (built in Photovisors)*** | PDF Grenadier, PDF Grenadier Officer |
+| **A set of Tempestus Carapace armour incorporating an Omnishield Helm (built in photo-visors, Respirator, and Vox Bead) *(→ set of Tempestus Carapace armour incorporating an Omnishield Helm (built in photo-visors, Respirator, and Vox Bead))*** | Inquisitorial Stormtrooper |
+| **A set of Tempestus Carapace armour incorporating an Omnishield Helm (built in Photo-visors, Respirator, and Vox Bead) *(→ set of Tempestus Carapace armour incorporating an Omnishield Helm (built in Photo-visors, Respirator, and Vox Bead))*** | Kasrkin, Renegade Veteran, Tempestor Aquilon, Tempestor Prime, Tempestus Aquilon, Tempestus Scion |
+| **A set of Tempestus Carapace armour incorporating an Omnishield Helm (built in Photovisors, Respirator, and Vox Bead) *(→ set of Tempestus Carapace armour incorporating an Omnishield Helm (built in Photovisors, Respirator, and Vox Bead))*** | PDF Grenadier, PDF Grenadier Officer |
 | **A set of Wychsuit armor *(→ set of Wychsuit armor)*** | Beastmaster, Hekatrix, Succubus, Wych |
 | **a Slabshield *(→ Slabshield)*** | Bullgryn, Bullgryn Bodyguard |
 | **a Soul Trap *(→ Soul Trap)*** | Archon |
@@ -554,9 +554,6 @@ These possessions have no matching system compendium entry.
 | **An Unholy Icon *(→ Unholy Icon)*** | Chaos Beastman |
 | **and a Lascutter** | Household Trooper |
 | **and jewelry** | Imperial Prince |
-| **and Signal Jammer)** | Clamavus |
-| **and Vox Bead)** | Inquisitorial Stormtrooper, Kasrkin, PDF Grenadier, PDF Grenadier Officer, Renegade Veteran, Tempestor Aquilon, Tempestor Prime, Tempestus Aquilon, Tempestus Scion |
-| **Any Equipment or Systems required to fulfill function** | Janus Simulacra |
 | **Aquillan Eye** | Sydonian Skatros |
 | **Armored Bodyglove** | Assassin, Inquisitorial Enlightener, Inquisitorial Pistolier, Inquisitorial Questkeeper, Sanctus |
 | **Artificer Power Armor** | Tech-Priest Dominus |
@@ -569,7 +566,6 @@ These possessions have no matching system compendium entry.
 | **Carapace Chestplate Refractor Field** | Renegade Officer |
 | **Chemical Injector w/ Frenzon doses** | Arco-Flagellant |
 | **Chirurgeon’s Apron** | Chirurgeon |
-| **Chirurgeon’s Kit** | Chirurgeon, Rejuvenant Adept, Sister Hospitaller, Sister Novitiate Hospitaller |
 | **Combat Vest** | Scout Marine |
 | **Corpse Grinder Cult Initiate Mask** | Initiate |
 | **Corrupted Carapace Armor** | Blessed Blade |
@@ -594,13 +590,11 @@ These possessions have no matching system compendium entry.
 | **Empty Spirit Stone** | Howling Banshee |
 | **Enforcer Light Carapace** | Kill Squad Trooper |
 | **Enunciator** | Slaugth Infiltrator |
-| **etc.)** | Jokaero |
 | **Fire Warrior Combat Armor** | Fire Warrior, Fire Warrior Shas'ui |
 | **Fire Warrior Heavy Combat Armor** | Fireblade |
 | **Flak Armor** | Hired Gun |
 | **Flak Reinforced Void Suit** | Hexacation Specialist |
 | **Flak Vest and Helmet** | Penal Legionnaire |
-| **Flame** | Jokaero |
 | **Formal Clothing hiding Mesh Vest** | Amaranthine Agent |
 | **Gang Colors** | Champion, Clamavus, Cutter, Dome Runner, Ganger, Grease Monkey, Heavy, Initiate, Juve, Lookout, Mind-Locked Wyrd, Prospect, Sanctus, Skinner, Skulker |
 | **Gang Colours** | Butcher, Gang Leader |
@@ -610,7 +604,6 @@ These possessions have no matching system compendium entry.
 | **Gavel** | Sentencing Lord |
 | **Glow-Globe** | Hexacation Specialist |
 | **Grapnel & line** | Hexacation Specialist |
-| **Grav** | Jokaero |
 | **Gravity Displacement Pack** | Triarch Praetorian |
 | **Grisly trophies** | Wrack |
 | **Grot Orderly (+5 to Medicae tests while it lives)** | Mad Dok |
@@ -621,7 +614,6 @@ These possessions have no matching system compendium entry.
 | **Hidden Mesh Vest** | Locus |
 | **High Fashion Clothes** | Dissolute Noble |
 | **Howling Banshee Mask** | Howling Banshee |
-| **If the Lychguard is armed with the Hyperphase Sword** | Lychguard |
 | **Improved Ork Flak Arma** | Ork Mekboy |
 | **Injector** | Rogue Doc, Wrack |
 | **Inquisitorial robes** | Inquisitorial Autosavant |
@@ -634,23 +626,18 @@ These possessions have no matching system compendium entry.
 | **Kataphron Plate** | Kataphron Breacher |
 | **Kustom Force Field** | Ork Mekboy |
 | **Kyropatris Field Generator** | Secutarii Axiarch, Secutarii Hoplite, Secutarii Peltast |
-| **Leech** | Clamavus |
 | **Less Shiny Bitz** | Gretchin |
 | **Light Aspect Armor** | Howling Banshee |
 | **Light Leathers** | Lookout, Skulker, Smuggler |
 | **Mag-Inverter Shield** | Secutarii Axiarch, Secutarii Hoplite |
 | **Map of the Region** | Hexacation Specialist |
 | **Markerlight** | Pathfinder |
-| **May also be equipped with a Pistol or One-Handed weapon** | Slaugth Vassal Construct |
-| **may exchange Rail Rifle with Pulse Carbine or Ion Rifle** | Pathfinder |
-| **Melta** | Jokaero |
 | **merchandise** | Merchant |
 | **Mesh -** | Dissolute Noble |
 | **Mesh Armor** | Novator |
 | **Monotask Servo Skull (Laud Hailer)** | Sentencing Lord |
 | **Motorbike (IM CRB pg. 226) or Combat Bike (Vehicles of the Imperium pg. 18) or Quadbike (MRG pg. 85)** | Atalan Jackal, Atalan Jackal Alphus |
 | **multiple disguise kits** | Arbites Detective |
-| **None** | Astral Specter, Bloodhound Cyber-Mastiff, Bullpup Cyber-Mastiff, Chaos Spawn, Cherubim, Cyber Mastiff, Dybuk Killer, Eliminator Mastiff, Fury, Jotunn Servitor-Ogryn, Lutheran Excavation Automata, Psyber-Eagle, Snotling Swarm, Squig |
 | **Novitiate Carapace** | Sister Novitiate Dialogus, Sister Novitiate Duelist, Sister Novitiate Exactor, Sister Novitiate Hospitaller, Sister Novitiate Militant, Sister Novitiate Penitent, Sister Novitiate Preceptor, Sister Novitiate Purgatus, Sister Novitiate Reliquarius |
 | **one reload of Amputator rounds for the Autogun** | Tactical Response Enforcer |
 | **one-day’s earnings** | Merchant |
@@ -666,7 +653,6 @@ These possessions have no matching system compendium entry.
 | **Photo-visors** | Inquisitor, Interrogator |
 | **Photovisor** | Kill Squad Trooper |
 | **Poison Vials** | Biophagus |
-| **Possession Description** | Bloodletter, Bondless Dealer, Ebon Geist |
 | **Protective Goggles** | Nightsider Citizen |
 | **Quality clothing suitable to surroundings** | Oathsworn Bodyguard |
 | **Ragged Clothing** | Beastman Citizen, Felinid Citizen, Imperial Citizen, Longshank Citizen, Nightsider Citizen, Ogryn Citizen, Ratling Citizen |
@@ -676,8 +662,7 @@ These possessions have no matching system compendium entry.
 | **random bits of rubbish** | Mutant Abomination |
 | **refractor field** | PDF Officer |
 | **Refractor Field** | Astra Militarum Officer, Bonded Emissary, House Operative, Imperial Prince, Master of Ordnance, Officer of the Fleet, Palatine, Rejuvenant Adept, Rogue Trader Captain, Sister Dogmata |
-| **Replace Pulse Rifle with Pulse Carbine and EMP Grenade with Photon Flash Grenade if part of a Breacher Team** | Fire Warrior, Fire Warrior Shas'ui |
-| **Respirator** | Amaranthine Captain, Inquisitorial Stormtrooper, Kasrkin, Kill Squad Trooper, Naval Breacher, PDF Grenadier, PDF Grenadier Officer, Renegade Veteran, Tempestor Aquilon, Tempestor Prime, Tempestus Aquilon, Tempestus Scion |
+| **Respirator** | Amaranthine Captain, Kill Squad Trooper |
 | **Robes of Officer (or Enforcer Carapace if a Warrior Serf)*** | Chapter Serf |
 | **Rokkit Pack** | Ork Stormboy |
 | **Rosarius** | Canoness |
@@ -716,21 +701,18 @@ These possessions have no matching system compendium entry.
 | **Tattered Light Leathers** | Rogue Psyker |
 | **tattered rags** | Chaos Beastman |
 | **Technical Kit** | Grease Monkey |
-| **they do not benefit from the 1d10 Armor Roll** | Lychguard |
-| **they will also be equipped with a Dispersion Shield. If they are equipped with a Warscythe** | Lychguard |
 | **Titanshard Armor** | Secutarii Axiarch |
 | **trade seal** | Merchant |
 | **two Saddlebags** | Astra Militarum Rough Rider |
 | **uniform** | Beastman Auxiliary |
 | **Uniform** | Kill Squad Trooper |
-| **various Jokaero Digi-Weapon rings (Las** | Jokaero |
+| **various Jokaero Digi-Weapon rings (Las, Melta, Flame, Grav, etc.)** | Jokaero |
 | **Verispex Armor** | Verispex Adept |
 | **Verispex Helm** | Verispex Adept |
 | **Voltagheist Field** | Corpuscarii Electro-Priest, Fulgurite Electro-Priest |
 | **vox bead** | Amaranthine Agent, Amaranthine Captain, Oathsworn Bodyguard |
 | **Vox Bead** | Hired Gun, Inquisitorial Pistolier, Kill Squad Trooper, Man at Arms, Wyrd Gunslinger |
-| **Vox Bead and Void Suit)** | Naval Breacher |
-| **Vox Interceptor Array (counts as Vox Caster** | Clamavus |
+| **Vox Interceptor Array (counts as Vox Caster, Leech, and Signal Jammer)** | Clamavus |
 | **Vratine Armor** | Sister of Silence Prosecutor, Sister of Silence Vigilator, Sister of Silence Witchseeker |
 | **Workers Clothings** | Squat Citizen |
 
