@@ -44,6 +44,12 @@ Copy `foundry-path.example.js` to `foundry-path.js` and set your local Foundry m
 
 ### Importing NPC compendiums from RTF source files
 
+System item registries (`tools/system-*.json`) are generated from your local Foundry install and are **not committed** to the repo. Generate them before the first import, and whenever the official ImpMal modules are updated (Foundry must be closed):
+
+```bash
+npm run registries
+```
+
 Rebuild all 41 packs from RTF sources (Foundry must be closed):
 
 ```bash
@@ -58,17 +64,12 @@ python tools/parse-rtf.py <rtf-dir> | node tools/write-pack.mjs packs/<pack-name
 
 The parser reads all `.rtf` files in a directory and outputs a JSON actor array to stdout. Actor names are derived from filenames — the parenthetical role suffix is stripped, e.g. `Administratum Overseer (Troop).rtf` → `Administratum Overseer`.
 
-`write-pack.mjs` writes to a Foundry LevelDB compendium directory. Existing entries with the same name are overwritten. System item registries in `tools/system-*.json` are used to embed system-matched items with their original IDs.
-
-Regenerate system item registries (Foundry must be closed):
-
-```bash
-node tools/generate-item-registries.mjs   # from monorepo root
-```
+`write-pack.mjs` writes to a Foundry LevelDB compendium directory. Existing entries with the same name are overwritten. System item registries are used to embed system-matched items with their original IDs.
 
 Regenerate reference docs:
 
 ```bash
-node tools/generate-trait-docs.mjs        # docs/traits.md
-node tools/generate-items-docs.mjs        # docs/items.md
+npm run docs        # both docs/traits.md and docs/items.md
+npm run docs:traits # docs/traits.md only
+npm run docs:items  # docs/items.md only
 ```
