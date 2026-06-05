@@ -19,7 +19,7 @@
  */
 import { createRequire } from "module";
 import path from "path";
-import { fileURLToPath } from "url";
+import { fileURLToPath, pathToFileURL } from "url";
 import fs from "fs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -33,7 +33,7 @@ const { ClassicLevel } = require(path.resolve(__dirname, "../../../node_modules/
 let FOUNDRY_DATA = process.env.FOUNDRY_DATA;
 if (!FOUNDRY_DATA) {
   try {
-    const { default: getFoundryPath } = await import(path.join(PKG, "foundry-path.js"));
+    const { default: getFoundryPath } = await import(pathToFileURL(path.join(PKG, "foundry-path.js")).href);
     FOUNDRY_DATA = path.resolve(getFoundryPath(), "../..");
   } catch {
     console.error("foundry-path.js not found and FOUNDRY_DATA env var not set.");
