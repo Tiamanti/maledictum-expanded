@@ -290,7 +290,8 @@ def extract_powers_from_traits(traits):
 
 
 _RULE_NOTE_RE = re.compile(
-    r"^(they\b|may\b|replace\b|some\b|if\s+the\b|if\s+they\b|any\s+equipment\b|possession\s+description\b)",
+    r"^(they\b|may\b|replace\b|if\s+the\b|if\s+they\b|any\s+equipment\b|possession\s+description\b)"
+    r"|^some\s+\S+\s+(may|can|will|are|have)\b",
     re.IGNORECASE,
 )
 

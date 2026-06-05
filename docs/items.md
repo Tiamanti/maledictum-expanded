@@ -1,7 +1,7 @@
 # Item Reference
 
 Generated automatically from all NPC stat block RTF files.
-**69 system weapons**, **24 derived weapons** (base + mods/ammo/Power), **229 fully custom weapons**. **61 system equipment/protection matches**, **291 custom possessions**. **20 system powers**, **1 unmatched**.
+**69 system weapons**, **24 derived weapons** (base + mods/ammo/Power), **229 fully custom weapons**. **61 system equipment/protection matches**, **290 custom possessions**. **20 system powers**, **1 unmatched**.
 
 ## Weapons
 
@@ -684,7 +684,6 @@ These possessions have no matching system compendium entry.
 | **Skitarii Warplate** | Pteraxii Skystalker, Pteraxii Sterylizor, Secutarii Hoplite, Secutarii Peltast, Serberys Raider, Serberys Sulphurhound, Skitarii Alpha, Skitarii Marshal, Skitarii Ranger, Skitarii Vanguard, Sydonian Skatros |
 | **some Heretical Writings** | Cult Gunner, Cultist |
 | **some stolen items** | Ratling Citizen |
-| **Some Tech-Assassins may have clothing to hide themselves amongst crowds** | Tech Assassin |
 | **Spiky Bitz** | Ork Meganob, Ork Nob, Ork Warboss |
 | **Squig Hound** | Ork Runtherd |
 | **Stablight** | Dome Runner |
